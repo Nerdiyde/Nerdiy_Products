@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicMirror frame parts for Lenovo Q24i-1L TFT display by Nerdiy.de</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0d1117;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: #1c2128;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            border: 1px solid #30363d;
+        }
+
+        h2 {
+            color: #58a6ff;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px 10px 0;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(31, 111, 235, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(31, 111, 235, 0.6);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .info-card {
+            background: #0d1117;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+        }
+
+        .info-card label {
+            color: #79c0ff;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .info-card .value {
+            color: #c9d1d9;
+            font-size: 0.95em;
+        }
+
+        h3 {
+            color: #79c0ff;
+            font-size: 1.2em;
+            margin: 20px 0 10px;
+        }
+
+        ul,
+        ol {
+            margin-left: 20px;
+            color: #c9d1d9;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 20px;
+            font-size: 0.95em;
+        }
+
+        th,
+        td {
+            border: 1px solid #30363d;
+            padding: 8px 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #0d1117;
+            color: #79c0ff;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #161b22;
+        }
+
+        .small {
+            color: #8b949e;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background: #0d1117;
+            color: #8b949e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #30363d;
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            color: #ffc107;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MagicMirror frame parts for Lenovo Q24i-1L TFT display by Nerdiy.de</h1>
+        <p>Professional 3D-Printable Solution from Nerdiy.de</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Product Information</h2>
+            <p>This product provides 3D-printable mounting and assembly parts for building a MagicMirror with wooden frame.</p>
+            <p><strong>Note:</strong> The 3D printed parts are used for mounting and connecting components. The wooden frame parts must be made separately or purchased.</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <label>Product Name</label>
+                    <span class="value">MagicMirror frame parts for Lenovo Q24i-1L TFT display by Nerdiy.de</span>
+                </div>
+                <div class="info-card">
+                    <label>Creator</label>
+                    <span class="value">Nerdiy.de</span>
+                </div>
+                <div class="info-card">
+                    <label>Created</label>
+                    <span class="value">February 2026</span>
+                </div>
+                <div class="info-card">
+                    <label>Last Updated</label>
+                    <span class="value">25. February 2026</span>
+                </div>
+                <div class="info-card">
+                    <label>Status</label>
+                    <span class="value">Complete - All materials and assembly guide documented</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Images</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./images/_DSC0930.JPG" alt="MagicMirror Frame - View 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC0943.JPG" alt="MagicMirror Frame - View 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC0959.JPG" alt="MagicMirror Frame - View 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC0960.JPG" alt="MagicMirror Frame - View 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC0963.JPG" alt="MagicMirror Frame - View 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC0965.JPG" alt="MagicMirror Frame - View 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/MagicMirror.png" alt="MagicMirror Logo">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Purchase Options</h2>
+            <h3>Primary Source (Recommended)</h3>
+            <ul>
+                <li><a href="https://nerdiy.de/de_de/produkt/magicmirror-rahmenteile-anbauteile-zur-genauen-positionierung-des-tft-displays-3d-druckbar-stl-dateien/">Nerdiy.de Shop</a> - Purchase the STL files here to support independent design and development</li>
+            </ul>
+
+            <h3>Alternative Sources</h3>
+            <ul>
+                <li><a href="https://www.printables.com/model/1284713-magicmirror-frame-parts-for-lenovo-q24i-1l-tft-dis">Printables Store</a></li>
+                <li><a href="https://cults3d.com/de/modell-3d/gadget/magicmirror-rahmenteile-anbauteile-zur-genauen-positionierung-des-tft-displays">Cults3D</a></li>
+            </ul>
+
+            <div class="note">
+                <strong>Support independent makers:</strong> By purchasing the STL files through the Nerdiy.de Shop, you directly support further development and new projects.
+            </div>
+        </section>
+
+        <section>
+            <h2>Bill of Materials</h2>
+
+            <h3>Required Tools</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Tool</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>Screwdriver Set</td>
+                        <td>B092LVWNX8</td>
+                        <td><a href="https://www.amazon.de/dp/B092LVWNX8?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>SD Card Reader</td>
+                        <td>B081VHSB2V</td>
+                        <td><a href="https://www.amazon.de/dp/B081VHSB2V?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Tweezers Set</td>
+                        <td>B09BQGT6GZ</td>
+                        <td><a href="https://www.amazon.de/dp/B09BQGT6GZ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>One-Handed Clamp</td>
+                        <td>B07ZTVY1PM</td>
+                        <td><a href="https://www.amazon.de/dp/B07ZTVY1PM?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Frame Clamp</td>
+                        <td>B000P37JJC</td>
+                        <td><a href="https://www.amazon.de/dp/B000P37JJC?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Soldering Iron</td>
+                        <td>B0CCV6T329</td>
+                        <td><a href="https://www.amazon.de/dp/B0CCV6T329?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Electronics</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>Lenovo Q24i-1L Display</td>
+                        <td>B08K9743BK</td>
+                        <td><a href="https://www.amazon.de/dp/B08K9743BK?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Lenovo Adapter (USB-C)</td>
+                        <td>B00N42IT4U</td>
+                        <td><a href="https://www.amazon.de/dp/B00N42IT4U?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Mini HDMI Cable 0.9M</td>
+                        <td>B089GN67HL</td>
+                        <td><a href="https://www.amazon.de/dp/B089GN67HL?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Micro USB Cable Short</td>
+                        <td>B095JZSHXQ</td>
+                        <td><a href="https://www.amazon.de/dp/B095JZSHXQ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>HDMI Ribbon Cable</td>
+                        <td>B07D9FSMD7</td>
+                        <td><a href="https://www.amazon.de/dp/B07D9FSMD7?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Power Delivery Trigger Board</td>
+                        <td>B0BTVV5PB4</td>
+                        <td><a href="https://www.amazon.de/dp/B0BTVV5PB4?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>USB StepDown Converter</td>
+                        <td>B07NLV411C</td>
+                        <td><a href="https://www.amazon.de/dp/B07NLV411C?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Mechanical Parts and Hardware</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10x</td>
+                        <td>M3x16 Countersunk Screw</td>
+                        <td>B0BF16195Q</td>
+                        <td><a href="https://www.amazon.de/dp/B0BF16195Q?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>5x</td>
+                        <td>M3x25 Countersunk Screw</td>
+                        <td>B0BF17YVHP</td>
+                        <td><a href="https://www.amazon.de/dp/B0BF17YVHP?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>4x</td>
+                        <td>3x16mm Timber Screw</td>
+                        <td>B07MZXY4BF</td>
+                        <td><a href="https://www.amazon.de/dp/B07MZXY4BF?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Supplies and Consumables</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>PLA Filament Black (1kg)</td>
+                        <td>B07T6WLFML</td>
+                        <td><a href="https://www.amazon.de/dp/B07T6WLFML?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Ponal Pur Glue</td>
+                        <td>B000U40L28</td>
+                        <td><a href="https://www.amazon.de/dp/B000U40L28?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Cable Ties Black</td>
+                        <td>B072SLJR2T</td>
+                        <td><a href="https://www.amazon.de/dp/B072SLJR2T?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Mounting Adhesive Tape 3M</td>
+                        <td>B00EDLCS9S</td>
+                        <td><a href="https://www.amazon.de/dp/B00EDLCS9S?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Oak Wood Frame Parts (Required)</h3>
+            <div class="note">
+                <strong>⚠️ Important:</strong> The wooden frame parts are essential for this project. The 3D printed parts only serve as mounting and connecting components!<br><br>
+                You have two options:<br>
+                <strong>Option 1:</strong> Purchase pre-made oak wood frame parts from the shop below<br>
+                <strong>Option 2:</strong> Make the wooden frame parts yourself
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>Shop</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 Set</td>
+                        <td>Pre-made Oak Wood MagicMirror Frame</td>
+                        <td><a href="https://www.massivholzleiste.de/de/leisten/192-magicmirror.html">Massivholzleiste.de</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>How to Use</h2>
+            <h3>Step-by-Step Guide</h3>
+            <ol>
+                <li>
+                    <strong>Gather Your Materials</strong>
+                    <ul>
+                        <li>Purchase all components from the Bill of Materials section above</li>
+                        <li>All Amazon links are pre-configured with affiliate tags to support Nerdiy.de development</li>
+                        <li>For STL files, purchase through the Nerdiy.de Shop to support independent makers</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Download 3D Files</strong>
+                    <ul>
+                        <li>Download from Nerdiy.de Shop (recommended - supports independent makers)</li>
+                        <li>Alternative: Download from Printables</li>
+                        <li>Alternative: Download from Cults3D</li>
+                        <li>Recommended: Get the premium version from the Nerdiy.de Shop with support and updates</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Obtain Wooden Frame Parts</strong>
+                    <ul>
+                        <li>Either purchase pre-made oak wood frame from <a href="https://www.massivholzleiste.de/de/leisten/192-magicmirror.html">Massivholzleiste.de</a></li>
+                        <li>Or make the wooden frame parts yourself according to specifications</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Prepare for 3D Printing</strong>
+                    <ul>
+                        <li>Print the mounting and assembly parts with these settings:</li>
+                        <li>Layer Height: 0.2mm</li>
+                        <li>Infill: 20-25%</li>
+                        <li>Supports: Yes (for overhangs greater than 45 degrees)</li>
+                        <li>Material: PETG or PLA (PLA recommended for indoor use)</li>
+                        <li>Slice and prepare files in your slicing software</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Assembly</strong>
+                    <ul>
+                        <li>Clean all printed parts after removal from build plate</li>
+                        <li>Assemble the wooden frame using the 3D printed connecting parts</li>
+                        <li>Mount the Lenovo Q24i-1L display into the wooden frame using the 3D printed mounting parts</li>
+                        <li>Connect electronics (Raspberry Pi, cables, power supply)</li>
+                        <li>Install all countersunk screws (M3x16, M3x25) and timber screws (3x16)</li>
+                        <li>Use cable ties for cable management inside the frame</li>
+                        <li>Apply mounting adhesive tape for final installation</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Configuration</strong>
+                    <ul>
+                        <li>Install Raspberry Pi OS (or compatible system) on the Micro SD card</li>
+                        <li>Configure MagicMirror2 software and modules</li>
+                        <li>Set up display orientation and resolution</li>
+                        <li>Test all functions before wall mounting</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p><strong>Required Tools from BOM:</strong> Screwdriver Set, SD Card Reader, Tweezers Set, One-Handed Clamp, Frame Clamp, Soldering Iron</p>
+        </section>
+
+        <section>
+            <h2>License</h2>
+            <p>The license for these STL files is included with your purchase. When you purchase the STL files, you receive the complete license terms along with the downloadable files.</p>
+            <p class="small"><strong>Last Updated:</strong> 25. February 2026<br><strong>Status:</strong> Complete - All materials and assembly guide documented</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nerdiy.de - Professional 3D-Printable Solutions</p>
+        <p>
+            <a href="https://github.com/Nerdiyde">GitHub</a> |
+            <a href="https://www.nerdiy.de">Website</a> |
+            <a href="https://www.printables.com/@Nerdiy">Printables</a>
+        </p>
+    </footer>
+</body>
+</html>
