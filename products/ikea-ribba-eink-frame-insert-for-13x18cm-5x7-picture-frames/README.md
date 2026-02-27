@@ -88,6 +88,21 @@ This product provides 3D-printable mounting and assembly parts for building an e
 
 ---
 
+## 🖨️ 3D Print Settings
+
+### Recommended Print Settings
+
+| Setting | Value |
+|---------|-------|
+| **Filament Type** | Weather and UV-resistant (e.g. PETG, ABS, ASA) |
+| **Layer Thickness** | 0.2mm |
+| **Infill** | 15-25% |
+| **Wall Lines** | 3-5 |
+
+> **💡 Print Orientation**: I highly recommend printing the parts in the already defined orientation. The defined orientation is intended to maximize the structural integrity of the part.
+
+---
+
 ## 🎯 How to Use
 
 ### Step-by-Step Guide

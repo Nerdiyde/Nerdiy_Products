@@ -29,6 +29,7 @@ This product provides 3D-printable mounting and assembly parts for building an e
 
 ### Alternative Sources
 - **[🎨 Printables Store](https://www.printables.com/model/1357158-ikea-rodalm-eink-frame-insert-for-13x18cm-5x7-pict)**
+- **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/ikea-roedalm-eink-frame-insert-for-13x18cm-5-x7-picture-frames-by-nerdiy-de)**
 
 > 💖 **Support independent makers**: By purchasing the STL files through [Nerdiy.de Shop](https://nerdiy.de/en/product-2/ikea-roedalm-eink-rahmeneinsatz-fuer-13x18cm-5x7-bilderrahmen-3d-druckbar-stl-dateien/), you directly support further development and new projects!
 
@@ -90,6 +91,21 @@ This product provides 3D-printable mounting and assembly parts for building an e
 
 ---
 
+## 🖨️ 3D Print Settings
+
+### Recommended Print Settings
+
+| Setting | Value |
+|---------|-------|
+| **Filament Type** | Weather and UV-resistant (e.g. PETG, ABS, ASA) |
+| **Layer Thickness** | 0.2mm |
+| **Infill** | 15-25% |
+| **Wall Lines** | 3-5 |
+
+> **💡 Print Orientation**: I highly recommend printing the parts in the already defined orientation. The defined orientation is intended to maximize the structural integrity of the part.
+
+---
+
 ## 🎯 How to Use
 
 ### Step-by-Step Guide
@@ -102,6 +118,7 @@ This product provides 3D-printable mounting and assembly parts for building an e
 2. **Download 3D Files**
    - [🛍️ Download from Nerdiy.de Shop](https://nerdiy.de/en/product-2/ikea-roedalm-eink-rahmeneinsatz-fuer-13x18cm-5x7-bilderrahmen-3d-druckbar-stl-dateien/) (recommended - supports independent makers)
    - Alternative: [Download from Printables](https://www.printables.com/model/1357158-ikea-rodalm-eink-frame-insert-for-13x18cm-5x7-pict)
+   - Alternative: [Download from Cults3D](https://cults3d.com/de/modell-3d/gadget/ikea-roedalm-eink-frame-insert-for-13x18cm-5-x7-picture-frames-by-nerdiy-de)
 
 3. **ESPHome Firmware Configuration**
    - The required ESPHome firmware configuration is included in the `esphome_config/` folder

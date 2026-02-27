@@ -30,7 +30,7 @@ This product provides 3D-printable mounting and assembly parts for building a Ma
 
 ### Alternative Sources
 - **[🎨 Printables Store](https://www.printables.com/model/1304672-magicmirror-frame-parts-for-xiaomi-a24i-tft-displa)**
-- **[🖨️ Cults3D](https://cults3d.com/)**
+- **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/magicmirror-frame-parts-for-xiaomi-a24i-tft-display-by-nerdiy-de)**
 
 > 💖 **Support independent makers**: By purchasing the STL files through [Nerdiy.de Shop](https://www.nerdiy.de/), you directly support further development and new projects!
 
@@ -93,6 +93,21 @@ This product provides 3D-printable mounting and assembly parts for building a Ma
 
 ---
 
+## 🖨️ 3D Print Settings
+
+### Recommended Print Settings
+
+| Setting | Value |
+|---------|-------|
+| **Filament Type** | Weather and UV-resistant (e.g. PETG, ABS, ASA) |
+| **Layer Thickness** | 0.2mm |
+| **Infill** | 15-25% |
+| **Wall Lines** | 3-5 |
+
+> **💡 Print Orientation**: I highly recommend printing the parts in the already defined orientation. The defined orientation is intended to maximize the structural integrity of the part.
+
+---
+
 ## 🎯 How to Use
 
 ### Step-by-Step Guide
@@ -105,7 +120,7 @@ This product provides 3D-printable mounting and assembly parts for building a Ma
 2. **Download 3D Files**
    - [🛍️ Download from Nerdiy.de Shop](https://www.nerdiy.de/) (recommended - supports independent makers)
    - Alternative: [Download from Printables](https://www.printables.com/model/1304672-magicmirror-frame-parts-for-xiaomi-a24i-tft-displa)
-   - Alternative: [Download from Cults3D](https://cults3d.com/)
+   - Alternative: [Download from Cults3D](https://cults3d.com/de/modell-3d/gadget/magicmirror-frame-parts-for-xiaomi-a24i-tft-display-by-nerdiy-de)
    - Recommended: Get the premium version from [Nerdiy.de Shop](https://www.nerdiy.de/) with support and updates
 
 3. **Obtain Wooden Frame Parts**
