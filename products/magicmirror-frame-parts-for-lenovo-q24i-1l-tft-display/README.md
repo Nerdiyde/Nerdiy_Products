@@ -1,6 +1,14 @@
 # MagicMirror frame parts for Lenovo Q24i-1L TFT display by Nerdiy.de
 
-**Printables Store Produkt - Nerdiy.de**
+---
+
+## 🎯 Project Overview
+
+Build a professionally assembled MagicMirror with our high-quality 3D-printable frame parts.
+
+Here we offer you the STL files for the 3D-printed frame parts, which have been specifically developed to precisely hold the Lenovo Q24i-1L TFT display, the Raspberry Pi Zero 2 W, and other components in the custom-made wooden frame.
+
+With the provided STL files, you can easily create your own frame parts on your 3D printer and integrate them into the self-built oak wood frame.
 
 ---
 
@@ -34,31 +42,31 @@ This product provides 3D-printable mounting and assembly parts for building a Ma
 
 | Qty | Tool | ASIN (DE) | Amazon (DE) |
 |-----|------|-----------|-------------|
-| 1x | Screwdriver Set | B092LVWNX8 | [Amazon](https://www.amazon.de/dp/B092LVWNX8?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | Screwdriver Set | B086SQZGLJ | [Amazon](https://www.amazon.de/dp/B086SQZGLJ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | SD Card Reader | B081VHSB2V | [Amazon](https://www.amazon.de/dp/B081VHSB2V?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Tweezers Set | B09BQGT6GZ | [Amazon](https://www.amazon.de/dp/B09BQGT6GZ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | One-Handed Clamp | B07ZTVY1PM | [Amazon](https://www.amazon.de/dp/B07ZTVY1PM?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Frame Clamp | B000P37JJC | [Amazon](https://www.amazon.de/dp/B000P37JJC?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 1x | Soldering Iron | B0CCV6T329 | [Amazon](https://www.amazon.de/dp/B0CCV6T329?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | Soldering Iron | B0D5M727WM | [Amazon](https://www.amazon.de/dp/B0D5M727WM?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
 ### 📦 Electronics
 
 | Qty | Component | ASIN (DE) | Amazon (DE) |
 |-----|-----------|-----------|-------------|
-| 1x | Lenovo Q24i-1L Display | B08K9743BK | [Amazon](https://www.amazon.de/dp/B08K9743BK?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 1x | Lenovo Adapter (USB-C) | B00N42IT4U | [Amazon](https://www.amazon.de/dp/B00N42IT4U?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | Lenovo Q24i-1L Display | B0DF83VJV6 | [Amazon](https://www.amazon.de/dp/B0DF83VJV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | Lenovo Adapter (USB-C) | B01C79UN26 | [Amazon](https://www.amazon.de/dp/B01C79UN26?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Mini HDMI Cable 0.9M | B089GN67HL | [Amazon](https://www.amazon.de/dp/B089GN67HL?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Micro USB Cable Short | B095JZSHXQ | [Amazon](https://www.amazon.de/dp/B095JZSHXQ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | HDMI Ribbon Cable | B07D9FSMD7 | [Amazon](https://www.amazon.de/dp/B07D9FSMD7?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 1x | Power Delivery Trigger Board | B0BTVV5PB4 | [Amazon](https://www.amazon.de/dp/B0BTVV5PB4?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 1x | USB StepDown Converter | B07NLV411C | [Amazon](https://www.amazon.de/dp/B07NLV411C?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | Power Delivery Trigger Board | B0F13QTL9M | [Amazon](https://www.amazon.de/dp/B0F13QTL9M?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | USB StepDown Converter | B0B5D8HL7R | [Amazon](https://www.amazon.de/dp/B0B5D8HL7R?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
 ### ⚙️ Mechanical Parts & Hardware
 
 | Qty | Component | ASIN (DE) | Amazon (DE) |
 |-----|-----------|-----------|-------------|
-| 10x | M3x16 Countersunk Screw | B0BF16195Q | [Amazon](https://www.amazon.de/dp/B0BF16195Q?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 5x | M3x25 Countersunk Screw | B0BF17YVHP | [Amazon](https://www.amazon.de/dp/B0BF17YVHP?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 10x | M3x16 Countersunk Screw | B0957VNMTS | [Amazon](https://www.amazon.de/dp/B0957VNMTS?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 5x | M3x25 Countersunk Screw | B07PWH826Z | [Amazon](https://www.amazon.de/dp/B07PWH826Z?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 4x | 3x16mm Timber Screw | B07MZXY4BF | [Amazon](https://www.amazon.de/dp/B07MZXY4BF?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
 ### 🎨 Supplies & Consumables
@@ -80,7 +88,7 @@ This product provides 3D-printable mounting and assembly parts for building a Ma
 
 | Qty | Component | Shop |
 |-----|-----------|------|
-| 1 Set | Pre-made Oak Wood MagicMirror Frame | [Massivholzleiste.de](https://www.massivholzleiste.de/de/leisten/192-magicmirror.html) |
+| 1 Set | Pre-made Oak Wood MagicMirror Frame | [Woodsellers.com](https://woodsellers.com/de/marktplatz/81-magicmirror.html) |
 
 ---
 
@@ -100,7 +108,7 @@ This product provides 3D-printable mounting and assembly parts for building a Ma
    - Recommended: Get the premium version from [Nerdiy.de Shop](https://nerdiy.de/de_de/produkt/magicmirror-rahmenteile-anbauteile-zur-genauen-positionierung-des-tft-displays-3d-druckbar-stl-dateien/) with support and updates
 
 3. **Obtain Wooden Frame Parts**
-   - Either purchase pre-made oak wood frame from [Massivholzleiste.de](https://www.massivholzleiste.de/de/leisten/192-magicmirror.html)
+   - Either purchase pre-made oak wood frame from [Woodsellers.com](https://woodsellers.com/de/marktplatz/81-magicmirror.html)
    - Or make the wooden frame parts yourself according to specifications
 
 4. **Prepare for 3D Printing**

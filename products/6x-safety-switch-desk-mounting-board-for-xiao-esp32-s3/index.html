@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6x Safety Switch desk mounting board for XIAO ESP32-S3 by Nerdiy.de</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0d1117;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: #1c2128;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            border: 1px solid #30363d;
+        }
+
+        h2 {
+            color: #58a6ff;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px 10px 0;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(31, 111, 235, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(31, 111, 235, 0.6);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .info-card {
+            background: #0d1117;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+        }
+
+        .info-card label {
+            color: #79c0ff;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .info-card .value {
+            color: #c9d1d9;
+            font-size: 0.95em;
+        }
+
+        h3 {
+            color: #79c0ff;
+            font-size: 1.2em;
+            margin: 20px 0 10px;
+        }
+
+        ul,
+        ol {
+            margin-left: 20px;
+            color: #c9d1d9;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 20px;
+            font-size: 0.95em;
+        }
+
+        th,
+        td {
+            border: 1px solid #30363d;
+            padding: 8px 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #0d1117;
+            color: #79c0ff;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #161b22;
+        }
+
+        .small {
+            color: #8b949e;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background: #0d1117;
+            color: #8b949e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #30363d;
+        }
+
+        /* Lightbox Modal Styles */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            max-height: 85vh;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f0f0f0;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+            z-index: 1001;
+        }
+
+        .lightbox-close:hover,
+        .lightbox-close:focus {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f0f0f0;
+            border: none;
+            font-size: 30px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            z-index: 1001;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .lightbox-prev {
+            left: 15px;
+        }
+
+        .lightbox-next {
+            right: 15px;
+        }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #f0f0f0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            z-index: 1001;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            color: #ffc107;
+        }
+
+        .warning {
+            background: rgba(220, 53, 69, 0.1);
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            color: #ff6b6b;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>6x Safety Switch desk mounting board for XIAO ESP32-S3 by Nerdiy.de</h1>
+        <p>Professional 3D-Printable Solution from Nerdiy.de</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Project Overview</h2>
+            <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 20px;">
+                A professional desk mounting solution for controlling up to six safety switches using a XIAO ESP32-S3 microcontroller.
+            </p>
+            <p style="line-height: 1.8; margin-bottom: 15px;">
+                This 3D-printable mounting board provides a clean and organized way to integrate multiple safety switches into your workspace. Perfect for controlling power tools, 3D printers, or other equipment that requires physical safety cutoffs. The integrated XIAO ESP32-S3 enables smart features like remote monitoring, automation, and integration with home automation systems through ESPHome.
+            </p>
+            <p style="line-height: 1.8;">
+                With the provided STL files, you can easily create your own professional-grade safety switch control board.
+            </p>
+        </section>
+
+        <section>
+            <h2>Product Information</h2>
+            <p>This product provides 3D-printable mounting and assembly parts for building a multi-switch safety control board.</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <label>Product Name</label>
+                    <span class="value" style="font-size: 0.85em;">6x Safety Switch desk mounting board for XIAO ESP32-S3 by Nerdiy.de</span>
+                </div>
+                <div class="info-card">
+                    <label>Creator</label>
+                    <span class="value">Nerdiy.de</span>
+                </div>
+                <div class="info-card">
+                    <label>Created</label>
+                    <span class="value">February 2026</span>
+                </div>
+                <div class="info-card">
+                    <label>Last Updated</label>
+                    <span class="value">27. February 2026</span>
+                </div>
+                <div class="info-card">
+                    <label>Status</label>
+                    <span class="value" style="font-size: 0.85em;">Active - Ready to build</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Images</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./images/20260123_134826.jpg" alt="Safety Switch Board - View 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/20260123_134835.jpg" alt="Safety Switch Board - View 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/20260123_134850.jpg" alt="Safety Switch Board - View 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/20260123_134921.jpg" alt="Safety Switch Board - View 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/switchboard_base_V1.0_1.jpg" alt="Safety Switch Board - Base Design">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Purchase Options</h2>
+            <h3>Primary Source (Recommended)</h3>
+            <ul>
+                <li><a href="https://www.nerdiy.de/">Nerdiy.de Shop</a> - Purchase the STL files here to support independent design and development</li>
+            </ul>
+
+            <h3>Alternative Sources</h3>
+            <ul>
+                <li><a href="https://www.printables.com/model/1567337-6x-safety-switch-desk-mounting-board-for-xiao-esp3">Printables Store</a></li>
+            </ul>
+
+            <div class="note">
+                <strong>Support independent makers:</strong> By purchasing the STL files through the Nerdiy.de Shop, you directly support further development and new projects.
+            </div>
+        </section>
+
+        <section>
+            <h2>Bill of Materials</h2>
+
+            <h3>Required Tools</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Tool</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>Screwdriver Set</td>
+                        <td>B086SQZGLJ</td>
+                        <td><a href="https://www.amazon.de/dp/B086SQZGLJ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Soldering Iron</td>
+                        <td>B0D5M727WM</td>
+                        <td><a href="https://www.amazon.de/dp/B0D5M727WM?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Side Cutters</td>
+                        <td>B005EXOF6S</td>
+                        <td><a href="https://www.amazon.de/Electronic-Elektronik-Seitenschneider-Lichtwellenleiter-Rostschutz-125/dp/B005EXOF6S?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Wire Stripper</td>
+                        <td>B001NUMVHQ</td>
+                        <td><a href="https://www.amazon.de/WEICON-automatische-Abisolierzange-Abisolierer-selbsteinstellend/dp/B001NUMVHQ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Electronics</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>Seeed Studio XIAO ESP32-S3 (or ESP32-C3)</td>
+                        <td>B0B94JZ2YF</td>
+                        <td><a href="https://www.amazon.de/dp/B0B94JZ2YF?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>6x</td>
+                        <td>Safety Switch / Emergency Stop Button</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Wire (Litze)</td>
+                        <td>B0C7TJG9YB</td>
+                        <td><a href="https://www.amazon.de/dp/B0C7TJG9YB?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>USB-C Cable (for programming)</td>
+                        <td>B0BPCBP15P</td>
+                        <td><a href="https://www.amazon.de/dp/B0BPCBP15P?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>USB Power Supply (optional)</td>
+                        <td>B00WLI5E3M</td>
+                        <td><a href="https://www.amazon.de/dp/B00WLI5E3M?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>USB StepUp Converter MT3608</td>
+                        <td>B089QHXF8K</td>
+                        <td><a href="https://www.amazon.de/dp/B089QHXF8K?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Mechanical Parts - Thread Inserts</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4x</td>
+                        <td>M3 Thread Insert</td>
+                        <td>B08BCRZZS3</td>
+                        <td><a href="https://www.amazon.de/dp/B08BCRZZS3?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Mechanical Parts - Screws</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4x</td>
+                        <td>M3x10 Countersunk Screw</td>
+                        <td>B07PVKLP5F</td>
+                        <td><a href="https://www.amazon.de/dp/B07PVKLP5F?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>M2x6 Countersunk Screw</td>
+                        <td>B0957W34XS</td>
+                        <td><a href="https://www.amazon.de/dp/B0957W34XS?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>4x</td>
+                        <td>Wood Screw 3x10mm</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Mounting & Adhesives</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>Tesa Powerstrips / Mounting Tape</td>
+                        <td>B00EDLCS9S</td>
+                        <td><a href="https://www.amazon.de/dp/B00EDLCS9S?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>📋 Note:</strong> Safety switches are not included in the standard materials list as they vary by application. Choose emergency stop buttons that meet your specific safety requirements and local electrical codes.
+            </div>
+        </section>
+
+        <section>
+            <h2>How to Use</h2>
+            
+            <div class="warning">
+                <strong>⚠️ Safety Warning:</strong> This board is designed to control safety-critical equipment. Always test the emergency stop functionality thoroughly before connecting to any equipment. Follow all local electrical codes and safety regulations.
+            </div>
+
+            <h3>Step-by-Step Guide</h3>
+            <ol>
+                <li>
+                    <strong>Gather Your Materials</strong>
+                    <ul>
+                        <li>Review the complete bill of materials on the <a href="https://www.printables.com/model/1567337-6x-safety-switch-desk-mounting-board-for-xiao-esp3">Printables product page</a></li>
+                        <li>Acquire all necessary safety switches and electronic components</li>
+                        <li>For STL files, <a href="https://www.nerdiy.de/">purchase through Nerdiy.de Shop</a> to support independent makers</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Download 3D Files</strong>
+                    <ul>
+                        <li><a href="https://www.nerdiy.de/">Download from Nerdiy.de Shop</a> (recommended - supports independent makers)</li>
+                        <li>Alternative: <a href="https://www.printables.com/model/1567337-6x-safety-switch-desk-mounting-board-for-xiao-esp3">Download from Printables</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>ESPHome Firmware Configuration</strong>
+                    <ul>
+                        <li>The required ESPHome firmware configuration is included in the <code>esphome_config/</code> folder</li>
+                        <li>Flash the XIAO ESP32-S3 with the provided configuration before assembly</li>
+                        <li>Customize switch assignments and automation rules as needed for your specific setup</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Prepare for 3D Printing</strong>
+                    <ul>
+                        <li>Recommended print settings:</li>
+                        <li>Material: PLA, PETG, or ABS (for higher temperature resistance)</li>
+                        <li>Layer height: 0.2mm</li>
+                        <li>Infill: 30-50% (higher for mechanical stability)</li>
+                        <li>Supports: As needed</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Assembly</strong>
+                    <ul>
+                        <li>Follow the detailed assembly instructions included with the STL files or on the Printables page</li>
+                        <li>Install all safety switches securely</li>
+                        <li>Wire the switches to the XIAO ESP32-S3 according to the wiring diagram</li>
+                        <li>Test each switch individually before final installation</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Final Installation</strong>
+                    <ul>
+                        <li>Mount the completed board to your desk or workbench</li>
+                        <li>Connect to your equipment following proper electrical safety procedures</li>
+                        <li>Configure your home automation system if desired</li>
+                        <li><strong>Always test the emergency stop functionality before connecting critical equipment</strong></li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p><strong>Required Tools from BOM:</strong> Screwdriver Set, Soldering Iron, Side Cutters, Wire Stripper</p>
+        </section>
+
+        <section>
+            <h2>License</h2>
+            <p>The license for these STL files is included with your purchase. When you purchase the STL files, you receive the complete license terms along with the downloadable files.</p>
+            <p class="small"><strong>Last Updated:</strong> February 27, 2026<br><strong>Status:</strong> Active - Ready to build</p>
+        </section>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Enlarged image">
+        </div>
+        <button class="lightbox-nav lightbox-prev" onclick="prevImage()">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" onclick="nextImage()">&#10095;</button>
+        <div class="lightbox-counter">
+            <span id="imageCounter">1 / 5</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nerdiy.de - Professional 3D-Printable Solutions</p>
+        <p>
+            <a href="https://github.com/Nerdiyde">GitHub</a> |
+            <a href="https://www.nerdiy.de">Website</a> |
+            <a href="https://www.printables.com/@Nerdiy">Printables</a>
+        </p>
+    </footer>
+
+    <script>
+        let currentImageIndex = 0;
+        let galleryImages = [];
+
+        // Initialize gallery images on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const galleryItems = document.querySelectorAll('.gallery-item img');
+            galleryImages = Array.from(galleryItems).map(img => ({
+                src: img.src,
+                alt: img.alt
+            }));
+
+            // Add click event listeners to gallery images
+            galleryItems.forEach((img, index) => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function() {
+                    openLightbox(index);
+                });
+            });
+        });
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('lightboxModal');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[index].src;
+            lightboxImage.alt = galleryImages[index].alt;
+            imageCounter.textContent = (index + 1) + ' / ' + galleryImages.length;
+            modal.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            modal.classList.remove('active');
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[currentImageIndex].src;
+            lightboxImage.alt = galleryImages[currentImageIndex].alt;
+            imageCounter.textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[currentImageIndex].src;
+            lightboxImage.alt = galleryImages[currentImageIndex].alt;
+            imageCounter.textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+        }
+
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightboxModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('lightboxModal');
+            if (modal.classList.contains('active')) {
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'Escape') closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -158,6 +158,104 @@
             border-top: 1px solid #30363d;
         }
 
+        /* Lightbox Modal Styles */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            max-height: 85vh;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f0f0f0;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+            z-index: 1001;
+        }
+
+        .lightbox-close:hover,
+        .lightbox-close:focus {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f0f0f0;
+            border: none;
+            font-size: 30px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            z-index: 1001;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .lightbox-prev {
+            left: 15px;
+        }
+
+        .lightbox-next {
+            right: 15px;
+        }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #f0f0f0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            z-index: 1001;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
         footer a {
             color: #58a6ff;
             text-decoration: none;
@@ -202,6 +300,7 @@
 
         .gallery-item:hover {
             transform: scale(1.05);
+            cursor: pointer;
         }
 
         .gallery-item img {
@@ -220,13 +319,26 @@
 
     <div class="container">
         <section>
+            <h2>Project Overview</h2>
+            <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 20px;">
+                Build a professionally assembled MagicMirror with our high-quality 3D-printable frame parts.
+            </p>
+            <p style="line-height: 1.8; margin-bottom: 15px;">
+                Here we offer you the STL files for the 3D-printed frame parts, which have been specifically developed to precisely hold the Lenovo Q24i-1L TFT display, the Raspberry Pi Zero 2 W, and other components in the custom-made wooden frame.
+            </p>
+            <p style="line-height: 1.8;">
+                With the provided STL files, you can easily create your own frame parts on your 3D printer and integrate them into the self-built oak wood frame.
+            </p>
+        </section>
+
+        <section>
             <h2>Product Information</h2>
             <p>This product provides 3D-printable mounting and assembly parts for building a MagicMirror with wooden frame.</p>
             <p><strong>Note:</strong> The 3D printed parts are used for mounting and connecting components. The wooden frame parts must be made separately or purchased.</p>
             <div class="info-grid">
                 <div class="info-card">
                     <label>Product Name</label>
-                    <span class="value">MagicMirror frame parts for Lenovo Q24i-1L TFT display by Nerdiy.de</span>
+                    <span class="value" style="font-size: 0.85em;">MagicMirror frame parts for Lenovo Q24i-1L TFT display by Nerdiy.de</span>
                 </div>
                 <div class="info-card">
                     <label>Creator</label>
@@ -242,7 +354,7 @@
                 </div>
                 <div class="info-card">
                     <label>Status</label>
-                    <span class="value">Complete - All materials and assembly guide documented</span>
+                    <span class="value" style="font-size: 0.85em;">Complete - All materials and assembly guide documented</span>
                 </div>
             </div>
         </section>
@@ -309,8 +421,8 @@
                     <tr>
                         <td>1x</td>
                         <td>Screwdriver Set</td>
-                        <td>B092LVWNX8</td>
-                        <td><a href="https://www.amazon.de/dp/B092LVWNX8?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                        <td>B086SQZGLJ</td>
+                        <td><a href="https://www.amazon.de/dp/B086SQZGLJ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
                     </tr>
                     <tr>
                         <td>1x</td>
@@ -339,8 +451,8 @@
                     <tr>
                         <td>1x</td>
                         <td>Soldering Iron</td>
-                        <td>B0CCV6T329</td>
-                        <td><a href="https://www.amazon.de/dp/B0CCV6T329?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                        <td>B0D5M727WM</td>
+                        <td><a href="https://www.amazon.de/dp/B0D5M727WM?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -359,14 +471,14 @@
                     <tr>
                         <td>1x</td>
                         <td>Lenovo Q24i-1L Display</td>
-                        <td>B08K9743BK</td>
-                        <td><a href="https://www.amazon.de/dp/B08K9743BK?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                        <td>B0DF83VJV6</td>
+                        <td><a href="https://www.amazon.de/dp/B0DF83VJV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
                     </tr>
                     <tr>
                         <td>1x</td>
                         <td>Lenovo Adapter (USB-C)</td>
-                        <td>B00N42IT4U</td>
-                        <td><a href="https://www.amazon.de/dp/B00N42IT4U?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                        <td>B01C79UN26</td>
+                        <td><a href="https://www.amazon.de/dp/B01C79UN26?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
                     </tr>
                     <tr>
                         <td>1x</td>
@@ -389,14 +501,14 @@
                     <tr>
                         <td>1x</td>
                         <td>Power Delivery Trigger Board</td>
-                        <td>B0BTVV5PB4</td>
-                        <td><a href="https://www.amazon.de/dp/B0BTVV5PB4?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                        <td>B0F13QTL9M</td>
+                        <td><a href="https://www.amazon.de/dp/B0F13QTL9M?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
                     </tr>
                     <tr>
                         <td>1x</td>
                         <td>USB StepDown Converter</td>
-                        <td>B07NLV411C</td>
-                        <td><a href="https://www.amazon.de/dp/B07NLV411C?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                        <td>B0B5D8HL7R</td>
+                        <td><a href="https://www.amazon.de/dp/B0B5D8HL7R?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -415,14 +527,14 @@
                     <tr>
                         <td>10x</td>
                         <td>M3x16 Countersunk Screw</td>
-                        <td>B0BF16195Q</td>
-                        <td><a href="https://www.amazon.de/dp/B0BF16195Q?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                        <td>B0957VNMTS</td>
+                        <td><a href="https://www.amazon.de/dp/B0957VNMTS?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
                     </tr>
                     <tr>
                         <td>5x</td>
                         <td>M3x25 Countersunk Screw</td>
-                        <td>B0BF17YVHP</td>
-                        <td><a href="https://www.amazon.de/dp/B0BF17YVHP?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                        <td>B07PWH826Z</td>
+                        <td><a href="https://www.amazon.de/dp/B07PWH826Z?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
                     </tr>
                     <tr>
                         <td>4x</td>
@@ -490,7 +602,7 @@
                     <tr>
                         <td>1 Set</td>
                         <td>Pre-made Oak Wood MagicMirror Frame</td>
-                        <td><a href="https://www.massivholzleiste.de/de/leisten/192-magicmirror.html">Massivholzleiste.de</a></td>
+                        <td><a href="https://woodsellers.com/de/marktplatz/81-magicmirror.html">Woodsellers.com</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -520,7 +632,7 @@
                 <li>
                     <strong>Obtain Wooden Frame Parts</strong>
                     <ul>
-                        <li>Either purchase pre-made oak wood frame from <a href="https://www.massivholzleiste.de/de/leisten/192-magicmirror.html">Massivholzleiste.de</a></li>
+                        <li>Either purchase pre-made oak wood frame from <a href="https://woodsellers.com/de/marktplatz/81-magicmirror.html">Woodsellers.com</a></li>
                         <li>Or make the wooden frame parts yourself according to specifications</li>
                     </ul>
                 </li>
@@ -568,6 +680,19 @@
         </section>
     </div>
 
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Enlarged image">
+        </div>
+        <button class="lightbox-nav lightbox-prev" onclick="prevImage()">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" onclick="nextImage()">&#10095;</button>
+        <div class="lightbox-counter">
+            <span id="imageCounter">1 / 7</span>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2026 Nerdiy.de - Professional 3D-Printable Solutions</p>
         <p>
@@ -576,5 +701,81 @@
             <a href="https://www.printables.com/@Nerdiy">Printables</a>
         </p>
     </footer>
+
+    <script>
+        let currentImageIndex = 0;
+        let galleryImages = [];
+
+        // Initialize gallery images on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const galleryItems = document.querySelectorAll('.gallery-item img');
+            galleryImages = Array.from(galleryItems).map(img => ({
+                src: img.src,
+                alt: img.alt
+            }));
+
+            // Add click event listeners to gallery images
+            galleryItems.forEach((img, index) => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function() {
+                    openLightbox(index);
+                });
+            });
+        });
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('lightboxModal');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[index].src;
+            lightboxImage.alt = galleryImages[index].alt;
+            imageCounter.textContent = (index + 1) + ' / ' + galleryImages.length;
+            modal.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            modal.classList.remove('active');
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[currentImageIndex].src;
+            lightboxImage.alt = galleryImages[currentImageIndex].alt;
+            imageCounter.textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[currentImageIndex].src;
+            lightboxImage.alt = galleryImages[currentImageIndex].alt;
+            imageCounter.textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+        }
+
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightboxModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('lightboxModal');
+            if (modal.classList.contains('active')) {
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'Escape') closeLightbox();
+            }
+        });
+    </script>
 </body>
 </html>
