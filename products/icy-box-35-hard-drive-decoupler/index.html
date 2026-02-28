@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICY BOX 3.5" Hard Drive Decoupler by Nerdiy.de</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0d1117;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: #1c2128;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            border: 1px solid #30363d;
+        }
+
+        h2 {
+            color: #58a6ff;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #79c0ff;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px 10px 0;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(31, 111, 235, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(31, 111, 235, 0.6);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .info-card {
+            background: #0d1117;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+        }
+
+        .info-card label {
+            color: #79c0ff;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .info-card span {
+            color: #c9d1d9;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background: #0d1117;
+            color: #8b949e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #30363d;
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            color: #ffc107;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 20px;
+            font-size: 0.95em;
+        }
+
+        th,
+        td {
+            border: 1px solid #30363d;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #0d1117;
+            color: #79c0ff;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #161b22;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        ol {
+            margin-left: 20px;
+            color: #c9d1d9;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .small {
+            font-size: 0.9em;
+            color: #8b949e;
+        }
+
+        /* Lightbox Modal Styles */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            max-height: 85vh;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f0f0f0;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+            z-index: 1001;
+        }
+
+        .lightbox-close:hover,
+        .lightbox-close:focus {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f0f0f0;
+            border: none;
+            font-size: 30px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            z-index: 1001;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .lightbox-prev {
+            left: 15px;
+        }
+
+        .lightbox-next {
+            right: 15px;
+        }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #f0f0f0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            z-index: 1001;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ICY BOX 3.5" Hard Drive Decoupler by Nerdiy.de</h1>
+        <p>Vibration-Damped 3D-Printable Enclosure Solution from Nerdiy.de</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Project Overview</h2>
+            <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 20px;">
+                The ICY BOX 3.5" Hard Drive Decoupler is an innovative 3D-printable vibration isolation solution for mounting 3.5" hard drives in external ICY BOX enclosures without vibration transmission.
+            </p>
+            <p style="line-height: 1.8; margin-bottom: 15px;">
+                This project provides STL files for 3D-printed parts specifically designed to hold your ICY BOX hard drive enclosure with vibration damping and stability – ideal for home theater systems, high-end audio, and other vibration-sensitive applications.
+            </p>
+            <p style="line-height: 1.8;">
+                With the provided STL files, you can easily create your own isolation parts on your 3D printer and integrate them into your system.
+            </p>
+        </section>
+
+        <section>
+            <h2>Product Information</h2>
+            <p>This product provides 3D-printable suspension and isolation parts for ICY BOX 3.5" hard drive enclosures.</p>
+            <p><strong>Note:</strong> The decoupler system enables vibration-free mounting of external ICY BOX hard drive enclosures, reducing noise and mechanical vibration transmission.</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <label>Product Name</label>
+                    <span>ICY BOX 3.5" Hard Drive Decoupler by Nerdiy.de</span>
+                </div>
+                <div class="info-card">
+                    <label>Creator</label>
+                    <span>Nerdiy.de</span>
+                </div>
+                <div class="info-card">
+                    <label>Created</label>
+                    <span>February 2026</span>
+                </div>
+                <div class="info-card">
+                    <label>Last Updated</label>
+                    <span>28. February 2026</span>
+                </div>
+                <div class="info-card">
+                    <label>Status</label>
+                    <span>Complete - All materials and assembly guide documented</span>
+                </div>
+                <div class="info-card">
+                    <label>Compatible With</label>
+                    <span>ICY BOX 3.5" USB-C Enclosure</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Images</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./images/Icy_box_3.5inch_housing_decoupler_V1.0_1.jpg" alt="ICY BOX Decoupler - View 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC6620.JPG" alt="ICY BOX Decoupler - Assembly 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC6622.JPG" alt="ICY BOX Decoupler - Assembly 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC6628.JPG" alt="ICY BOX Decoupler - Assembly 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC6636.JPG" alt="ICY BOX Decoupler - Assembly 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC6643.JPG" alt="ICY BOX Decoupler - Assembly 5">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Purchase Options</h2>
+            <h3>Primary Source (Recommended)</h3>
+            <ul>
+                <li><a href="https://nerdiy.de/de_de/produkt/icy-box-35-festplatten-entkoppler-3d-druckbar-stl-dateien/">Nerdiy.de Shop</a> - Purchase the STL files here to support independent design and development</li>
+            </ul>
+
+            <h3>Alternative Sources</h3>
+            <ul>
+                <li><a href="https://www.printables.com/model/1279739-icy-box-35-hard-drive-decoupler-by-nerdiyde">Printables Store</a></li>
+                <li><a href="https://cults3d.com/en/3d-model/gadget/icy-box-3-5-hard-drive-decoupler-3d-printable-stl-files">Cults3D</a></li>
+            </ul>
+
+            <div class="note">
+                <strong>💖 Support independent makers:</strong> By purchasing the STL files through the Nerdiy.de Shop, you directly support further development and new projects.
+            </div>
+        </section>
+
+        <section>
+            <h2>Bill of Materials</h2>
+
+            <h3>3D Print Materials</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>PETG Filament 1.75mm (1kg)</td>
+                        <td>B07T2QZYS1</td>
+                        <td><a href="https://www.amazon.de/dp/B07T2QZYS1?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Suspension Hardware</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x (1x 55cm + 2x 70cm)</td>
+                        <td>Silicone Rubber Cord 5mm (5m)</td>
+                        <td>B00YEFQUSI</td>
+                        <td><a href="https://www.amazon.de/dp/B00YEFQUSI?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Fasteners &amp; Hardware</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4x</td>
+                        <td>M3x25 Countersunk Screw</td>
+                        <td>B09MZQ8C84</td>
+                        <td><a href="https://www.amazon.de/dp/B09MZQ8C84?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>8x</td>
+                        <td>M2x20 Countersunk Screw</td>
+                        <td>B09N4WV1WP</td>
+                        <td><a href="https://www.amazon.de/dp/B09N4WV1WP?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>8x</td>
+                        <td>M3x10 Set Screw</td>
+                        <td>B0DNFW44L9</td>
+                        <td><a href="https://www.amazon.de/dp/B0DNFW44L9?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>16x</td>
+                        <td>M3 Thread Insert</td>
+                        <td>B08BCRZZS3</td>
+                        <td><a href="https://www.amazon.de/dp/B08BCRZZS3?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>4x</td>
+                        <td>M2 Thread Insert</td>
+                        <td>B088QJG676</td>
+                        <td><a href="https://www.amazon.de/dp/B088QJG676?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Cables &amp; Electronics</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>USB-C Cable (General Purpose)</td>
+                        <td>B0BPCBP15P</td>
+                        <td><a href="https://www.amazon.de/dp/B0BPCBP15P?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>ICY BOX Enclosure</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Component</th>
+                        <th>ASIN (DE)</th>
+                        <th>Amazon (DE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x (pro Klemme)</td>
+                        <td>ICY BOX 3.5" USB-C Enclosure</td>
+                        <td>B07JFY2357</td>
+                        <td><a href="https://www.amazon.de/dp/B07JFY2357?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>3D Print Settings</h2>
+            <h3>Recommended Print Settings</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Setting</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Filament Type</strong></td>
+                        <td>PETG (weather and vibration-resistant)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Layer Height</strong></td>
+                        <td>0.2mm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Infill</strong></td>
+                        <td>15-25%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wall Lines</strong></td>
+                        <td>3-5</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Support</strong></td>
+                        <td>Yes (for overhangs &gt; 45°)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">
+                <strong>💡 Print Orientation:</strong> The parts should be printed in the orientation that provides maximum structural integrity. The rubber cord suspension requires careful stress-bearing design.
+            </div>
+        </section>
+
+        <section>
+            <h2>How to Use</h2>
+            <h3>Step-by-Step Assembly Guide</h3>
+            <ol>
+                <li>
+                    <strong>Gather Your Materials</strong>
+                    <ul>
+                        <li>Purchase all components from the Bill of Materials section above</li>
+                        <li>All Amazon links are pre-configured with affiliate tags to support Nerdiy.de development</li>
+                        <li>For STL files, purchase through the Nerdiy.de Shop to support independent makers</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Download 3D Files</strong>
+                    <ul>
+                        <li><a href="https://nerdiy.de/de_de/produkt/icy-box-35-festplatten-entkoppler-3d-druckbar-stl-dateien/">Download from Nerdiy.de Shop</a> (recommended - supports independent makers)</li>
+                        <li>Alternative: <a href="https://www.printables.com/model/1279739-icy-box-35-hard-drive-decoupler-by-nerdiyde">Download from Printables</a></li>
+                        <li>Alternative: <a href="https://cults3d.com/en/3d-model/gadget/icy-box-3-5-hard-drive-decoupler-3d-printable-stl-files">Download from Cults3D</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Prepare for 3D Printing</strong>
+                    <ul>
+                        <li>Print the mounting and suspension parts with these settings:</li>
+                        <li>Layer Height: 0.2mm</li>
+                        <li>Infill: 20-25%</li>
+                        <li>Supports: Yes (for overhangs &gt; 45°)</li>
+                        <li>Material: PETG (recommended for durability and vibration resistance)</li>
+                        <li>Slice and prepare files in your slicing software</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Assembly</strong>
+                    <ul>
+                        <li>Clean all printed parts after removal from build plate</li>
+                        <li>Cut rubber cord to required lengths:
+                            <ul style="margin-left: 20px;">
+                                <li>1x 55cm (main suspension)</li>
+                                <li>2x 70cm (side support)</li>
+                            </ul>
+                        </li>
+                        <li>Install the suspension frame on the ICY BOX enclosure using M3x25 screws</li>
+                        <li>Attach the rubber cord isolation points</li>
+                        <li>Secure all fasteners (M3x10 set screws and M2x20 countersunk screws)</li>
+                        <li>Install thread inserts (M3 and M2) for screw reinforcement</li>
+                        <li>Verify that the enclosure hangs freely without touching the frame</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Installation</strong>
+                    <ul>
+                        <li>Mount the decoupler assembly in your desired location (desk, wall mount, etc.)</li>
+                        <li>Connect your hard drive enclosure to the USB-C interface</li>
+                        <li>Ensure all vibration isolation points are properly connected</li>
+                        <li>Test the system for stability before placing sensitive equipment nearby</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Maintenance</strong>
+                    <ul>
+                        <li>Periodically check the rubber cord for wear and degradation</li>
+                        <li>Replace cords if they show signs of damage or reduced elasticity</li>
+                        <li>Check all screws for tightness</li>
+                        <li>Clean the enclosure and frame assembly as needed</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>License</h2>
+            <p>The license for these STL files is included with your purchase. When you purchase the STL files, you receive the complete license terms along with the downloadable files.</p>
+            <p class="small"><strong>Last Updated:</strong> 28. February 2026<br><strong>Status:</strong> Complete - All materials and assembly guide documented</p>
+        </section>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <button class="lightbox-nav lightbox-prev" onclick="prevImage()">&#10094;</button>
+            <img id="lightboxImage" src="" alt="">
+            <button class="lightbox-nav lightbox-next" onclick="nextImage()">&#10095;</button>
+            <div class="lightbox-counter" id="imageCounter">1 / 1</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nerdiy.de - Professional 3D-Printable Solutions</p>
+        <p>
+            <a href="https://github.com/Nerdiyde">GitHub</a> |
+            <a href="https://www.nerdiy.de">Website</a> |
+            <a href="https://www.printables.com/@Nerdiy">Printables</a>
+        </p>
+    </footer>
+
+    <script>
+        let currentImageIndex = 0;
+        let galleryImages = [];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all gallery images
+            const galleryItems = document.querySelectorAll('.gallery-item img');
+            galleryImages = Array.from(galleryItems);
+
+            // Add click event listeners to gallery images
+            galleryItems.forEach((img, index) => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function() {
+                    openLightbox(index);
+                });
+            });
+        });
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('lightboxModal');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[index].src;
+            lightboxImage.alt = galleryImages[index].alt;
+            imageCounter.textContent = (index + 1) + ' / ' + galleryImages.length;
+            modal.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            modal.classList.remove('active');
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[currentImageIndex].src;
+            lightboxImage.alt = galleryImages[currentImageIndex].alt;
+            imageCounter.textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[currentImageIndex].src;
+            lightboxImage.alt = galleryImages[currentImageIndex].alt;
+            imageCounter.textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+        }
+
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightboxModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('lightboxModal');
+            if (modal.classList.contains('active')) {
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'Escape') closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
