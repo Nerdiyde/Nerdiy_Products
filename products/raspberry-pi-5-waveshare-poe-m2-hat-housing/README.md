@@ -29,7 +29,8 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 - **[🎨 Printables Store](https://www.printables.com/model/1287066-raspberry-pi-5-waveshare-poe-m2-hat-housing-by-ner)** - Download the STL files here
 
 ### Alternative Sources
-- **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[�️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-5-waveshare-poe-m-2-hat-housing-by-nerdiy-de)**
+- **[�🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -96,6 +97,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 2. **Download 3D Files**
    - [🎨 Download from Printables](https://www.printables.com/model/1287066-raspberry-pi-5-waveshare-poe-m2-hat-housing-by-ner) (free download)
+   - Alternative: [Download from Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-5-waveshare-poe-m-2-hat-housing-by-nerdiy-de)
    - Alternative: Check [Nerdiy.de Shop](https://nerdiy.de/) for availability
 
 3. **Prepare for 3D Printing**
