@@ -63,6 +63,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 | Qty | Component | ASIN (DE) | Amazon (DE) |
 |-----|-----------|-----------|-------------|
 | 1x | Raspberry Pi 5 (4GB or 8GB) | B0CK3L9WD3 | [Amazon](https://www.amazon.de/dp/B0CK3L9WD3?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | Raspberry Pi 5 Active Cooler | B0CX588V5Q | [Amazon](https://www.amazon.de/dp/B0CX588V5Q?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Waveshare 3-Channel Relay HAT | B01FZ7XLJ4 | [Amazon](https://www.amazon.de/dp/B01FZ7XLJ4?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Raspberry Pi 5 Power Supply | B0CM46P7MC | [Amazon](https://www.amazon.de/dp/B0CM46P7MC?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Micro SD Card 64GB | B07FCMBLV6 | [Amazon](https://www.amazon.de/dp/B07FCMBLV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
