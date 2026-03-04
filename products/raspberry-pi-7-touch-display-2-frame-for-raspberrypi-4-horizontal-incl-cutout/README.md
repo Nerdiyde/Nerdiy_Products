@@ -21,7 +21,8 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 - **Raspberry Pi Version**: Raspberry Pi 4
 - **Mounting Style**: horizontal
 - **Cutout Configuration**: Incl. Cutout
-- **Printables URL**: https://www.printables.com
+- **Printables URL**: [1279504-raspberry-pi-7-touch-display-2-frame-for-raspberry](https://www.printables.com/model/1279504-raspberry-pi-7-touch-display-2-frame-for-raspberry)
+- **Cults3D URL**: [raspberry-pi-7-touch-display-2-frame-for-raspberrypi-4-horizontal-incl-cut](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-7-touch-display-2-frame-for-raspberrypi-4-horizontal-incl-cut)
 - **Created**: February 2026
 
 ---
@@ -29,9 +30,10 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 ## 🛒 Purchase Options
 
 ### Primary Source (Recommended)
-- **[🎨 Printables Store](https://www.printables.com)** - Download the STL files here (free)
+- **[🎨 Printables Store](https://www.printables.com/model/1279504-raspberry-pi-7-touch-display-2-frame-for-raspberry)** - Download the STL files here
 
 ### Alternative Sources
+- **[🎭 Cults3D Store](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-7-touch-display-2-frame-for-raspberrypi-4-horizontal-incl-cut)** - Alternative download platform
 - **[🛍️ Nerdiy.de Shop](https://www.nerdiy.de/)** - Check for availability
 
 ---

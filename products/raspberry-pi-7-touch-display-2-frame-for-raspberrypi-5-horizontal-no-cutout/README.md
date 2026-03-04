@@ -21,7 +21,8 @@ This product provides 3D-printable display frame parts for Raspberry Pi 5 with s
 - **Raspberry Pi Version**: Raspberry Pi 5
 - **Mounting Style**: horizontal
 - **Cutout Configuration**: No Cutout
-- **Printables URL**: https://www.printables.com
+- **Printables URL**: [1280616-raspberry-pi-7-touch-display-2-frame-for-raspberry](https://www.printables.com/model/1280616-raspberry-pi-7-touch-display-2-frame-for-raspberry)
+- **Cults3D URL**: [raspberry-pi-touch-display-2-housing-plain-horizontal-rpi5](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-touch-display-2-housing-plain-horizontal-rpi5)
 - **Created**: February 2026
 
 ---
@@ -29,9 +30,10 @@ This product provides 3D-printable display frame parts for Raspberry Pi 5 with s
 ## 🛒 Purchase Options
 
 ### Primary Source (Recommended)
-- **[🎨 Printables Store](https://www.printables.com)** - Download the STL files here (free)
+- **[🎨 Printables Store](https://www.printables.com/model/1280616-raspberry-pi-7-touch-display-2-frame-for-raspberry)** - Download the STL files here
 
 ### Alternative Sources
+- **[🎭 Cults3D Store](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-touch-display-2-housing-plain-horizontal-rpi5)** - Alternative download platform
 - **[🛍️ Nerdiy.de Shop](https://www.nerdiy.de/)** - Check for availability
 
 ---

@@ -21,7 +21,7 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 - **Raspberry Pi Version**: Raspberry Pi 4
 - **Mounting Style**: horizontal
 - **Cutout Configuration**: Integrated
-- **Printables URL**: https://www.printables.com
+- **Printables URL**: [1361783-raspberry-pi4-waveshare-101-1920x1200-high-resolut](https://www.printables.com/model/1361783-raspberry-pi4-waveshare-101-1920x1200-high-resolut)
 - **Created**: February 2026
 
 ---
@@ -29,7 +29,7 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 ## 🛒 Purchase Options
 
 ### Primary Source (Recommended)
-- **[🎨 Printables Store](https://www.printables.com)** - Download the STL files here (free)
+- **[🎨 Printables Store](https://www.printables.com/model/1361783-raspberry-pi4-waveshare-101-1920x1200-high-resolut)** - Download the STL files here (free)
 
 ### Alternative Sources
 - **[🛍️ Nerdiy.de Shop](https://www.nerdiy.de/)** - Check for availability
