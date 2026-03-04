@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi 4 & 7" Touch Display 2 Frame - Horizontal (No Cutout) by Nerdiy.de</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0d1117;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: #1c2128;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            border: 1px solid #30363d;
+        }
+
+        h2 {
+            color: #58a6ff;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #79c0ff;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background: #0d1117;
+            color: #8b949e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #30363d;
+        }
+
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            max-height: 85vh;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f0f0f0;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+            z-index: 1001;
+        }
+
+        .lightbox-close:hover,
+        .lightbox-close:focus {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f0f0f0;
+            border: none;
+            font-size: 30px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            z-index: 1001;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .lightbox-prev {
+            left: 15px;
+        }
+
+        .lightbox-next {
+            right: 15px;
+        }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #f0f0f0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            z-index: 1001;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            color: #ffc107;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 20px;
+            font-size: 0.95em;
+        }
+
+        th,
+        td {
+            border: 1px solid #30363d;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #0d1117;
+            color: #79c0ff;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #161b22;
+        }
+
+        ol {
+            margin-left: 20px;
+            color: #c9d1d9;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Raspberry Pi 4 & 7" Touch Display 2 Frame - Horizontal (No Cutout) by Nerdiy.de</h1>
+        <p>Professional 3D-Printable Display Housing Solution</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>🎯 Project Overview</h2>
+            <p>Build a professional protective frame for your Raspberry Pi 4 with integrated 7" Touch Display 2 mounting in horizontal orientation.</p>
+            <p>This product provides 3D-printable housing parts specifically designed for 7" Touch Display 2 with Raspberry Pi 4 compatibility. Your project gets protection from dust and physical damage while maintaining full access to all ports and connectors.</p>
+        </section>
+
+        <section>
+            <h2>🛒 Purchase Options</h2>
+            <h3>Primary Source (Recommended)</h3>
+            <ul>
+                <li><a href="https://www.printables.com">🎨 Printables Store</a> - Download the STL files here (free)</li>
+            </ul>
+            <h3>Alternative Sources</h3>
+            <ul>
+                <li><a href="https://nerdiy.de/">🛍️ Nerdiy.de Shop</a> - Check for availability</li>
+            </ul>
+            <div class="note">
+                💖 <strong>Support independent makers:</strong> By downloading from Printables and giving a like, you directly support further development!
+            </div>
+        </section>
+
+        <section>
+            <h2>📸 Product Images</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./images/RaspberryPi_touch_display_2_housing_slim_V1.0_1.jpg" alt="Display Housing - Main View">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC6209.JPG" alt="Assembly Photo 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC6218.JPG" alt="Assembly Photo 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC6226.JPG" alt="Assembly Photo 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC6243.JPG" alt="Assembly Photo 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/_DSC6281.JPG" alt="Assembly Photo 5">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>📄 Complete Documentation</h2>
+            <p>For a comprehensive Bill of Materials, assembly guide, 3D print settings, and step-by-step instructions, please refer to the detailed README.md file:</p>
+            <ul>
+                <li>Complete BOM with all ASIN codes</li>
+                <li>Recommended 3D print settings</li>
+                <li>Step-by-step assembly guide</li>
+                <li>Hardware specifications</li>
+                <li>Installation instructions</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>📄 License</h2>
+            <p>This design is available under the license specified on the Printables product page. Please review the license terms when downloading the files.</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                <strong>Last Updated:</strong> 4. March 2026<br>
+                <strong>Status:</strong> Complete - Professional documentation available
+            </p>
+        </section>
+    </div>
+
+    <div id="lightboxModal" class="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <button class="lightbox-nav lightbox-prev" onclick="prevImage()">&#10094;</button>
+            <img id="lightboxImage" src="" alt="">
+            <button class="lightbox-nav lightbox-next" onclick="nextImage()">&#10095;</button>
+            <div class="lightbox-counter" id="imageCounter">1 / 1</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nerdiy.de - Professional 3D-Printable Solutions</p>
+        <p>
+            <a href="https://github.com/Nerdiyde">GitHub</a> |
+            <a href="https://www.nerdiy.de">Website</a> |
+            <a href="https://www.printables.com/@Nerdiy">Printables</a>
+        </p>
+    </footer>
+
+    <script>
+        let currentImageIndex = 0;
+        let galleryImages = [];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const galleryItems = document.querySelectorAll('.gallery-item img');
+            galleryImages = Array.from(galleryItems);
+
+            galleryItems.forEach((img, index) => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function() {
+                    openLightbox(index);
+                });
+            });
+        });
+
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('lightboxModal');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[index].src;
+            lightboxImage.alt = galleryImages[index].alt;
+            imageCounter.textContent = (index + 1) + ' / ' + galleryImages.length;
+            modal.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            modal.classList.remove('active');
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[currentImageIndex].src;
+            lightboxImage.alt = galleryImages[currentImageIndex].alt;
+            imageCounter.textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+
+            lightboxImage.src = galleryImages[currentImageIndex].src;
+            lightboxImage.alt = galleryImages[currentImageIndex].alt;
+            imageCounter.textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+        }
+
+        document.getElementById('lightboxModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('lightboxModal');
+            if (modal.classList.contains('active')) {
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'Escape') closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
