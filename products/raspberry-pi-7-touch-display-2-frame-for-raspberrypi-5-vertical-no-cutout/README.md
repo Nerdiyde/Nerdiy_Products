@@ -70,7 +70,7 @@ This product provides 3D-printable display frame parts for Raspberry Pi 5 with s
 | Qty | Component | ASIN (DE) | Amazon (DE) |
 |-----|-----------|-----------|-------------|
 | 1x | Raspberry Pi 5 (4GB or 8GB) | B0CK3L9WD3 | [Amazon](https://www.amazon.de/dp/B0CK3L9WD3?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 1x | 7" Touch Display 2 | - | Check availability |
+| 1x | 7" Touch Display 2 | B0DM24QFCF | [Amazon](https://www.amazon.de/Raspberry-Display-Display-Modul-Passend-Entwickl-Schwarz/dp/B0DM24QFCF?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Raspberry Pi 5 Power Supply | B0CM46P7MC | [Amazon](https://www.amazon.de/dp/B0CM46P7MC?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Micro SD Card 64GB | B07FCMBLV6 | [Amazon](https://www.amazon.de/dp/B07FCMBLV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 

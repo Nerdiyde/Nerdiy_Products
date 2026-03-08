@@ -1,0 +1,198 @@
+# WooCommerce Product Definition
+# Raspberry Pi 5 Case by Nerdiy.de
+# Last Updated: 2026-03-06
+
+woocommerce:
+  # ===== BASIC INFORMATION =====
+  name: "Raspberry Pi 5 Case by Nerdiy.de"
+  slug: "raspberry-pi-5-case"
+  sku: "NERDIY-RPI5-CASE-001"
+  
+  # ===== PRICING =====
+  # Kostenloser Download - Unterstützung über Affiliate-Links und Printables
+  regular_price: "0.00"
+  sale_price: null
+  
+  # ===== STATUS & VISIBILITY =====
+  status: "publish"  # draft | pending | publish | private
+  catalog_visibility: "visible"  # visible | catalog | search | hidden
+  featured: true  # Als Featured-Produkt kennzeichnen
+  
+  # ===== CATEGORIES & TAGS =====
+  categories:
+    - name: "Raspberry Pi"
+      slug: "raspberry-pi"
+    - name: "3D Druckdateien"
+      slug: "3d-druckdateien"
+    - name: "Gehäuse & Cases"
+      slug: "gehaeuse-cases"
+  
+  tags:
+    - "Raspberry Pi 5"
+    - "Gehäuse"
+    - "Housing"
+    - "Case"
+    - "3D Print"
+    - "STL Files"
+    - "PETG"
+    - "Protective Housing"
+  
+  # ===== BESCHREIBUNGEN =====
+  # Kurzbeschreibung wird in Produktlisten und Suchergebnissen angezeigt
+  short_description: |
+    Professionelles, 3D-druckbares Schutzgehäuse für Raspberry Pi 5. 
+    Bietet vollständigen Schutz mit optimaler Belüftung und Zugang zu allen Anschlüssen.
+    Kostenloser Download - unterstützt durch Affiliate-Links.
+  
+  # Hauptbeschreibung - kann HTML enthalten oder auf Template verweisen
+  description_template: "woocommerce_description.html"
+  
+  # ===== PRODUCT TYPE =====
+  type: "simple"  # simple | grouped | external | variable
+  virtual: true  # Digitales Produkt (keine physische Lieferung)
+  downloadable: true  # Produkt ist herunterladbar
+  
+  # ===== DOWNLOADS =====
+  # Automatisch generiert aus README und externen Links
+  downloads:
+    - name: "Printables STL Files"
+      file: "https://www.printables.com/model/1285626-raspberry-pi-5-case-by-nerdiyde"
+      external: true
+    - name: "Cults3D Alternative"
+      file: "https://cults3d.com/de/modell-3d/werkzeuge/raspberrypi-5-gehaeuse"
+      external: true
+  
+  # ===== BILDER =====
+  # Bilder werden automatisch aus dem images-Ordner (inkl. Unterordner) gesammelt
+  # Sortierung: alphabetisch nach Dateinamen
+  # Erstes Bild wird automatisch als Featured-Image markiert
+  # 
+  # Optional: Manuelle Bildkonfiguration (auto_collect_images: false setzen):
+  # images:
+  #   - path: "images/bild.jpg"
+  #     alt: "Beschreibung"
+  #     position: 0
+  #     featured: true
+  auto_collect_images: true  # Standard: true (kann weggelassen werden)
+  
+  # ===== ATTRIBUTES =====
+  # Werden zur Filterung und als Produktinformationen verwendet
+  attributes:
+    - name: "Kompatibilität"
+      options: ["Raspberry Pi 5"]
+      visible: true
+      variation: false
+      position: 0
+    
+    - name: "Material"
+      options: ["PETG (empfohlen)", "PLA", "ABS"]
+      visible: true
+      variation: false
+      position: 1
+    
+    - name: "Druckzeit"
+      options: ["ca. 8-12 Stunden"]
+      visible: true
+      variation: false
+      position: 2
+    
+    - name: "Filamentverbrauch"
+      options: ["ca. 150-200g"]
+      visible: true
+      variation: false
+      position: 3
+    
+    - name: "Schwierigkeitsgrad"
+      options: ["Einfach"]
+      visible: true
+      variation: false
+      position: 4
+    
+    - name: "Benötigte Hardware"
+      options: ["4x M2 Gewindeeinsätze", "4x M2x20 Schrauben"]
+      visible: true
+      variation: false
+      position: 5
+  
+  # ===== DIMENSIONS & WEIGHT =====
+  dimensions:
+    length: "10"  # in cm
+    width: "8"
+    height: "3"
+  weight: "0.18"  # in kg (geschätzt für gedrucktes Produkt)
+  
+  # ===== INVENTORY =====
+  manage_stock: false  # Digitales Produkt - kein Lagerbestand
+  stock_status: "instock"  # instock | outofstock | onbackorder
+  
+  # ===== SHIPPING =====
+  shipping_class: null  # Keine Versandkosten für digitale Produkte
+  
+  # ===== RELATED PRODUCTS =====
+  # Produkt-IDs oder SKUs von verwandten Produkten
+  upsell_ids: 
+    - "NERDIY-RPI5-M2HAT"
+    - "NERDIY-RPI5-NVME-PIMORONI"
+  
+  cross_sell_ids:
+    - "NERDIY-RPI5-CAMERA-MOUNT"
+    - "NERDIY-RPI4-CASE"
+  
+  # ===== SEO & META =====
+  meta_data:
+    - key: "_yoast_wpseo_title"
+      value: "Raspberry Pi 5 Gehäuse STL - 3D Druckdateien kostenlos | Nerdiy.de"
+    
+    - key: "_yoast_wpseo_metadesc"
+      value: "Professionelles 3D-druckbares Gehäuse für Raspberry Pi 5. Kostenlose STL-Dateien mit vollständiger Anleitung, Stückliste und Druckeinstellungen. Jetzt herunterladen!"
+    
+    - key: "_yoast_wpseo_focuskw"
+      value: "Raspberry Pi 5 Gehäuse"
+    
+    - key: "product_highlights"
+      value: "Vollständiger Schutz|Optimale Belüftung|Einfache Montage|Alle Anschlüsse zugänglich"
+    
+    - key: "printables_url"
+      value: "https://www.printables.com/model/1285626-raspberry-pi-5-case-by-nerdiyde"
+    
+    - key: "cults3d_url"
+      value: "https://cults3d.com/de/modell-3d/werkzeuge/raspberrypi-5-gehaeuse"
+    
+    - key: "github_readme"
+      value: "https://github.com/Nerdiy/Nerdiy_Products/tree/main/products/raspberry-pi-5-case"
+
+# ===== EXTERNE LINKS & REFERENZEN =====
+external_links:
+  printables: "https://www.printables.com/model/1285626-raspberry-pi-5-case-by-nerdiyde"
+  cults3d: "https://cults3d.com/de/modell-3d/werkzeuge/raspberrypi-5-gehaeuse"
+  nerdiy_shop: "https://nerdiy.de/produkt/raspberry-pi-5-case"
+  github: "https://github.com/Nerdiy/Nerdiy_Products/tree/main/products/raspberry-pi-5-case"
+
+# ===== CUSTOM TABS (Optional) =====
+# Zusätzliche Tabs im WooCommerce Produkt
+custom_tabs:
+  - title: "📐 Druckeinstellungen"
+    priority: 10
+    content_source: "tab_print_settings.html"
+  
+  - title: "🔧 Montageanleitung"
+    priority: 20
+    content_source: "tab_assembly.html"
+  
+  - title: "📦 Stückliste"
+    priority: 30
+    content_source: "tab_bom.html"
+  
+  - title: "⬇️ Downloads"
+    priority: 40
+    content_source: "tab_downloads.html"
+
+# ===== BUILD INFORMATION =====
+# Zusätzliche Informationen für unsere Dokumentation
+build_info:
+  created: "2026-02-15"
+  last_updated: "2026-03-06"
+  version: "1.0"
+  status: "production"
+  readme_source: "README.md"
+  html_preview: "index.html"

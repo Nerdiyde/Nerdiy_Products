@@ -68,7 +68,7 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 | Qty | Component | ASIN (DE) | Amazon (DE) |
 |-----|-----------|-----------|-------------|
 | 1x | Raspberry Pi 4 (4GB or 8GB) | B09TTNF8BT | [Amazon](https://www.amazon.de/dp/B09TTNF8BT?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 1x | 7" Touch Display 2 | - | Check availability |
+| 1x | 7" Touch Display 2 | B0DM24QFCF | [Amazon](https://www.amazon.de/Raspberry-Display-Display-Modul-Passend-Entwickl-Schwarz/dp/B0DM24QFCF?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Raspberry Pi 4 Power Supply | B07TZ89BT7 | [Amazon](https://www.amazon.de/dp/B07TZ89BT7?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Micro SD Card 64GB | B07FCMBLV6 | [Amazon](https://www.amazon.de/dp/B07FCMBLV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
