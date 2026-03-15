@@ -1,0 +1,128 @@
+# WooCommerce Product Definition
+# PrintAirPipe - 125mm AirFlowSensor Segment by Nerdiy.de
+# Last Updated: 2026-03-15
+
+woocommerce:
+  name: "PrintAirPipe - 125mm AirFlowSensor Segment by Nerdiy.de"
+  slug: "printairpipe-125mm-airflowsensor-segment"
+  sku: "NERDIY-PRINTAIRPIPE-125-AIRFLOWSENSOR-001"
+
+  regular_price: "0.00"
+  sale_price: null
+
+  status: "publish"
+  catalog_visibility: "visible"
+  featured: false
+
+  categories:
+    - name: "PrintAirPipe"
+      slug: "printairpipe"
+    - name: "3D Print Files"
+      slug: "3d-print-files"
+    - name: "Airflow & Sensors"
+      slug: "airflow-sensors"
+
+  tags:
+    - "PrintAirPipe"
+    - "125mm"
+    - "AirFlowSensor"
+    - "ESP32-S3"
+    - "WS2812"
+    - "Hall Sensor US1881"
+    - "PETG"
+    - "STL Files"
+
+  short_description: |
+    3D-printable 125mm PrintAirPipe AirFlowSensor segment with ESP32-S3,
+    Hall Sensor US1881 modules, and WS2812 LEDs. Ideal for airflow measurement in modular
+    PrintAirPipe ducting systems.
+
+  description_template: "woocommerce_description.html"
+
+  type: "simple"
+  virtual: true
+  downloadable: true
+
+  downloads:
+    - name: "Printables STL Files"
+      file: "https://www.printables.com/model/1283622-printairpipe-125mm-airflowsensor-segment-by-nerdiy"
+      external: true
+
+  auto_collect_images: true
+
+  attributes:
+    - name: "System"
+      options: ["PrintAirPipe 125mm"]
+      visible: true
+      variation: false
+      position: 0
+
+    - name: "Electronics"
+      options: ["Seeed Studio XIAO ESP32-S3", "Hall Sensor Melexis US1881", "WS2812 LED on PCB"]
+      visible: true
+      variation: false
+      position: 1
+
+    - name: "Material"
+      options: ["PETG (recommended)", "ABS", "ASA"]
+      visible: true
+      variation: false
+      position: 2
+
+    - name: "Assembly"
+      options: ["M2/M3 thread inserts", "M2/M3 countersunk screws"]
+      visible: true
+      variation: false
+      position: 3
+
+  dimensions:
+    length: "13"
+    width: "13"
+    height: "8"
+  weight: "0.22"
+
+  manage_stock: false
+  stock_status: "instock"
+
+  shipping_class: null
+
+  upsell_ids: []
+  cross_sell_ids: []
+
+  meta_data:
+    - key: "_yoast_wpseo_title"
+      value: "PrintAirPipe 125mm AirFlowSensor Segment STL | Nerdiy.de"
+
+    - key: "_yoast_wpseo_metadesc"
+      value: "PrintAirPipe 125mm AirFlowSensor Segment as STL files. Includes BOM, tool list, and print settings for ESP32-S3 based airflow measurement."
+
+    - key: "_yoast_wpseo_focuskw"
+      value: "PrintAirPipe AirFlowSensor Segment"
+
+    - key: "printables_url"
+      value: "https://www.printables.com/model/1283622-printairpipe-125mm-airflowsensor-segment-by-nerdiy"
+
+    - key: "github_readme"
+      value: "https://github.com/Nerdiy/Nerdiy_Products/tree/main/products/printairpipe-125mm-airflowsensor-segment"
+
+external_links:
+  printables: "https://www.printables.com/model/1283622-printairpipe-125mm-airflowsensor-segment-by-nerdiy"
+  nerdiy_shop: "https://www.nerdiy.de/"
+  github: "https://github.com/Nerdiy/Nerdiy_Products/tree/main/products/printairpipe-125mm-airflowsensor-segment"
+
+custom_tabs:
+  - title: "Print Settings"
+    priority: 10
+    content_source: "README.md"
+
+  - title: "Bill of Materials"
+    priority: 20
+    content_source: "README.md"
+
+build_info:
+  created: "2026-03-15"
+  last_updated: "2026-03-15"
+  version: "1.0"
+  status: "production"
+  readme_source: "README.md"
+  html_preview: "index.html"
