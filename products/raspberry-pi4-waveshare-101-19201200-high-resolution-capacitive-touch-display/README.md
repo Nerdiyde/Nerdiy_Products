@@ -72,12 +72,31 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 | 1x | Raspberry Pi 4 Power Supply | B07TZ89BT7 | [Amazon](https://www.amazon.de/dp/B07TZ89BT7?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Micro SD Card 64GB | B07FCMBLV6 | [Amazon](https://www.amazon.de/dp/B07FCMBLV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
+
+---
+
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250721_181353.jpg" alt="20250721 181353" width="400" /></td>
+    <td><img src="images/20250721_181416.jpg" alt="20250721 181416" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250721_181456.jpg" alt="20250721 181456" width="400" /></td>
+    <td><img src="images/20250721_181613.jpg" alt="20250721 181613" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250721_181650(0).jpg" alt="20250721 181650(0)" width="400" /></td>
+    <td><img src="images/Waveshare_10.1_touch_display_frame_V1.1_1.jpg" alt="Waveshare 10.1 touch display frame V1.1 1" width="400" /></td>
+  </tr>
+</table>
+
 ---
 
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |

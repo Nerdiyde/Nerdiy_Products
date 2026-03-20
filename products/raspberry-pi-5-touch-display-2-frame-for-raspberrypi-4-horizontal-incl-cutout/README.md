@@ -33,6 +33,7 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 
 ### Alternative Sources
 - **[🛍️ Nerdiy.de Shop](https://www.nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4386954386/raspberry-pi-5-touch-display-2-frame-for)** - Alternative purchase option
 
 ---
 
@@ -72,12 +73,31 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 | 1x | Raspberry Pi 4 Power Supply | B07TZ89BT7 | [Amazon](https://www.amazon.de/dp/B07TZ89BT7?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Micro SD Card 64GB | B07FCMBLV6 | [Amazon](https://www.amazon.de/dp/B07FCMBLV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
+
+---
+
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250924_182904.jpg" alt="20250924 182904" width="400" /></td>
+    <td><img src="images/20250924_182924.jpg" alt="20250924 182924" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250924_182945.jpg" alt="20250924 182945" width="400" /></td>
+    <td><img src="images/20250924_183042.jpg" alt="20250924 183042" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250924_183048.jpg" alt="20250924 183048" width="400" /></td>
+    <td><img src="images/RaspberryPi_touch_display_2_5inch_housing_slim_side_cutout_raspi4_V1.0_1.jpg" alt="RaspberryPi touch display 2 5inch housing slim side cutout raspi4 V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
 ---
 
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |

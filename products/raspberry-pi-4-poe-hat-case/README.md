@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberrypi-4-poe-hat-gehaeuse-by-nerdiy-de)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/1601390380/raspberrypi-4-poe-hat-housing-stl-files)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -70,10 +71,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20231110_163258.jpg" alt="20231110 163258" width="400" /></td>
+    <td><img src="images/20231110_163324.jpg" alt="20231110 163324" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20231110_163419.jpg" alt="20231110 163419" width="400" /></td>
+    <td><img src="images/20231110_163437.jpg" alt="20231110 163437" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20231110_163451(0).jpg" alt="20231110 163451(0)" width="400" /></td>
+    <td><img src="images/20231110_164138.jpg" alt="20231110 164138" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -127,22 +146,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Verify PoE HAT fan operation
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 4 PoE HAT Case - Main View](./images/20231110_163258.jpg)
-
-![Assembly Photo 1](./images/20231110_163324.jpg)
-
-![Assembly Photo 2](./images/20231110_163419.jpg)
-
-![Assembly Photo 3](./images/20231110_163437.jpg)
-
-![Assembly Photo 4](./images/20231110_163451(0).jpg)
-
-![Assembled 3D Print](./images/20231110_164138.jpg)
 
 ---
 

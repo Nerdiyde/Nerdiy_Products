@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[�️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-5-waveshare-poe-m-2-hat-housing-by-nerdiy-de)**
 - **[�🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4331586358/raspberry-pi-5-waveshare-poe-m2-hat)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -71,10 +72,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250503_200720.jpg" alt="20250503 200720" width="400" /></td>
+    <td><img src="images/20250503_200802.jpg" alt="20250503 200802" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250503_200815.jpg" alt="20250503 200815" width="400" /></td>
+    <td><img src="images/20250503_200947.jpg" alt="20250503 200947" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250503_201014.jpg" alt="20250503 201014" width="400" /></td>
+    <td><img src="images/raspi_5_waveshare_PoE_M.2_HAT+_housing_V1.0_1.jpg" alt="raspi 5 waveshare PoE M.2 HAT+ housing V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -130,18 +149,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation (especially M.2 SSD temperature)
    - Check M.2 SSD connection if experiencing storage issues
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 Waveshare PoE M.2 HAT+ Housing](images/raspi_5_waveshare_PoE_M.2_HAT+_housing_V1.0_1.jpg)
-
-![Assembly Photo 1](images/20250503_200720.jpg)
-![Assembly Photo 2](images/20250503_200802.jpg)
-![Assembly Photo 3](images/20250503_200815.jpg)
-![Assembly Photo 4](images/20250503_200947.jpg)
-![Assembly Photo 5](images/20250503_201014.jpg)
 
 ---
 

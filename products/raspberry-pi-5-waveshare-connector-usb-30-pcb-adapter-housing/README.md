@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberrypi-5-waveshare-connector-usb-3-0-pcb-adapter-gehaeuse)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4331755761/raspberry-pi-5-waveshare-connector-usb)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -71,10 +72,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC6068.JPG" alt=" DSC6068" width="400" /></td>
+    <td><img src="images/_DSC6086.JPG" alt=" DSC6086" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC6093.JPG" alt=" DSC6093" width="400" /></td>
+    <td><img src="images/_DSC6097.JPG" alt=" DSC6097" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC6099.JPG" alt=" DSC6099" width="400" /></td>
+    <td><img src="images/raspi5_housing_inlc_waveshare_con_usb_adapter_V1.0_1.jpg" alt="raspi5 housing inlc waveshare con usb adapter V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -129,22 +148,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Verify cable connections remain secure
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 & Waveshare Connector & USB 3.0 Adapter Housing - CAD View](./images/raspi5_housing_inlc_waveshare_con_usb_adapter_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/_DSC6068.JPG)
-
-![Assembly Photo 2](./images/_DSC6086.JPG)
-
-![Assembly Photo 3](./images/_DSC6093.JPG)
-
-![Assembly Photo 4](./images/_DSC6097.JPG)
-
-![Assembled Unit](./images/_DSC6099.JPG)
 
 ---
 

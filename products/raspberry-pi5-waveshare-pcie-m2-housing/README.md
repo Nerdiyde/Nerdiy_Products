@@ -28,6 +28,9 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Primary Source (Recommended)
 - **[🎨 Printables Store](https://www.printables.com/model/1022967-raspberry-pi5-waveshare-pcie-m2-housing-by-nerdiyd)** - Download the STL files here
 
+### Alternative Sources
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4333221521/raspberry-pi5-waveshare-pcie-m2-housing)** - Alternative purchase option
+
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
 ---
@@ -65,10 +68,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC5218.JPG" alt=" DSC5218" width="400" /></td>
+    <td><img src="images/_DSC5220.JPG" alt=" DSC5220" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5231.JPG" alt=" DSC5231" width="400" /></td>
+    <td><img src="images/_DSC5257.JPG" alt=" DSC5257" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5259.JPG" alt=" DSC5259" width="400" /></td>
+    <td><img src="images/raspi5_waveshare_pcie_to_m.2_board_housing_V1.0_1.jpg" alt="raspi5 waveshare pcie to m.2 board housing V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -122,22 +143,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor NVMe SSD temperature
    - Verify adequate ventilation for both Pi and SSD
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 & Waveshare PCIe M.2 Housing - CAD View](./images/raspi5_waveshare_pcie_to_m.2_board_housing_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/_DSC5218.JPG)
-
-![Assembly Photo 2](./images/_DSC5220.JPG)
-
-![Assembly Photo 3](./images/_DSC5231.JPG)
-
-![Assembly Photo 4](./images/_DSC5257.JPG)
-
-![Assembled Unit](./images/_DSC5259.JPG)
 
 ---
 

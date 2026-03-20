@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-5-waveshare-3x-relais-hat-housing-by-nerdiy-de)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4331584174/raspberry-pi-5-waveshare-3x-relais-hat)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -70,10 +71,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250503_201429.jpg" alt="20250503 201429" width="400" /></td>
+    <td><img src="images/20250503_201500(0).jpg" alt="20250503 201500(0)" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250503_201511.jpg" alt="20250503 201511" width="400" /></td>
+    <td><img src="images/20250503_201644.jpg" alt="20250503 201644" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250503_201646.jpg" alt="20250503 201646" width="400" /></td>
+    <td><img src="images/raspi_5_waveshare_3x_relais_board_hat_housing_V1.0_1.jpg" alt="raspi 5 waveshare 3x relais board hat housing V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -128,18 +147,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Regularly inspect relay connections for security
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 Waveshare 3x Relay HAT Housing](images/raspi_5_waveshare_3x_relais_board_hat_housing_V1.0_1.jpg)
-
-![Assembly Photo 1](images/20250503_201429.jpg)
-![Assembly Photo 2](images/20250503_201500(0).jpg)
-![Assembly Photo 3](images/20250503_201511.jpg)
-![Assembly Photo 4](images/20250503_201644.jpg)
-![Assembly Photo 5](images/20250503_201646.jpg)
 
 ---
 

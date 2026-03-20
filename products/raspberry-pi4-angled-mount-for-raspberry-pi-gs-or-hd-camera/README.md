@@ -69,10 +69,28 @@ This product provides 3D-printable angled camera mounting parts for Raspberry Pi
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250721_183137.jpg" alt="20250721 183137" width="400" /></td>
+    <td><img src="images/20250721_183212.jpg" alt="20250721 183212" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250721_183217.jpg" alt="20250721 183217" width="400" /></td>
+    <td><img src="images/20250721_183235.jpg" alt="20250721 183235" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250721_183243.jpg" alt="20250721 183243" width="400" /></td>
+    <td><img src="images/raspi4_global_shutter_camera_angled_V1.0_1.jpg" alt="raspi4 global shutter camera angled V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -127,22 +145,6 @@ This product provides 3D-printable angled camera mounting parts for Raspberry Pi
    - Check screw tightness after extended use
    - Verify camera ribbon cable connection remains secure
    - Test camera functionality regularly
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 4 Angled Camera Mount - Main View](./images/raspi4_global_shutter_camera_angled_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/20250721_183137.jpg)
-
-![Assembly Photo 2](./images/20250721_183212.jpg)
-
-![Assembly Photo 3](./images/20250721_183217.jpg)
-
-![Assembly Photo 4](./images/20250721_183235.jpg)
-
-![Assembly Photo 5](./images/20250721_183243.jpg)
 
 ---
 

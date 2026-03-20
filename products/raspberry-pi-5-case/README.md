@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/werkzeuge/raspberrypi-5-gehaeuse)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/1615567983/raspberrypi-5-housing-stl-files)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -68,10 +69,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20231108_122434.jpg" alt="20231108 122434" width="400" /></td>
+    <td><img src="images/20231108_122507.jpg" alt="20231108 122507" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20231108_122927.jpg" alt="20231108 122927" width="400" /></td>
+    <td><img src="images/20231108_123005.jpg" alt="20231108 123005" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20231108_123018.jpg" alt="20231108 123018" width="400" /></td>
+    <td></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -122,20 +141,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Periodically clean dust from ventilation areas
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 Case - Main View](./images/20231108_122434.jpg)
-
-![Assembly Photo 1](./images/20231108_122507.jpg)
-
-![Assembly Photo 2](./images/20231108_122927.jpg)
-
-![Assembly Photo 3](./images/20231108_123005.jpg)
-
-![Assembly Photo 4](./images/20231108_123018.jpg)
 
 ---
 

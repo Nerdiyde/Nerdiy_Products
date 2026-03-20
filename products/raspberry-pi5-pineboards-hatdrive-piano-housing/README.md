@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberrypi5-pineboards-hatdrive-piano-gehaeuse)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4331752301/raspberry-pi5-pineboards-hatdrive-piano)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -70,10 +71,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC5302.JPG" alt=" DSC5302" width="400" /></td>
+    <td><img src="images/_DSC5303.JPG" alt=" DSC5303" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5307.JPG" alt=" DSC5307" width="400" /></td>
+    <td><img src="images/_DSC5308.JPG" alt=" DSC5308" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5316.JPG" alt=" DSC5316" width="400" /></td>
+    <td><img src="images/raspi_5_pineberry_HatDrive!_Piano_housing_V1.0_1.jpg" alt="raspi 5 pineberry HatDrive! Piano housing V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -128,22 +147,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Regularly test storage connections and performance
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 Pineboards HatDrive! PIANO Housing - Main View](./images/raspi_5_pineberry_HatDrive!_Piano_housing_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/_DSC5302.JPG)
-
-![Assembly Photo 2](./images/_DSC5303.JPG)
-
-![Assembly Photo 3](./images/_DSC5307.JPG)
-
-![Assembly Photo 4](./images/_DSC5308.JPG)
-
-![Assembly Photo 5](./images/_DSC5316.JPG)
 
 ---
 

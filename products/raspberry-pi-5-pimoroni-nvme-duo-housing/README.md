@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberrypi-5-pimoroni-nvme-duo-gehaeuse)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4333223032/raspberry-pi-5-pimoroni-nvme-duo-housing)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -71,10 +72,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC5334.JPG" alt=" DSC5334" width="400" /></td>
+    <td><img src="images/_DSC5345.JPG" alt=" DSC5345" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5356.JPG" alt=" DSC5356" width="400" /></td>
+    <td><img src="images/_DSC5362.JPG" alt=" DSC5362" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5367.JPG" alt=" DSC5367" width="400" /></td>
+    <td><img src="images/raspi5_pimoroni_nvme_duo_base_V1.0_1.jpg" alt="raspi5 pimoroni nvme duo base V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -130,22 +149,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Regularly test SSD connections and performance
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 Pimoroni NVME Duo Housing - Main View](./images/raspi5_pimoroni_nvme_duo_base_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/_DSC5334.JPG)
-
-![Assembly Photo 2](./images/_DSC5345.JPG)
-
-![Assembly Photo 3](./images/_DSC5356.JPG)
-
-![Assembly Photo 4](./images/_DSC5362.JPG)
-
-![Assembly Photo 5](./images/_DSC5367.JPG)
 
 ---
 

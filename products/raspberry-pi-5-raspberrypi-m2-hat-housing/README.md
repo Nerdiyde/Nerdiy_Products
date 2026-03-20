@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberrypi5-m-2-hat-gehaeuse)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4333223863/raspberry-pi-5-raspberrypi-m2-hat)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -69,10 +70,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC5445.JPG" alt=" DSC5445" width="400" /></td>
+    <td><img src="images/_DSC5450.JPG" alt=" DSC5450" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5475.JPG" alt=" DSC5475" width="400" /></td>
+    <td><img src="images/_DSC5476.JPG" alt=" DSC5476" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5495.JPG" alt=" DSC5495" width="400" /></td>
+    <td><img src="images/raspi_5_M.2_HAT+_housing_V1.0_1.jpg" alt="raspi 5 M.2 HAT+ housing V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -126,22 +145,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor M.2 module temperature
    - Verify adequate ventilation for both Pi and M.2 module
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 & M.2 HAT+ Housing - CAD View](./images/raspi_5_M.2_HAT+_housing_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/_DSC5445.JPG)
-
-![Assembly Photo 2](./images/_DSC5450.JPG)
-
-![Assembly Photo 3](./images/_DSC5475.JPG)
-
-![Assembly Photo 4](./images/_DSC5476.JPG)
-
-![Assembled Unit](./images/_DSC5495.JPG)
 
 ---
 

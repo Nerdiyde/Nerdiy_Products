@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberrypi-4-waveshare-connector-adapter-gehaeuse)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4331589802/raspberry-pi-4-waveshare-connector)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -70,10 +71,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC6133.JPG" alt=" DSC6133" width="400" /></td>
+    <td><img src="images/_DSC6143.JPG" alt=" DSC6143" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC6153.JPG" alt=" DSC6153" width="400" /></td>
+    <td><img src="images/_DSC6159.JPG" alt=" DSC6159" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC6165.JPG" alt=" DSC6165" width="400" /></td>
+    <td><img src="images/raspi4_housing_inlc_waveshare_con_adapter_V1.0_1.jpg" alt="raspi4 housing inlc waveshare con adapter V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -127,22 +146,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Verify cable connections remain secure
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 4 & Waveshare Connector Adapter Housing - CAD View](./images/raspi4_housing_inlc_waveshare_con_adapter_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/_DSC6133.JPG)
-
-![Assembly Photo 2](./images/_DSC6143.JPG)
-
-![Assembly Photo 3](./images/_DSC6153.JPG)
-
-![Assembly Photo 4](./images/_DSC6159.JPG)
-
-![Assembled Unit](./images/_DSC6165.JPG)
 
 ---
 

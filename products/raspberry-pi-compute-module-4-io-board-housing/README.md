@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-compute-module-io-board-gehaeuse-by-nerdiy-de)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4331749177/raspberry-pi-compute-module-4-io-board)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -69,10 +70,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20240102_190532.jpg" alt="20240102 190532" width="400" /></td>
+    <td><img src="images/20240102_190627.jpg" alt="20240102 190627" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20240102_190638.jpg" alt="20240102 190638" width="400" /></td>
+    <td><img src="images/20240102_190807.jpg" alt="20240102 190807" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20240102_190822.jpg" alt="20240102 190822" width="400" /></td>
+    <td><img src="images/Acrobat_Ge2Op5pgyz.png" alt="Acrobat Ge2Op5pgyz" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -125,22 +144,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Verify cable connections remain secure
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi Compute Module 4 IO Board Housing - CAD View](./images/Acrobat_Ge2Op5pgyz.png)
-
-![Assembly Photo 1](./images/20240102_190532.jpg)
-
-![Assembly Photo 2](./images/20240102_190627.jpg)
-
-![Assembly Photo 3](./images/20240102_190638.jpg)
-
-![Assembly Photo 4](./images/20240102_190807.jpg)
-
-![Assembled Unit](./images/20240102_190822.jpg)
 
 ---
 

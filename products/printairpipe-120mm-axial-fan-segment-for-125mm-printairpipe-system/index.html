@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintAirPipe – 120mm axial fan segment for 125mm PrintAirPipe system by Nerdiy.de</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #e0e0e0; background: #0d1117; }
+        header { background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%); color: white; padding: 60px 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.4); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        section { background: #1c2128; margin-bottom: 30px; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.3); border: 1px solid #30363d; }
+        h2 { color: #58a6ff; font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid #58a6ff; padding-bottom: 10px; }
+        h3 { color: #79c0ff; font-size: 1.2em; margin: 20px 0 10px; }
+        .btn { display: inline-block; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; margin: 10px 5px 10px 0; transition: all 0.3s ease; border: none; cursor: pointer; }
+        .btn-primary { background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%); color: white; box-shadow: 0 4px 15px rgba(31,111,235,0.4); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(31,111,235,0.6); }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .info-card { background: #0d1117; padding: 15px; border-radius: 6px; border: 1px solid #30363d; }
+        .info-card label { color: #79c0ff; font-weight: bold; display: block; margin-bottom: 5px; font-size: 0.9em; }
+        .info-card .value { color: #c9d1d9; font-size: 0.95em; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0 20px; font-size: 0.95em; }
+        th, td { border: 1px solid #30363d; padding: 8px 10px; text-align: left; }
+        th { background: #0d1117; color: #79c0ff; }
+        tbody tr:nth-child(even) { background: #161b22; }
+        .gallery { display: grid; gap: 15px; margin: 20px 0; }
+        .gallery-primary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .gallery-extra { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: transform 0.3s ease; cursor: pointer; }
+        .gallery-item:hover { transform: scale(1.02); }
+        .gallery-item img { width: 100%; height: 260px; object-fit: cover; display: block; }
+        .more-images summary { color: #79c0ff; cursor: pointer; font-weight: 600; margin-top: 12px; }
+        .more-images[open] summary { margin-bottom: 10px; }
+        .note { background: rgba(255,193,7,0.1); border-left: 4px solid #ffc107; padding: 15px; border-radius: 4px; margin: 20px 0; color: #ffc107; }
+        footer { background: #0d1117; color: #8b949e; text-align: center; padding: 20px; margin-top: 40px; border-top: 1px solid #30363d; }
+        a { color: #58a6ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lightbox-modal { display: none; position: fixed; z-index: 1000; inset: 0; background-color: rgba(0,0,0,0.9); animation: fadeIn 0.3s ease; }
+        .lightbox-modal.active { display: flex; align-items: center; justify-content: center; }
+        .lightbox-content { position: relative; max-width: 90vw; max-height: 90vh; }
+        .lightbox-content img { width: 100%; height: auto; max-height: 85vh; display: block; border-radius: 8px; }
+        .lightbox-close { position: absolute; top: 15px; right: 35px; color: #f0f0f0; font-size: 40px; font-weight: bold; cursor: pointer; border: none; background: none; padding: 0; z-index: 1001; }
+        .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #f0f0f0; border: none; font-size: 30px; padding: 10px 15px; cursor: pointer; border-radius: 4px; z-index: 1001; }
+        .lightbox-prev { left: 15px; }
+        .lightbox-next { right: 15px; }
+        .lightbox-counter { position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); color: #f0f0f0; background: rgba(0,0,0,0.7); padding: 8px 15px; border-radius: 4px; font-size: 14px; z-index: 1001; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PrintAirPipe – 120mm axial fan segment for 125mm PrintAirPipe system by Nerdiy.de</h1>
+        <p>Professional 3D-Printable Solution from Nerdiy.de</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>📋 Product Information</h2>
+            <p>This product page provides all key details required to print, source, and assemble this project.</p>
+            <div class="info-grid">
+                <div class="info-card"><label>Product Name</label><div class="value">PrintAirPipe – 120mm axial fan segment for 125mm PrintAirPipe system by Nerdiy.de</div></div>
+                <div class="info-card"><label>Creator</label><div class="value">Nerdiy.de</div></div>
+                <div class="info-card"><label>Status</label><div class="value">Active</div></div>
+                <div class="info-card"><label>Last Updated</label><div class="value">22. February 2026</div></div>
+            </div>
+        </section>
+
+        <section>
+            <h2> Purchase & Download</h2>
+            <p>Get the STL files and verified marketplace alternatives from the links below.</p>
+            <div style="margin-top: 20px;"><a href="https://www.nerdiy.de/" class="btn btn-primary" target="_blank" rel="noopener"> Nerdiy.de Shop</a>
+                <a href="https://www.printables.com/model/1281924-printairpipe-120mm-axial-fan-segment-for-125mm-pri" class="btn btn-primary" target="_blank" rel="noopener"> Printables</a></div>
+            <div class="note"><strong>? Note:</strong> Only valid STL product links are listed here.</div>
+        </section>
+
+        <section>
+            <h2>📦 Bill of Materials</h2>
+            <h3>🛠️ Required Tools</h3>
+            <table>
+                <thead><tr><th>Qty</th><th>Component</th><th>ASIN (DE)</th><th>Amazon (DE)</th></tr></thead>
+                <tbody><tr><td>1x</td><td>Screwdriver Set</td><td>B092LVWNX8</td><td><a href="https://www.amazon.de/dp/B086SQZGLJ?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>Soldering Iron</td><td>B0CCV6T329</td><td><a href="https://www.amazon.de/dp/B0CCV6T329?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>3D Printer</td><td>-</td><td>N/A</td></tr></tbody>
+            </table>
+            <h3>📦 Required Components</h3>
+            <table>
+                <thead><tr><th>Qty</th><th>Component</th><th>ASIN (DE)</th><th>Amazon (DE)</th></tr></thead>
+                <tbody><tr><td>1x</td><td>Seeed Studio XIAO ESP32-S3</td><td>B0BYSB66S5</td><td><a href="https://www.amazon.de/dp/B0BYSB66S5?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>120mm Axial Fan</td><td>B07GSRRHZT</td><td><a href="https://www.amazon.de/dp/B07GSRRHZT?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>3x</td><td>WS2812 LED on PCB</td><td>B088K6C7TJ</td><td><a href="https://www.amazon.de/dp/B088K6C7TJ?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>2x</td><td>M3 Thread Insert</td><td>B08BCRZZS3</td><td><a href="https://www.amazon.de/dp/B08BCRZZS3?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>Thread Insert</td><td>B088QJG676</td><td><a href="https://www.amazon.de/dp/B088QJG676?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>2x</td><td>Fan Screws 5.0 x 10.0mm</td><td>B000TG3IGS</td><td><a href="https://www.amazon.de/dp/B000TG3IGS?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>M2x8 Countersunk</td><td>B0957TSYBY</td><td><a href="https://www.amazon.de/dp/B0957TSYBY?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>M3x6 Zylinderkopfschraube</td><td>B01GQX0JVY</td><td><a href="https://www.amazon.de/dp/B01GQX0JVY?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>Unterlegscheibe für M3</td><td>B0CJWP92X1</td><td><a href="https://www.amazon.de/dp/B0CJWP92X1?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>Mutter M3</td><td>B07JMF3KMD</td><td><a href="https://www.amazon.de/dp/B07JMF3KMD?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>2x</td><td>M3x25 Countersunk</td><td>B09MZQ8C84</td><td><a href="https://www.amazon.de/dp/B09MZQ8C84?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>PETG Filament</td><td>B0C6MMM51Y</td><td><a href="https://www.amazon.de/dp/B0C6MMM51Y?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>Wire (Litze)</td><td>B0C7TJG9YB</td><td><a href="https://www.amazon.de/dp/B0C7TJG9YB?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>USB-C Cable</td><td>B098WVHH5L</td><td><a href="https://www.amazon.de/dp/B098WVHH5L?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>USB Power Supply</td><td>B00WLI5E3M</td><td><a href="https://www.amazon.de/dp/B00WLI5E3M?tag=nerdiyde018-21&amp;linkCode=ogi&amp;th=1&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td></tr><tr><td>1x</td><td>3D Printer</td><td>-</td><td>N/A</td></tr></tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>🖼️ Product Images</h2>
+
+            <div class="gallery gallery-primary"><div class="gallery-item"><img src="images/20240613_191445.jpg" alt="PrintAirPipe – 120mm axial fan segment for 125mm PrintAirPipe system by Nerdiy.de image 1" onclick="openLightbox(0)"></div><div class="gallery-item"><img src="images/20240613_191449.jpg" alt="PrintAirPipe – 120mm axial fan segment for 125mm PrintAirPipe system by Nerdiy.de image 2" onclick="openLightbox(1)"></div><div class="gallery-item"><img src="images/20240613_191507.jpg" alt="PrintAirPipe – 120mm axial fan segment for 125mm PrintAirPipe system by Nerdiy.de image 3" onclick="openLightbox(2)"></div><div class="gallery-item"><img src="images/20240613_191510.jpg" alt="PrintAirPipe – 120mm axial fan segment for 125mm PrintAirPipe system by Nerdiy.de image 4" onclick="openLightbox(3)"></div><div class="gallery-item"><img src="images/20240613_191558.jpg" alt="PrintAirPipe – 120mm axial fan segment for 125mm PrintAirPipe system by Nerdiy.de image 5" onclick="openLightbox(4)"></div><div class="gallery-item"><img src="images/20240613_191653(0).jpg" alt="PrintAirPipe – 120mm axial fan segment for 125mm PrintAirPipe system by Nerdiy.de image 6" onclick="openLightbox(5)"></div></div>
+
+            <details class="more-images">
+                <summary>Show additional images (including subfolders)</summary>
+                <div class="gallery gallery-extra"><div class="gallery-item"><img src="images/additional/printAirPipe_125mm_120mm_fan_insert_segment_V1.0_1.jpg" alt="PrintAirPipe – 120mm axial fan segment for 125mm PrintAirPipe system by Nerdiy.de image 7" onclick="openLightbox(6)"></div></div>
+            </details>
+
+
+        </section>
+
+        <section>
+            <h2>🖨️ 3D Print Settings</h2>
+            <h3>Recommended Print Settings</h3>
+            <table>
+                <thead><tr><th>Setting</th><th>Value</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Filament Type</strong></td><td>Weather and UV-resistant (for example PETG, ABS, or ASA)</td></tr>
+                    <tr><td><strong>Layer Height</strong></td><td>0.2 mm</td></tr>
+                    <tr><td><strong>Infill</strong></td><td>15-25%</td></tr>
+                    <tr><td><strong>Wall Lines</strong></td><td>3-5</td></tr>
+                    <tr><td><strong>Supports</strong></td><td>As needed by part geometry</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nerdiy.de - Professional 3D-Printable Solutions</p>
+        <p><a href="https://github.com/Nerdiyde">GitHub</a> | <a href="https://www.nerdiy.de">Website</a></p>
+    </footer>
+
+    <div id="lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</button>
+        <div class="lightbox-content"><img id="lightboxImage" src="" alt="Product image preview"></div>
+        <button class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</button>
+        <div id="lightboxCounter" class="lightbox-counter"></div>
+    </div>
+    <script>
+        const lightboxImages = ["images/20240613_191445.jpg","images/20240613_191449.jpg","images/20240613_191507.jpg","images/20240613_191510.jpg","images/20240613_191558.jpg","images/20240613_191653(0).jpg","images/additional/printAirPipe_125mm_120mm_fan_insert_segment_V1.0_1.jpg"];
+        let currentImageIndex = 0;
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('lightbox');
+            modal.classList.add('active');
+            updateLightboxImage();
+        }
+        function closeLightbox(event) {
+            if (!event || event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
+                document.getElementById('lightbox').classList.remove('active');
+            }
+        }
+        function changeImage(direction) {
+            currentImageIndex = (currentImageIndex + direction + lightboxImages.length) % lightboxImages.length;
+            updateLightboxImage();
+        }
+        function updateLightboxImage() {
+            const image = document.getElementById('lightboxImage');
+            const counter = document.getElementById('lightboxCounter');
+            image.src = lightboxImages[currentImageIndex];
+            counter.textContent = `${currentImageIndex + 1} / ${lightboxImages.length}`;
+        }
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('lightbox');
+            if (!modal.classList.contains('active')) return;
+            if (event.key === 'Escape') closeLightbox();
+            if (event.key === 'ArrowLeft') changeImage(-1);
+            if (event.key === 'ArrowRight') changeImage(1);
+        });
+    </script>
+
+</body>
+</html>

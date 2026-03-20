@@ -91,12 +91,31 @@ This product provides 3D-printable mounting and assembly parts for building a Ma
 |-----|-----------|------|
 | 1 Set | Pre-made Oak Wood MagicMirror Frame | [Woodsellers.com](https://woodsellers.com/de/marktplatz/81-magicmirror.html) |
 
+
+---
+
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250706_203741.jpg" alt="20250706 203741" width="400" /></td>
+    <td><img src="images/20250706_203756.jpg" alt="20250706 203756" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250706_203810.jpg" alt="20250706 203810" width="400" /></td>
+    <td><img src="images/20250706_203828.jpg" alt="20250706 203828" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250706_203842.jpg" alt="20250706 203842" width="400" /></td>
+    <td><img src="images/20250706_203845.jpg" alt="20250706 203845" width="400" /></td>
+  </tr>
+</table>
+
 ---
 
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | Weather and UV-resistant (e.g. PETG, ABS, ASA) |

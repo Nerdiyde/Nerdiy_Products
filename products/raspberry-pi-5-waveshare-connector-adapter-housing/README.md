@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberrypi-5-waveshare-connector-adapter)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4333215017/raspberry-pi-5-waveshare-connector)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -70,10 +71,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC5374.JPG" alt=" DSC5374" width="400" /></td>
+    <td><img src="images/_DSC5391.JPG" alt=" DSC5391" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5397.JPG" alt=" DSC5397" width="400" /></td>
+    <td><img src="images/_DSC5402.JPG" alt=" DSC5402" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5417.JPG" alt=" DSC5417" width="400" /></td>
+    <td><img src="images/raspi5_housing_inlc_waveshare_con_adapter_V1.0_1.jpg" alt="raspi5 housing inlc waveshare con adapter V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -127,22 +146,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Verify cable connections remain secure
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 & Waveshare Connector Adapter Housing - CAD View](./images/raspi5_housing_inlc_waveshare_con_adapter_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/_DSC5374.JPG)
-
-![Assembly Photo 2](./images/_DSC5391.JPG)
-
-![Assembly Photo 3](./images/_DSC5397.JPG)
-
-![Assembly Photo 4](./images/_DSC5402.JPG)
-
-![Assembled Unit](./images/_DSC5417.JPG)
 
 ---
 

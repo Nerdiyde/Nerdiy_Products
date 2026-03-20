@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberrypi-5-pineberry-pi-bm1l-nvme-gehaeuse-by-nerdiy-de)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4331569738/raspberry-pi-5-pineberry-pi-bm1l-bottom)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -69,10 +70,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20240102_184504.jpg" alt="20240102 184504" width="400" /></td>
+    <td><img src="images/20240102_184822.jpg" alt="20240102 184822" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20240102_184907.jpg" alt="20240102 184907" width="400" /></td>
+    <td><img src="images/20240102_184940.jpg" alt="20240102 184940" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20240102_185244.jpg" alt="20240102 185244" width="400" /></td>
+    <td><img src="images/Acrobat_z23YPLdmch.png" alt="Acrobat z23YPLdmch" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -126,22 +145,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor NVMe SSD temperature
    - Verify adequate ventilation for both Pi and SSD
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 & Pineberry Pi BM1L Housing - CAD View](./images/Acrobat_z23YPLdmch.png)
-
-![Assembly Photo 1](./images/20240102_184504.jpg)
-
-![Assembly Photo 2](./images/20240102_184822.jpg)
-
-![Assembly Photo 3](./images/20240102_184907.jpg)
-
-![Assembly Photo 4](./images/20240102_184940.jpg)
-
-![Assembled Unit](./images/20240102_185244.jpg)
 
 ---
 

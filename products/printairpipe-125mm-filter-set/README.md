@@ -1,0 +1,93 @@
+# PrintAirPipe – 125mm Filter Set by Nerdiy.de
+
+---
+
+## 🎯 Project Overview
+
+This product page provides a complete overview of the STL package, bill of materials, and recommended print settings.
+
+---
+
+## 📋 About This Product
+
+- **Product Name**: PrintAirPipe – 125mm Filter Set by Nerdiy.de
+- **Nerdiy.de Shop**: [ View Product](https://www.nerdiy.de/)
+- **Created**: March 2026
+
+---
+
+## 🛒 Purchase Options
+
+### Primary Source (Recommended)
+- **[ Nerdiy.de Shop](https://www.nerdiy.de/)** - Download the STL files here
+
+### Alternative Sources
+- **[ Printables](https://www.printables.com/model/1284682-printairpipe-125mm-filter-set-by-nerdiyde)**
+
+---
+
+## 📦 Bill of Materials
+
+### 🛠️ Required Tools
+
+| Qty | Component | ASIN (DE) | Amazon (DE) |
+|-----|-----------|-----------|-------------|
+| 1x | Screwdriver Set | B092LVWNX8 | [Amazon](https://www.amazon.de/dp/B086SQZGLJ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | Soldering Iron | B0CCV6T329 | [Amazon](https://www.amazon.de/dp/B0CCV6T329?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | 3D Printer | - | N/A |
+
+### 📦 Required Components
+
+| Qty | Component | ASIN (DE) | Amazon (DE) |
+|-----|-----------|-----------|-------------|
+| 2x | Countersunk Screw | B09N5DWFQ8 | [Amazon](https://www.amazon.de/dp/B09N5DWFQ8?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 2x | M3 Thread Insert | B08BCRZZS3 | [Amazon](https://www.amazon.de/dp/B08BCRZZS3?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 2x | 10mm Activated Carbon Filter Mat | B07WR72S4Y | [Amazon](https://www.amazon.de/dp/B07WR72S4Y?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | PETG Filament | B0C6MMM51Y | [Amazon](https://www.amazon.de/dp/B0C6MMM51Y?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 10x | Countersunk Screw | B07PZT63LX | [Amazon](https://www.amazon.de/dp/B07PZT63LX?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | True HEPA-Filter Kartusche | B09W9JV3KJ | [Amazon](https://www.amazon.de/dp/B09W9JV3KJ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+
+---
+
+## 🖼️ Product Images
+
+| Image 1 | Image 2 |
+|---------|---------|
+| ![PrintAirPipe – 125mm Filter Set by Nerdiy.de image 1](images/20240322_132537.jpg) | ![PrintAirPipe – 125mm Filter Set by Nerdiy.de image 2](images/20240726_113256.jpg) |
+| ![PrintAirPipe – 125mm Filter Set by Nerdiy.de image 3](images/20240726_113305(0).jpg) | ![PrintAirPipe – 125mm Filter Set by Nerdiy.de image 4](images/PrintAirPipe HEPA Filter.png) |
+| ![PrintAirPipe – 125mm Filter Set by Nerdiy.de image 5](images/PrintAirPipe_HEPA_filter_round_segment_V1.0_1.jpg) | ![PrintAirPipe – 125mm Filter Set by Nerdiy.de image 6](images/butterfly_valve_125mm_filter_insert_V1.0_dimensions_1.jpg) |
+
+---
+
+## 🖨️ 3D Print Settings
+
+### ⚙️ Recommended Print Settings
+| Setting | Value |
+|---------|-------|
+| **Filament Type** | Weather and UV-resistant (for example PETG, ABS, or ASA) |
+| **Layer Height** | 0.2 mm |
+| **Infill** | 15-25% |
+| **Wall Lines** | 3-5 |
+| **Supports** | As needed by part geometry |
+
+> 🖨️ **Print Orientation**: Use the orientation included in the STL package to maximize part strength and fit.
+
+---
+
+## 🔧 How to Use
+
+1. Download the STL files from the Nerdiy.de product page.
+2. Print all required parts with the recommended settings.
+3. Prepare all parts from the bill of materials.
+4. Assemble and test before final installation.
+
+---
+
+## 📄 License
+
+See the license information on the product page.
+
+---
+
+**Last Updated**: 22. February 2026
+**Status**: Active - Ready to build

@@ -71,10 +71,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20240129_184710.jpg" alt="20240129 184710" width="400" /></td>
+    <td><img src="images/20240129_184731.jpg" alt="20240129 184731" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20240129_184827.jpg" alt="20240129 184827" width="400" /></td>
+    <td><img src="images/20240129_184905.jpg" alt="20240129 184905" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20240129_185008.jpg" alt="20240129 185008" width="400" /></td>
+    <td><img src="images/raspi5_pimoroni_nvme_base_V1.0_1.jpg" alt="raspi5 pimoroni nvme base V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -130,22 +148,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Regularly test SSD connection and performance
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 Pimoroni NVME Base Housing - Main View](./images/raspi5_pimoroni_nvme_base_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/20240129_184710.jpg)
-
-![Assembly Photo 2](./images/20240129_184731.jpg)
-
-![Assembly Photo 3](./images/20240129_184827.jpg)
-
-![Assembly Photo 4](./images/20240129_184905.jpg)
-
-![Assembly Photo 5](./images/20240129_185008.jpg)
 
 ---
 

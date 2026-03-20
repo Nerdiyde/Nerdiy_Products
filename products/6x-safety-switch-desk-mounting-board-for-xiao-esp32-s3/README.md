@@ -79,12 +79,31 @@ This product provides 3D-printable mounting and assembly parts for building a mu
 |-----|-----------|-----------|-------------|
 | 1x | Tesa Powerstrips / Mounting Tape | B00EDLCS9S | [Amazon](https://www.amazon.de/dp/B00EDLCS9S?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
+
+---
+
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20260123_134750.jpg" alt="20260123 134750" width="400" /></td>
+    <td><img src="images/20260123_134826.jpg" alt="20260123 134826" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20260123_134835.jpg" alt="20260123 134835" width="400" /></td>
+    <td><img src="images/20260123_134850.jpg" alt="20260123 134850" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20260123_134921.jpg" alt="20260123 134921" width="400" /></td>
+    <td><img src="images/switchboard_base_V1.0_1.jpg" alt="switchboard base V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
 ---
 
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | Weather and UV-resistant (e.g. PETG, ABS, ASA) |

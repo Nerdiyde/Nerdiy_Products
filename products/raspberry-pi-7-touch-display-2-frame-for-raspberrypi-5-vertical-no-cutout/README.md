@@ -74,12 +74,31 @@ This product provides 3D-printable display frame parts for Raspberry Pi 5 with s
 | 1x | Raspberry Pi 5 Power Supply | B0CM46P7MC | [Amazon](https://www.amazon.de/dp/B0CM46P7MC?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Micro SD Card 64GB | B07FCMBLV6 | [Amazon](https://www.amazon.de/dp/B07FCMBLV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
+
+---
+
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC6355.JPG" alt=" DSC6355" width="400" /></td>
+    <td><img src="images/_DSC6357.JPG" alt=" DSC6357" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC6369.JPG" alt=" DSC6369" width="400" /></td>
+    <td><img src="images/_DSC6372.JPG" alt=" DSC6372" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC6378.JPG" alt=" DSC6378" width="400" /></td>
+    <td><img src="images/RaspberryPi_touch_display_2_housing_slim_vertical_V1.0_1.jpg" alt="RaspberryPi touch display 2 housing slim vertical V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
 ---
 
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |

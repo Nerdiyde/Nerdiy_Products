@@ -86,12 +86,31 @@ This product provides 3D-printable mounting and assembly parts for building an e
 |-----|-----------|-----------|-------------|
 | 1x | Ikea RIBBA Frame 5"x7" | B0BW8SGP2T | [Amazon](https://www.amazon.de/dp/B0BW8SGP2T?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
+
+---
+
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20240324_144012.jpg" alt="20240324 144012" width="400" /></td>
+    <td><img src="images/20240324_144258%20-%20Kopie.jpg" alt="20240324 144258   Kopie" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC4202%20-%20Kopie.JPG" alt=" DSC4202   Kopie" width="400" /></td>
+    <td><img src="images/_DSC4210%20-%20Kopie.JPG" alt=" DSC4210   Kopie" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC4215.JPG" alt=" DSC4215" width="400" /></td>
+    <td></td>
+  </tr>
+</table>
+
 ---
 
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | Weather and UV-resistant (e.g. PETG, ABS, ASA) |

@@ -67,10 +67,28 @@ This product provides a 3D-printable alternative back panel as an addon for exis
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20251113_125632(0).jpg" alt="20251113 125632(0)" width="400" /></td>
+    <td><img src="images/20251113_125709(0).jpg" alt="20251113 125709(0)" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20251113_125723.jpg" alt="20251113 125723" width="400" /></td>
+    <td><img src="images/20251113_125757.jpg" alt="20251113 125757" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20251113_125801.jpg" alt="20251113 125801" width="400" /></td>
+    <td><img src="images/20251113_125921(0).jpg" alt="20251113 125921(0)" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -127,22 +145,6 @@ This product provides a 3D-printable alternative back panel as an addon for exis
    - Check cable connections and routing
    - Verify screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 7" Touch Display Housing - Main View](./images/20251113_125632(0).jpg)
-
-![Assembly Photo 1](./images/20251113_125709(0).jpg)
-
-![Assembly Photo 2](./images/20251113_125723.jpg)
-
-![Assembly Photo 3](./images/20251113_125757.jpg)
-
-![Assembly Photo 4](./images/20251113_125801.jpg)
-
-![Assembled Unit](./images/20251113_125921(0).jpg)
 
 ---
 

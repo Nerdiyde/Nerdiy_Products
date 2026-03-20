@@ -70,12 +70,31 @@ This product provides 3D-printable suspension and isolation parts for ICY BOX 3.
 |-----|-----------|-----------|-------------|
 | 1x | ICY BOX 3.5" USB-C Enclosure | B07JFY2357 | [Amazon](https://www.amazon.de/dp/B07JFY2357?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
+
+---
+
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC6620.JPG" alt=" DSC6620" width="400" /></td>
+    <td><img src="images/_DSC6622.JPG" alt=" DSC6622" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC6628.JPG" alt=" DSC6628" width="400" /></td>
+    <td><img src="images/_DSC6636.JPG" alt=" DSC6636" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC6643.JPG" alt=" DSC6643" width="400" /></td>
+    <td><img src="images/Icy_box_3.5inch_housing_decoupler_V1.0_1.jpg" alt="Icy box 3.5inch housing decoupler V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
 ---
 
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and vibration-resistant) |
@@ -131,18 +150,6 @@ This product provides 3D-printable suspension and isolation parts for ICY BOX 3.
    - Replace cords if they show signs of damage or reduced elasticity
    - Check all screws for tightness
    - Clean the enclosure and frame assembly as needed
-
----
-
-### 📸 Product Images
-
-![ICY BOX 3.5" Hard Drive Decoupler](images/Icy_box_3.5inch_housing_decoupler_V1.0_1.jpg)
-
-![Assembly Photo 1](images/_DSC6620.JPG)
-![Assembly Photo 2](images/_DSC6622.JPG)
-![Assembly Photo 3](images/_DSC6628.JPG)
-![Assembly Photo 4](images/_DSC6636.JPG)
-![Assembly Photo 5](images/_DSC6643.JPG)
 
 
 ---

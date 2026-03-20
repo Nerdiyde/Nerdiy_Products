@@ -76,10 +76,28 @@ This product provides 3D-printable housing parts and the electronics BOM for a s
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/1.png" alt="1" width="400" /></td>
+    <td><img src="images/2.png" alt="2" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20240507_205201.jpg" alt="20240507 205201" width="400" /></td>
+    <td><img src="images/20240507_205206.jpg" alt="20240507 205206" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20240507_205227.jpg" alt="20240507 205227" width="400" /></td>
+    <td><img src="images/20240507_205325.jpg" alt="20240507 205325" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (recommended), ABS or ASA |
@@ -120,34 +138,6 @@ This product provides 3D-printable housing parts and the electronics BOM for a s
 	- Connect 5V USB power
 	- Check LED animation and sensor behavior
 	- Integrate the segment into your 125mm duct run
-
----
-
-## 📸 Product Images
-
-![AirFlowSensor Segment - Main View 1](./images/1.png)
-
-![AirFlowSensor Segment - Main View 2](./images/2.png)
-
-![AirFlowSensor Segment - Main View 3](./images/20240507_205201.jpg)
-
-![AirFlowSensor Segment - Main View 4](./images/20240507_205206.jpg)
-
-![AirFlowSensor Segment - Main View 5](./images/20240507_205227.jpg)
-
-![AirFlowSensor Segment - Main View 6](./images/20240507_205325.jpg)
-
-![AirFlowSensor Segment - Additional View 1](./images/additional/3.png)
-
-![AirFlowSensor Segment - Additional View 2](./images/additional/4.png)
-
-![AirFlowSensor Segment - Additional View 3](./images/additional/20240507_205237.jpg)
-
-![AirFlowSensor Segment - Additional View 4](./images/additional/20240507_205239.jpg)
-
-![AirFlowSensor Segment - Additional View 5](./images/additional/20240507_205328.jpg)
-
-![AirFlowSensor Segment - Additional View 6](./images/additional/20240507_205334.jpg)
 
 ---
 

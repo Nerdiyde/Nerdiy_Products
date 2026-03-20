@@ -74,12 +74,31 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 | 1x | Raspberry Pi 4 Power Supply | B07TZ89BT7 | [Amazon](https://www.amazon.de/dp/B07TZ89BT7?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Micro SD Card 64GB | B07FCMBLV6 | [Amazon](https://www.amazon.de/dp/B07FCMBLV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
+
+---
+
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250915_182916.jpg" alt="20250915 182916" width="400" /></td>
+    <td><img src="images/20250915_183047.jpg" alt="20250915 183047" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250915_183103.jpg" alt="20250915 183103" width="400" /></td>
+    <td><img src="images/20250915_183116.jpg" alt="20250915 183116" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250915_183232.jpg" alt="20250915 183232" width="400" /></td>
+    <td><img src="images/cutout_raspi4_V1.0.jpg" alt="cutout raspi4 V1.0" width="400" /></td>
+  </tr>
+</table>
+
 ---
 
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |

@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-compute-module-io-board-gehaeuse-by-nerdiy-de)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4333214776/raspberry-pi-compute-module-5-io-board)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -69,10 +70,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC6486.JPG" alt=" DSC6486" width="400" /></td>
+    <td><img src="images/_DSC6499.JPG" alt=" DSC6499" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC6510.JPG" alt=" DSC6510" width="400" /></td>
+    <td><img src="images/_DSC6524.JPG" alt=" DSC6524" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC6532.JPG" alt=" DSC6532" width="400" /></td>
+    <td><img src="images/_DSC6540.JPG" alt=" DSC6540" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -125,22 +144,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation (CM5 runs hotter than CM4)
    - Verify cable connections remain secure
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi Compute Module 5 IO Board Housing - Main View](./images/_DSC6486.JPG)
-
-![Assembly Photo 1](./images/_DSC6499.JPG)
-
-![Assembly Photo 2](./images/_DSC6510.JPG)
-
-![Assembly Photo 3](./images/_DSC6524.JPG)
-
-![Assembly Photo 4](./images/_DSC6532.JPG)
-
-![Assembled Unit](./images/_DSC6540.JPG)
 
 ---
 

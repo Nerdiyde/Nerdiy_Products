@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-4-waveshare-3x-relais-hat-housing-by-nerdiy-de)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4331581350/raspberry-pi-4-waveshare-3x-relais-hat)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -69,10 +70,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250508_172811.jpg" alt="20250508 172811" width="400" /></td>
+    <td><img src="images/20250508_172821.jpg" alt="20250508 172821" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250508_172843.jpg" alt="20250508 172843" width="400" /></td>
+    <td><img src="images/20250508_172849.jpg" alt="20250508 172849" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250508_172854.jpg" alt="20250508 172854" width="400" /></td>
+    <td><img src="images/raspi4_waveshare_3x_relais_board_hat_housing_V1.0_1.jpg" alt="raspi4 waveshare 3x relais board hat housing V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -129,22 +148,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Regularly inspect relay connections for security
 
 > ⚠️ **Safety Warning**: When working with relay boards controlling mains voltage (230V AC), always follow proper safety procedures. Disconnect power before wiring, use proper insulation, and consult a qualified electrician if unsure.
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 4 3x Relay HAT Housing - Main View](./images/raspi4_waveshare_3x_relais_board_hat_housing_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/20250508_172811.jpg)
-
-![Assembly Photo 2](./images/20250508_172821.jpg)
-
-![Assembly Photo 3](./images/20250508_172843.jpg)
-
-![Assembly Photo 4](./images/20250508_172849.jpg)
-
-![Assembly Photo 5](./images/20250508_172854.jpg)
 
 ---
 

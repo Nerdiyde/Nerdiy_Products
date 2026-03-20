@@ -71,10 +71,28 @@ This product provides 3D-printable angled camera mounting parts for Raspberry Pi
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20251013_180420.jpg" alt="20251013 180420" width="400" /></td>
+    <td><img src="images/20251013_180438(0).jpg" alt="20251013 180438(0)" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20251013_180456.jpg" alt="20251013 180456" width="400" /></td>
+    <td><img src="images/20251013_180607.jpg" alt="20251013 180607" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20251013_180746(0).jpg" alt="20251013 180746(0)" width="400" /></td>
+    <td><img src="images/raspi5_global_shutter_camera_angled_V1.0_1.jpg" alt="raspi5 global shutter camera angled V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -131,22 +149,6 @@ This product provides 3D-printable angled camera mounting parts for Raspberry Pi
    - Verify camera ribbon cable and AI HAT connections remain secure
    - Monitor AI HAT temperature during operation
    - Test camera and AI functionality regularly
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 Angled Camera Mount with AI HAT - Main View](./images/raspi5_global_shutter_camera_angled_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/20251013_180420.jpg)
-
-![Assembly Photo 2](./images/20251013_180438(0).jpg)
-
-![Assembly Photo 3](./images/20251013_180456.jpg)
-
-![Assembly Photo 4](./images/20251013_180607.jpg)
-
-![Assembly Photo 5](./images/20251013_180746(0).jpg)
 
 ---
 

@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/werkzeuge/raspberrypi-3-gehaeuse-by-nerdiy-de)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/1601383662/raspberrypi-3-housing-stl-files)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -68,10 +69,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20231116_094523.jpg" alt="20231116 094523" width="400" /></td>
+    <td><img src="images/20231116_094834.jpg" alt="20231116 094834" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20231116_094910.jpg" alt="20231116 094910" width="400" /></td>
+    <td><img src="images/20231116_095005(0).jpg" alt="20231116 095005(0)" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20231116_095023.jpg" alt="20231116 095023" width="400" /></td>
+    <td><img src="images/20231116_095048.jpg" alt="20231116 095048" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -122,24 +141,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Periodically clean dust from ventilation areas
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 3 Housing - Main View](./images/20231116_094523.jpg)
-
-![Assembly Photo 1](./images/20231116_094834.jpg)
-
-![Assembly Photo 2](./images/20231116_094910.jpg)
-
-![Assembly Photo 3](./images/20231116_095005(0).jpg)
-
-![Assembly Photo 4](./images/20231116_095023.jpg)
-
-![Assembly Photo 5](./images/20231116_095048.jpg)
-
-![3D Model View](./images/Screenshot%202023-11-16%20232524.png)
 
 ---
 

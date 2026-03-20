@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/werkzeuge/raspberrypi-4-gehaeuse-by-nerdiy-de)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/1615634549/raspberry-pi-4-case-by-nerdiyde-stl)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -68,10 +69,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20231108_122737.jpg" alt="20231108 122737" width="400" /></td>
+    <td><img src="images/20231108_122802.jpg" alt="20231108 122802" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20231108_122812(0).jpg" alt="20231108 122812(0)" width="400" /></td>
+    <td><img src="images/20231108_123026.jpg" alt="20231108 123026" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20231108_123031.jpg" alt="20231108 123031" width="400" /></td>
+    <td><img src="images/20231108_123058.jpg" alt="20231108 123058" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -122,24 +141,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Periodically clean dust from ventilation areas
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 4 Case - Main View](./images/20231108_122802.jpg)
-
-![Assembly Photo 1](./images/20231108_122737.jpg)
-
-![Assembly Photo 2](./images/20231108_122812(0).jpg)
-
-![Assembly Photo 3](./images/20231108_123026.jpg)
-
-![Assembly Photo 4](./images/20231108_123031.jpg)
-
-![Assembly Photo 5](./images/20231108_123058.jpg)
-
-![3D Model View](./images/Acrobat_kKG3RUPHJU.png)
 
 ---
 

@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberrypi-4-digiamp-hat-housing)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4333229840/raspberry-pi-4-digiamp-hat-housing-by)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -69,10 +70,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250306_160842.jpg" alt="20250306 160842" width="400" /></td>
+    <td><img src="images/20250306_160859.jpg" alt="20250306 160859" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250306_160908.jpg" alt="20250306 160908" width="400" /></td>
+    <td><img src="images/20250306_160935(0).jpg" alt="20250306 160935(0)" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250306_160957.jpg" alt="20250306 160957" width="400" /></td>
+    <td><img src="images/raspi4_DigiAmp+_V1.0_1.jpg" alt="raspi4 DigiAmp+ V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -127,22 +146,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Regularly test audio output connections for security
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 4 DigiAmp+ HAT Housing - Main View](./images/raspi4_DigiAmp+_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/20250306_160842.jpg)
-
-![Assembly Photo 2](./images/20250306_160859.jpg)
-
-![Assembly Photo 3](./images/20250306_160908.jpg)
-
-![Assembly Photo 4](./images/20250306_160935(0).jpg)
-
-![Assembly Photo 5](./images/20250306_160957.jpg)
 
 ---
 

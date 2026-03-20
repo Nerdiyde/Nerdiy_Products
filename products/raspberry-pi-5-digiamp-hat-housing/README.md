@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberrypi-5-digiamp-hat-housing)**
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4333228498/raspberry-pi-5-digiamp-hat-housing-by)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
@@ -70,10 +71,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250227_170458.jpg" alt="20250227 170458" width="400" /></td>
+    <td><img src="images/20250227_170508.jpg" alt="20250227 170508" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250227_170527.jpg" alt="20250227 170527" width="400" /></td>
+    <td><img src="images/20250227_170533.jpg" alt="20250227 170533" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250227_170551.jpg" alt="20250227 170551" width="400" /></td>
+    <td><img src="images/raspi_5_DigiAmp+_HAT_housing_V1.0_1.jpg" alt="raspi 5 DigiAmp+ HAT housing V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -128,22 +147,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
    - Regularly test audio output connections for security
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 IQaudio DigiAMP+ Housing - Main View](./images/raspi_5_DigiAmp+_HAT_housing_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/20250227_170458.jpg)
-
-![Assembly Photo 2](./images/20250227_170508.jpg)
-
-![Assembly Photo 3](./images/20250227_170527.jpg)
-
-![Assembly Photo 4](./images/20250227_170533.jpg)
-
-![Assembly Photo 5](./images/20250227_170551.jpg)
 
 ---
 

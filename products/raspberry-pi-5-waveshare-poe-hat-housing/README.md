@@ -31,6 +31,7 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 ### Alternative Sources
 - **[🎨 Printables Store](https://www.printables.com/model/1022979-raspberry-pi-5-waveshare-poe-hat-housing-by-nerdiy)**
 - **[🖨️ Cults3D](https://cults3d.com/de/kreationen/raspberrypi-5-waveshare-poe-hat-gehaeuse)**
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4333387578/raspberry-pi-5-waveshare-poe-hat-housing)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By purchasing the STL files through [Nerdiy.de Shop](https://nerdiy.de/en/product-2/waveshare-poe-has-housing-for-raspberry-pi-5-3d-printable-stl-files-2/), you directly support further development and new projects!
 
@@ -69,10 +70,28 @@ This product provides 3D-printable protective housing and mounting parts for Ras
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/_DSC5577.JPG" alt=" DSC5577" width="400" /></td>
+    <td><img src="images/_DSC5580.JPG" alt=" DSC5580" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5587.JPG" alt=" DSC5587" width="400" /></td>
+    <td><img src="images/_DSC5590.JPG" alt=" DSC5590" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/_DSC5600.JPG" alt=" DSC5600" width="400" /></td>
+    <td><img src="images/raspi_5_waveshare_PoE_HAT_housing_V1.0_1.jpg" alt="raspi 5 waveshare PoE HAT housing V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -125,18 +144,6 @@ This product provides 3D-printable protective housing and mounting parts for Ras
    - Periodically clean dust from ventilation areas
    - Check screw tightness after extended use
    - Monitor temperature to ensure adequate ventilation
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 5 Waveshare PoE HAT Housing](images/raspi_5_waveshare_PoE_HAT_housing_V1.0_1.jpg)
-
-![Assembly Photo 1](images/_DSC5577.JPG)
-![Assembly Photo 2](images/_DSC5580.JPG)
-![Assembly Photo 3](images/_DSC5587.JPG)
-![Assembly Photo 4](images/_DSC5590.JPG)
-![Assembly Photo 5](images/_DSC5600.JPG)
 
 ---
 

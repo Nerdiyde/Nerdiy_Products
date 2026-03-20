@@ -69,10 +69,28 @@ This product provides 3D-printable straight camera mounting parts for Raspberry 
 
 ---
 
+## 🖼️ Product Images
+
+<table>
+  <tr>
+    <td><img src="images/20250721_180456.jpg" alt="20250721 180456" width="400" /></td>
+    <td><img src="images/20250721_183642(0).jpg" alt="20250721 183642(0)" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250721_183704(0).jpg" alt="20250721 183704(0)" width="400" /></td>
+    <td><img src="images/20250721_183720.jpg" alt="20250721 183720" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/20250721_183812.jpg" alt="20250721 183812" width="400" /></td>
+    <td><img src="images/raspi4_global_shutter_camera_straight_V1.0_1.jpg" alt="raspi4 global shutter camera straight V1.0 1" width="400" /></td>
+  </tr>
+</table>
+
+---
+
 ## 🖨️ 3D Print Settings
 
-### Recommended Print Settings
-
+### ⚙️ Recommended Print Settings
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | PETG (weather and UV-resistant) |
@@ -127,22 +145,6 @@ This product provides 3D-printable straight camera mounting parts for Raspberry 
    - Check screw tightness after extended use
    - Verify camera ribbon cable connection remains secure
    - Test camera functionality regularly
-
----
-
-## 📸 Product Images
-
-![Raspberry Pi 4 Straight Camera Mount - Main View](./images/raspi4_global_shutter_camera_straight_V1.0_1.jpg)
-
-![Assembly Photo 1](./images/20250721_183642(0).jpg)
-
-![Assembly Photo 2](./images/20250721_180456.jpg)
-
-![Assembly Photo 3](./images/20250721_183704(0).jpg)
-
-![Assembly Photo 4](./images/20250721_183720.jpg)
-
-![Assembly Photo 5](./images/20250721_183812.jpg)
 
 ---
 
