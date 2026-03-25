@@ -1,4 +1,4 @@
-# Raspberry Pi 4 & 7" Touch Display 2 Frame - Horizontal (Incl. Cutout) by Nerdiy.de
+# Raspberry Pi 5" Touch Display 2 Housing for Raspberry Pi 4/5 (Incl. Active Cooler) by Nerdiy.de
 
 **Professional 3D-Printable Display Housing**
 
@@ -6,19 +6,20 @@
 
 ## 🎯 Project Overview
 
-Build a professional protective frame for your Raspberry Pi 4 with integrated 7" Touch Display 2 mounting. This horizontal mounting variant with top-side cutout for camera/connector access.
+Build a professional protective housing for your Raspberry Pi Touch Display 2 with integrated mounting for Raspberry Pi 4 or Raspberry Pi 5 including Active Cooler support. This horizontal mounting variant includes a top-side cutout for camera/connector access.
 
-Here we offer you the STL files for 3D-printed housing parts, specifically developed to securely hold the Raspberry Pi 4 and 7" Touch Display 2 while protecting the components from dust and physical damage.
+Here we offer you the STL files for 3D-printed housing parts, specifically developed to securely hold a Raspberry Pi 4 or Raspberry Pi 5 together with the 5" Touch Display 2 and Active Cooler while protecting the components from dust and physical damage.
 
 ---
 
 ## 📋 About This Product
 
-This product provides 3D-printable display frame parts for Raspberry Pi 4 with support for 7" Touch Display 2 in horizontal orientation with integrated cutout.
+This product provides 3D-printable housing parts for Raspberry Pi 4 or Raspberry Pi 5 with support for 5" Touch Display 2 and Active Cooler in horizontal orientation with integrated cutout.
 
-- **Product Name**: Raspberry Pi 4 & 7" Touch Display 2 Frame - Horizontal (Incl. Cutout)
-- **Display Type**: 7" Touch Display 2
-- **Raspberry Pi Version**: Raspberry Pi 4
+- **Product Name**: Raspberry Pi Touch Display 2 Housing for Raspberry Pi 4/5 (Incl. Active Cooler)
+- **Display Type**: 5" Touch Display 2
+- **Raspberry Pi Version**: Raspberry Pi 4 or Raspberry Pi 5
+- **Cooling**: Raspberry Pi Active Cooler supported
 - **Mounting Style**: horizontal
 - **Cutout Configuration**: Incl. Cutout
 - **Printables URL**: https://www.printables.com
@@ -58,9 +59,6 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 |-----|-----------|-----------|-------------|
 | 4x | M3 Thread Insert | B08BCRZZS3 | [Amazon](https://www.amazon.de/dp/B08BCRZZS3?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 4x | M3x8 Countersunk Screw | B0957T69W6 | [Amazon](https://www.amazon.de/dp/B0957T69W6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 2x | M2 Thread Insert | B088QJG676 | [Amazon](https://www.amazon.de/dp/B088QJG676?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 2x | M2x8 Countersunk Screw | B0957TSYBY | [Amazon](https://www.amazon.de/dp/B0957TSYBY?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 1x | M2x16 Countersunk Screw | B0957SL8PN | [Amazon](https://www.amazon.de/dp/B0957SL8PN?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 2x | Neodym Magnet 10x3 (cylindrical) | B0F6CQMCN3 | [Amazon](https://www.amazon.de/dp/B0F6CQMCN3?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | USB-C 90° Angle Adapter | B0F24HLGPS | [Amazon](https://www.amazon.de/dp/B0F24HLGPS?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
@@ -68,9 +66,10 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 
 | Qty | Component | ASIN (DE) | Amazon (DE) |
 |-----|-----------|-----------|-------------|
-| 1x | Raspberry Pi 4 (4GB or 8GB) | B09TTNF8BT | [Amazon](https://www.amazon.de/dp/B09TTNF8BT?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 1x | 7" Touch Display 2 | B0DM24QFCF | [Amazon](https://www.amazon.de/Raspberry-Display-Display-Modul-Passend-Entwickl-Schwarz/dp/B0DM24QFCF?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
-| 1x | Raspberry Pi 4 Power Supply | B07TZ89BT7 | [Amazon](https://www.amazon.de/dp/B07TZ89BT7?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | Raspberry Pi 4 or Raspberry Pi 5 | B09TTNF8BT / B0CK2FCG1K | [Raspberry Pi 4](https://www.amazon.de/dp/B09TTNF8BT?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) / [Raspberry Pi 5](https://www.amazon.de/dp/B0CK2FCG1K?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | 5" Touch Display 2 | B0DM24QFCF | [Amazon](https://www.amazon.de/Raspberry-Display-Display-Modul-Passend-Entwickl-Schwarz/dp/B0DM24QFCF?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | Raspberry Pi Active Cooler (for Pi 5 builds) | B0CM3C2Q9K | [Amazon](https://www.amazon.de/dp/B0CM3C2Q9K?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
+| 1x | Raspberry Pi Power Supply (matching your Pi version) | B07TZ89BT7 / B0CHT4S6V4 | [Pi 4 PSU](https://www.amazon.de/dp/B07TZ89BT7?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) / [Pi 5 PSU](https://www.amazon.de/dp/B0CHT4S6V4?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 | 1x | Micro SD Card 64GB | B07FCMBLV6 | [Amazon](https://www.amazon.de/dp/B07FCMBLV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1) |
 
 
@@ -132,14 +131,15 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
    - Assemble frame structure with M3x8 screws
 
 4. **Mount Components**
-   - Position Raspberry Pi 4 in housing base
-   - Attach 7" Touch Display 2 with mounting screws
+   - Position Raspberry Pi 4 or Raspberry Pi 5 in housing base
+   - Install Active Cooler where applicable (Pi 5 setup)
+   - Attach 5" Touch Display 2 with mounting screws
    - Secure display bracket with M2 hardware
    - Connect power and ribbon cables
 
 5. **Installation**
    - Mount the complete assembly in desired location
-   - Ensure proper ventilation around Raspberry Pi
+   - Ensure proper ventilation around Raspberry Pi and Active Cooler airflow path
    - Connect power supply via USB-C adapter
    - Boot Raspberry Pi and configure display settings
 
