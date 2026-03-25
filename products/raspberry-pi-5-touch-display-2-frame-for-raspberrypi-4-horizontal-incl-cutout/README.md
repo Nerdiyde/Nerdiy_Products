@@ -30,11 +30,13 @@ This product provides 3D-printable housing parts for Raspberry Pi 4 or Raspberry
 ## 🛒 Purchase Options
 
 ### Primary Source (Recommended)
-- **[🎨 Printables Store](https://www.printables.com)** - Download the STL files here (free)
+- **[🎨 Printables (Raspberry Pi 4)](https://www.printables.com/model/1424341-raspberry-pi-5-touch-display-2-frame-for-raspberry)** - Download the STL files here (free)
 
 ### Alternative Sources
 - **[🛍️ Nerdiy.de Shop](https://www.nerdiy.de/)** - Check for availability
-- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4386954386/raspberry-pi-5-touch-display-2-frame-for)** - Alternative purchase option
+- **[🧵 Etsy (Raspberry Pi 5)](https://www.etsy.com/de/listing/4477700026/raspberry-pi-5-touch-display-2-frame-for)**
+- **[🧵 Etsy (Raspberry Pi 4)](https://www.etsy.com/de/listing/4386954386/raspberry-pi-5-touch-display-2-frame-for)**
+- **[🗿 Cults3D (Raspberry Pi 4)](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-5-touch-display-2-frame-for-raspberrypi-4-horizontal-incl-cut)**
 
 ---
 
