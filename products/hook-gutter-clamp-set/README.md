@@ -23,6 +23,7 @@ This product page provides a complete overview of the STL package, bill of mater
 
 ### Alternative Sources
 - **[ Printables](https://www.printables.com/model/1285823-hook-gutter-clamp-set-by-nerdiyde)**
+- **[🎨 Cults3D](https://cults3d.com/de/modell-3d/haus/haken-dachrinnen-klemme-set)**
 
 ---
 

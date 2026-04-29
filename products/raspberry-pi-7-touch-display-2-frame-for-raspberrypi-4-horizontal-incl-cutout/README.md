@@ -35,6 +35,7 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 ### Alternative Sources
 - **[🎭 Cults3D Store](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-7-touch-display-2-frame-for-raspberrypi-4-horizontal-incl-cut)** - Alternative download platform
 - **[🛍️ Nerdiy.de Shop](https://www.nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4333390923/raspberry-pi-7-touch-display-2-frame-for)** - Alternative purchase option
 
 ---
 

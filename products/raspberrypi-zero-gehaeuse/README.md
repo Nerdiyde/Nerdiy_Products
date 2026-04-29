@@ -21,6 +21,9 @@ This product page provides a complete overview of the STL package, bill of mater
 ### Primary Source (Recommended)
 - **[ Nerdiy.de Shop](https://www.nerdiy.shop/shop/3d-datei/raspberrypi-zero-gehaeuse-3d-druckbar-stl-dateien/)** - Download the STL files here
 
+### Alternative Sources
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/1601403596/raspberrypi-zero-housing-3d-gedruckt)** - Alternative purchase option
+
 ---
 
 ## 📦 Bill of Materials

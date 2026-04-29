@@ -30,6 +30,7 @@ This product provides 3D-printable angled camera mounting parts for Raspberry Pi
 
 ### Alternative Sources
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🗿 Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-5-angled-mount-for-raspberry-pi-gs-or-hd-camera-and-ai-hat-by-ner)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 

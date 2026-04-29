@@ -32,7 +32,10 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 ### Primary Source (Recommended)
 - **[🎨 Printables Store](https://www.printables.com/model/1167269-raspberry-pi-7-touch-display-2-frame-for-raspberry)** - Download the STL files here (free)
 
-### Alternative Sources- **[🎭 Cults3D Store](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-touch-display-2-rahmen-plain-vertikal-3d-druckbar-stl-dateien)** - Alternative download platform- **[🛍️ Nerdiy.de Shop](https://www.nerdiy.de/)** - Check for availability
+### Alternative Sources
+- **[🎭 Cults3D Store](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-touch-display-2-rahmen-plain-vertikal-3d-druckbar-stl-dateien)** - Alternative download platform
+- **[🛍️ Nerdiy.de Shop](https://www.nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4386978065/raspberry-pi-7-touch-display-2-frame-for)** - Alternative purchase option
 
 ---
 

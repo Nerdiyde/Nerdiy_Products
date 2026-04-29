@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi 4 & Straight Mount for Raspberry Pi GS and HD Camera by Nerdiy.de</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0d1117;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: #1c2128;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            border: 1px solid #30363d;
+        }
+
+        h2 {
+            color: #58a6ff;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #79c0ff;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .info-card {
+            background: #0d1117;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+        }
+
+        .info-card label {
+            color: #79c0ff;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .info-card span {
+            color: #c9d1d9;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background: #0d1117;
+            color: #8b949e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #30363d;
+        }
+
+        /* Lightbox Modal Styles */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            max-height: 85vh;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f0f0f0;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+            z-index: 1001;
+        }
+
+        .lightbox-close:hover,
+        .lightbox-close:focus {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f0f0f0;
+            border: none;
+            font-size: 30px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            z-index: 1001;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .lightbox-prev { left: 15px; }
+        .lightbox-next { right: 15px; }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #f0f0f0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            z-index: 1001;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover { text-decoration: underline; }
+
+        .note {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            color: #ffc107;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 20px;
+            font-size: 0.95em;
+        }
+
+        th, td {
+            border: 1px solid #30363d;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #0d1117;
+            color: #79c0ff;
+        }
+
+        tbody tr:nth-child(even) { background: #161b22; }
+
+        ol {
+            margin-left: 20px;
+            color: #c9d1d9;
+        }
+
+        li { margin-bottom: 15px; }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Raspberry Pi 4 & Straight Mount for Raspberry Pi GS and HD Camera by Nerdiy.de</h1>
+        <p>Professional 3D-Printable Camera Mounting Solution</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>🎯 Project Overview</h2>
+            <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 20px;">
+                Build a professional straight camera mount for your Raspberry Pi 4 with Raspberry Pi Global Shutter (GS) or HD Camera support.
+            </p>
+            <p style="line-height: 1.8; margin-bottom: 15px;">
+                Here we offer you the STL files for 3D-printed mounting parts, which have been specifically developed to securely hold the Raspberry Pi 4 and provide a straight-forward mounting position for your camera module while protecting the components from dust and physical damage.
+            </p>
+            <p style="line-height: 1.8;">
+                With the provided STL files, you can easily create your own mounting parts on your 3D printer and integrate them into your Raspberry Pi 4 camera projects, surveillance systems, or robotics applications.
+            </p>
+        </section>
+
+        <section>
+            <h2>📋 About This Product</h2>
+            <p>This product provides 3D-printable straight camera mounting parts for Raspberry Pi 4 with support for Global Shutter (GS) and HD Camera modules.</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <label>Product Name</label>
+                    <span>Raspberry Pi 4 & Straight Mount for GS/HD Camera</span>
+                </div>
+                <div class="info-card">
+                    <label>Creator</label>
+                    <span>Nerdiy.de</span>
+                </div>
+                <div class="info-card">
+                    <label>Created</label>
+                    <span>February 2026</span>
+                </div>
+                <div class="info-card">
+                    <label>Status</label>
+                    <span>Complete</span>
+                </div>
+            </div>
+            <p style="margin-top: 15px;"><strong>Note:</strong> The mount provides straight-forward camera positioning while maintaining full access to all Pi 4 ports and connectors.</p>
+        </section>
+
+        <section>
+            <h2>🛒 Purchase Options</h2>
+            <h3>Primary Source (Recommended)</h3>
+            <ul>
+                <li><a href="https://www.printables.com/model/1361734-raspberry-pi4-straight-mount-for-raspberry-pi-gs-a">🎨 Printables Store</a> - Download the STL files here (free)</li>
+            </ul>
+
+            <h3>Alternative Sources</h3>
+            <ul>
+                <li><a href="https://nerdiy.de/">🛍️ Nerdiy.de Shop</a> - Check for availability</li>
+                <li><a href="https://cults3d.com/de/modell-3d/gadget/raspberry-pi-4-straight-mount-for-raspberry-pi-gs-and-hd-camera-by-nerdiy-de">🗿 Cults3D</a> - Alternative purchase option</li>
+            </ul>
+
+            <div class="note">
+                💖 <strong>Support independent makers:</strong> By downloading from Printables and giving a like, you directly support further development and new projects!
+            </div>
+        </section>
+
+        <section>
+            <h2>📦 Bill of Materials</h2>
+
+            <h3>🛠️ Required Tools</h3>
+            <table>
+                <thead>
+                    <tr><th>Qty</th><th>Component</th><th>ASIN (DE)</th><th>Amazon (DE)</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>Screwdriver Set</td>
+                        <td>B086SQZGLJ</td>
+                        <td><a href="https://www.amazon.de/dp/B086SQZGLJ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Soldering Iron</td>
+                        <td>B0D5M727WM</td>
+                        <td><a href="https://www.amazon.de/dp/B0D5M727WM?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>🎨 3D Print Materials</h3>
+            <table>
+                <thead>
+                    <tr><th>Qty</th><th>Component</th><th>ASIN (DE)</th><th>Amazon (DE)</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>PETG Filament 1.75mm (1kg)</td>
+                        <td>B07T2QZYS1</td>
+                        <td><a href="https://www.amazon.de/dp/B07T2QZYS1?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>⚙️ Mounting Hardware</h3>
+            <table>
+                <thead>
+                    <tr><th>Qty</th><th>Component</th><th>ASIN (DE)</th><th>Amazon (DE)</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4x</td>
+                        <td>M2 Threaded Insert</td>
+                        <td>B088QJG676</td>
+                        <td><a href="https://www.amazon.de/dp/B088QJG676?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>4x</td>
+                        <td>M2x20 Countersunk Screw</td>
+                        <td>B09N4WV1WP</td>
+                        <td><a href="https://www.amazon.de/dp/B09N4WV1WP?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>📦 Required Components</h3>
+            <table>
+                <thead>
+                    <tr><th>Qty</th><th>Component</th><th>ASIN (DE)</th><th>Amazon (DE)</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1x</td>
+                        <td>Raspberry Pi 4 (4GB or 8GB)</td>
+                        <td>B09TTNF8BT</td>
+                        <td><a href="https://www.amazon.de/dp/B09TTNF8BT?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Raspberry Pi Global Shutter Camera (optional)</td>
+                        <td>B0C2CSTNRZ</td>
+                        <td><a href="https://www.amazon.de/dp/B0C2CSTNRZ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Raspberry Pi HQ Camera (optional)</td>
+                        <td>B0BHF4D1QY</td>
+                        <td><a href="https://www.amazon.de/dp/B0BHF4D1QY?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Raspberry Pi 4 Power Supply</td>
+                        <td>B07TZ89BT7</td>
+                        <td><a href="https://www.amazon.de/dp/B07TZ89BT7?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td>1x</td>
+                        <td>Micro SD Card 64GB</td>
+                        <td>B07FCMBLV6</td>
+                        <td><a href="https://www.amazon.de/dp/B07FCMBLV6?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>🖨️ 3D Print Settings</h2>
+            <h3>Recommended Print Settings</h3>
+            <table>
+                <thead>
+                    <tr><th>Setting</th><th>Value</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Filament Type</strong></td><td>PETG (weather and UV-resistant)</td></tr>
+                    <tr><td><strong>Layer Height</strong></td><td>0.2mm</td></tr>
+                    <tr><td><strong>Infill</strong></td><td>20-25%</td></tr>
+                    <tr><td><strong>Wall Lines</strong></td><td>3-5</td></tr>
+                    <tr><td><strong>Support</strong></td><td>Yes (for overhangs &gt; 45°)</td></tr>
+                </tbody>
+            </table>
+            <div class="note">
+                💡 <strong>Print Orientation:</strong> I highly recommend printing the parts in the already defined orientation. The defined orientation is intended to maximize the structural integrity of the part and ensure proper camera mounting stability.
+            </div>
+        </section>
+
+        <section>
+            <h2>🎯 How to Use</h2>
+            <h3>Step-by-Step Assembly Guide</h3>
+            <ol>
+                <li>
+                    <strong>Gather Your Materials</strong>
+                    <ul>
+                        <li>Purchase all components from the Bill of Materials section above</li>
+                        <li>All Amazon links are pre-configured with affiliate tags to support Nerdiy.de development</li>
+                        <li>For STL files, <a href="https://www.printables.com/model/1361734-raspberry-pi4-straight-mount-for-raspberry-pi-gs-a">download from Printables</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Download 3D Files</strong>
+                    <ul>
+                        <li><a href="https://www.printables.com/model/1361734-raspberry-pi4-straight-mount-for-raspberry-pi-gs-a">🎨 Download from Printables</a> (free download)</li>
+                        <li>Alternative: Check <a href="https://nerdiy.de/">Nerdiy.de Shop</a> for availability</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Prepare for 3D Printing</strong>
+                    <ul>
+                        <li>Print the mount and camera bracket parts with these settings:</li>
+                        <li>Layer Height: 0.2mm</li>
+                        <li>Infill: 20-25%</li>
+                        <li>Supports: Yes (for overhangs &gt; 45°)</li>
+                        <li>Material: PETG (recommended for durability and outdoor use if needed)</li>
+                        <li>Slice and prepare files in your slicing software</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Assembly</strong>
+                    <ul>
+                        <li>Clean all printed parts after removal from build plate</li>
+                        <li>Install M2 threaded inserts into designated holes using soldering iron</li>
+                        <li>Mount the Raspberry Pi 4 onto the base mounting plate</li>
+                        <li>Attach the camera module to the straight bracket</li>
+                        <li>Connect the camera ribbon cable to the Raspberry Pi 4 CSI port</li>
+                        <li>Secure all parts with M2x20 screws</li>
+                        <li>Verify camera alignment</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Installation</strong>
+                    <ul>
+                        <li>Mount the complete assembly in your desired location</li>
+                        <li>Ensure proper ventilation around the Raspberry Pi 4</li>
+                        <li>Connect power supply (USB-C power input)</li>
+                        <li>Boot up your Raspberry Pi 4 and test camera functionality</li>
+                        <li>Configure camera settings in Raspberry Pi OS or your preferred software</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Maintenance</strong>
+                    <ul>
+                        <li>Periodically clean camera lens and housing from dust</li>
+                        <li>Check screw tightness after extended use</li>
+                        <li>Verify camera ribbon cable connection remains secure</li>
+                        <li>Test camera functionality regularly</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>📸 Product Images</h2>
+            <div class="gallery" id="gallery">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="./images/raspi4_global_shutter_camera_straight_V1.0_1.jpg" alt="Raspberry Pi 4 Straight Camera Mount - Main View">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="./images/20250721_180456.jpg" alt="Assembly Photo 1">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="./images/20250721_183642(0).jpg" alt="Assembly Photo 2">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="./images/20250721_183704(0).jpg" alt="Assembly Photo 3">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="./images/20250721_183720.jpg" alt="Assembly Photo 4">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="./images/20250721_183812.jpg" alt="Assembly Photo 5">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>📄 License</h2>
+            <p>This design is available under the license specified on the Printables product page. Please review the license terms when downloading the files.</p>
+        </section>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">×</button>
+        <button class="lightbox-nav lightbox-prev" onclick="changeLightbox(-1)">&#8249;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+        <button class="lightbox-nav lightbox-next" onclick="changeLightbox(1)">&#8250;</button>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <a href="https://nerdiy.de/">Nerdiy.de</a> — Professional 3D-Printable Products</p>
+        <p style="margin-top: 8px; font-size: 0.9em;">Last Updated: March 2026</p>
+    </footer>
+
+    <script>
+        const images = [
+            { src: './images/raspi4_global_shutter_camera_straight_V1.0_1.jpg', alt: 'Raspberry Pi 4 Straight Camera Mount - Main View' },
+            { src: './images/20250721_180456.jpg', alt: 'Assembly Photo 1' },
+            { src: './images/20250721_183642(0).jpg', alt: 'Assembly Photo 2' },
+            { src: './images/20250721_183704(0).jpg', alt: 'Assembly Photo 3' },
+            { src: './images/20250721_183720.jpg', alt: 'Assembly Photo 4' },
+            { src: './images/20250721_183812.jpg', alt: 'Assembly Photo 5' }
+        ];
+
+        let currentIndex = 0;
+
+        function openLightbox(index) {
+            currentIndex = index;
+            updateLightbox();
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function changeLightbox(direction) {
+            currentIndex = (currentIndex + direction + images.length) % images.length;
+            updateLightbox();
+        }
+
+        function updateLightbox() {
+            document.getElementById('lightbox-img').src = images[currentIndex].src;
+            document.getElementById('lightbox-img').alt = images[currentIndex].alt;
+            document.getElementById('lightbox-counter').textContent = (currentIndex + 1) + ' / ' + images.length;
+        }
+
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (!document.getElementById('lightbox').classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') changeLightbox(-1);
+            if (e.key === 'ArrowRight') changeLightbox(1);
+        });
+    </script>
+</body>
+</html>

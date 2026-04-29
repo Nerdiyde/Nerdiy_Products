@@ -35,6 +35,7 @@ This product provides 3D-printable display frame parts for Raspberry Pi 5 with s
 ### Alternative Sources
 - **[🎭 Cults3D Store](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-touch-display-2-housing-plain-horizontal-rpi5)** - Alternative download platform
 - **[🛍️ Nerdiy.de Shop](https://www.nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4332878444/raspberry-pi-touch-display-2-housing)** - Alternative purchase option
 
 ---
 

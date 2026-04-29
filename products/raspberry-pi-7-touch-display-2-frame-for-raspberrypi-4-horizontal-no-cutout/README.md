@@ -33,6 +33,7 @@ This product provides 3D-printable display frame parts for Raspberry Pi 4 with s
 
 ### Alternative Sources
 - **[🛍️ Nerdiy.de Shop](https://www.nerdiy.de/)** - Check for availability
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4333396938/raspberry-pi-7-touch-display-2-frame-for)** - Alternative purchase option
 
 ---
 

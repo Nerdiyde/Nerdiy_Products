@@ -23,6 +23,7 @@ This product page provides a complete overview of the STL package, bill of mater
 
 ### Alternative Sources
 - **[🎨 Printables](https://www.printables.com/model/1285832-eufy-spaceview-baby-monitor-camera-thread-adapter)**
+- **[🎨 Cults3D](https://cults3d.com/de/modell-3d/werkzeuge/eufy-spaceview-babyfone-kameragwinde-adapter)**
 
 > 💖 **Support independent makers**: By purchasing the STL files through [Nerdiy.de Shop](https://www.nerdiy.de/), you directly support further development and new projects!
 

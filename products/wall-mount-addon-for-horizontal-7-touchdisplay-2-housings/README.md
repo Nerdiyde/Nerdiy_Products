@@ -31,7 +31,6 @@ This product is available in the Nerdiy.de Store on Printables.
 ## 🖨️ 3D Print Settings
 
 ### ⚙️ Recommended Print Settings
-
 | Setting | Value |
 |---------|-------|
 | **Filament Type** | Weather and UV-resistant (e.g. PETG, ABS, ASA) |

@@ -30,6 +30,7 @@ This product provides 3D-printable straight camera mounting parts for Raspberry 
 
 ### Alternative Sources
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Check for availability
+- **[🗿 Cults3D](https://cults3d.com/de/modell-3d/gadget/raspberry-pi-4-straight-mount-for-raspberry-pi-gs-and-hd-camera-by-nerdiy-de)** - Alternative purchase option
 
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 

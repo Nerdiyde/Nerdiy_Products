@@ -28,6 +28,9 @@ This product provides a 3D-printable alternative back panel as an addon for exis
 ### Primary Source (Recommended)
 - **[🎨 Printables Store](https://www.printables.com/model/1491295-raspberry-pi54-addon-lid-for-7-touchdisplay-2-hous)** - Download the STL files here
 
+### Alternative Sources
+- **[🧵 Etsy Shop](https://www.etsy.com/de/listing/4476582597/plain-lid-for-raspberry-pi-7-touch)** - Alternative purchase option
+
 > 💖 **Support independent makers**: By downloading from Printables and giving a like, you directly support further development and new projects!
 
 ---
