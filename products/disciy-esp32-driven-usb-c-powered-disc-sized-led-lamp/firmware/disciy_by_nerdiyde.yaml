@@ -1,0 +1,392 @@
+#                                  _   _                 _  _               _
+#                                 | \ | |               | |(_)             | |
+#  __      ____      ____      __ |  \| |  ___  _ __  __| | _  _   _     __| |  ___
+#  \ \ /\ / /\ \ /\ / /\ \ /\ / / | . ` | / _ \| '__|/ _` || || | | |   / _` | / _ \
+#   \ V  V /  \ V  V /  \ V  V /_ | |\  ||  __/| |  | (_| || || |_| | _| (_| ||  __/
+#    \_/\_/    \_/\_/    \_/\_/(_)|_| \_| \___||_|   \__,_||_| \__, |(_)\__,_| \___|
+#                                                               __/ |
+#                                                              |___/
+#     More information: https://www.Nerdiy.de/
+#
+#     This program is free software: you can redistribute it and/or modify
+#     it under the terms of the GNU General Public License as published by
+#     the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+#
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#     GNU General Public License for more details.
+#
+#     You should have received a copy of the GNU General Public License
+#     along with this program.  If not, see <http://www.gnu.org/licenses/>.#
+#     Additional licensing information: https://nerdiy.de/en/lizenz/
+#
+
+substitutions:
+  # ===== Device / Build =====================================================
+  device_name: nerdiys-disciy
+  friendly_name: DiscIY
+  project_name: nerdiy.disciy
+  firmware_version: "1.0.0"
+  name_add_mac_suffix: "true"
+  esp32_board: esp32-s3-devkitc-1
+
+  # ===== Logging / Diagnostics ===============================================
+  logger_default_level: INFO
+  wifi_signal_update_interval: 60s
+
+  # ===== WiFi / Web ==========================================================
+  wifi_ssid: "YOUR_WIFI_SSID"
+  wifi_password: "YOUR_WIFI_PASSWORD"
+  wifi_fallback_ssid: DiscIY Fallback Hotspot
+  webserver_port: "80"
+  webserver_version: "3"
+  webserver_local: "true"
+  webserver_include_internal: "false"
+
+  # ===== Access / Credentials (dummy values, replace before production) =====
+  api_encryption_key: "REPLACE_WITH_32_BYTE_BASE64_KEY"
+  ota_password: "please_change_me_ota"
+  fallback_ap_password: "please_change_me_ap"
+  web_user: "admin"
+  web_password: "please_change_me_web"
+
+  # ===== GPIO Mapping =========================================================
+  gpio_led_strip: GPIO07
+  gpio_touch_sensor_left: GPIO04
+  gpio_touch_sensor_right: GPIO05
+  gpio_touch_sensor_center: GPIO03
+
+  # ===== LED Layout ===========================================================
+  led_num_total: "120"
+  led_inner_start: "0"
+  led_inner_end: "56"
+  led_outer_start: "57"
+  led_outer_end: "119"
+  led_orientation_a_start: "0"
+  led_orientation_a_end: "1"
+  led_orientation_b_start: "55"
+  led_orientation_b_end: "56"
+  default_transition: 100ms
+  toggle_transition: 500ms
+  min_brightness: "0.30"
+  max_brightness: "1.00"
+  step_brightness: "0.10"
+
+  # ===== Touch Tuning =========================================================
+  touch_sensors_setup_mode: "false"
+  threshold_touch_sensor_left: "128000"
+  threshold_touch_sensor_right: "154000"
+  threshold_touch_sensor_center: "150000"
+
+esphome:
+  name: ${device_name}
+  friendly_name: ${friendly_name}
+  min_version: 2024.11.0
+  name_add_mac_suffix: ${name_add_mac_suffix}
+  project:
+    name: ${project_name}
+    version: ${firmware_version}
+
+esp32:
+  board: ${esp32_board}
+  framework:
+    type: arduino
+
+logger:
+  level: ${logger_default_level}
+
+api:
+  encryption:
+    key: ${api_encryption_key}
+
+ota:
+  - platform: esphome
+    password: ${ota_password}
+
+wifi:
+  ssid: ${wifi_ssid}
+  password: ${wifi_password}
+  ap:
+    ssid: ${wifi_fallback_ssid}
+    password: ${fallback_ap_password}
+
+captive_portal:
+
+improv_serial:
+
+esp32_ble_tracker:
+
+bluetooth_proxy:
+
+esp32_touch:
+  # Enable setup_mode temporarily to inspect raw touch values during calibration.
+  setup_mode: ${touch_sensors_setup_mode}
+  measurement_duration: 0.25ms
+  filter_mode: IIR_4
+  debounce_count: 1
+  noise_threshold: 2
+  jitter_step: 7
+  smooth_mode: IIR_2
+
+web_server:
+  version: ${webserver_version}
+  local: ${webserver_local}
+  include_internal: ${webserver_include_internal}
+  port: ${webserver_port}
+  auth:
+    username: ${web_user}
+    password: ${web_password}
+
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
+text_sensor:
+  - platform: version
+    name: ESPHome Version
+    entity_category: diagnostic
+
+  - platform: wifi_info
+    ip_address:
+      name: ESP IP Address
+      entity_category: diagnostic
+    ssid:
+      name: ESP Connected SSID
+      entity_category: diagnostic
+    bssid:
+      name: ESP Connected BSSID
+      entity_category: diagnostic
+    mac_address:
+      name: ESP Mac Wifi Address
+      entity_category: diagnostic
+
+sensor:
+  - platform: wifi_signal
+    name: WiFi Signal dB
+    id: wifi_signal_db
+    update_interval: ${wifi_signal_update_interval}
+    entity_category: diagnostic
+
+  - platform: copy
+    source_id: wifi_signal_db
+    name: WiFi Signal Percent
+    filters:
+      - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
+    unit_of_measurement: "%"
+    entity_category: diagnostic
+
+  - platform: uptime
+    name: Uptime
+    entity_category: diagnostic
+
+binary_sensor:
+  - platform: status
+    name: Device Status
+    entity_category: diagnostic
+
+  - platform: esp32_touch
+    name: Touch Sensor Left
+    id: touch_sensor_left
+    pin: ${gpio_touch_sensor_left}
+    threshold: ${threshold_touch_sensor_left}
+    filters:
+      - delayed_on: 50ms
+    on_press:
+      then:
+        # Left pad increases brightness in steps; max press turns the selected segment off.
+        - lambda: |-
+            esphome::light::LightState *target = &id(outer_ring_partition_light);
+            if (id(controlled_segment).state == "Inner ring") {
+              target = &id(inner_ring_partition_light);
+            } else if (id(controlled_segment).state == "Orientation light") {
+              target = &id(orientation_partition_light);
+            }
+
+            if (!target->current_values.is_on()) {
+              auto call = target->turn_on();
+              call.set_transition_length(${default_transition});
+              call.set_brightness(${max_brightness});
+              call.perform();
+              return;
+            }
+
+            float b = target->current_values.get_brightness();
+            if (b >= (${max_brightness} - 0.05f)) {
+              auto off_call = target->turn_off();
+              off_call.set_transition_length(${default_transition});
+              off_call.perform();
+            } else {
+              float new_brightness = b + ${step_brightness};
+              if (new_brightness > ${max_brightness}) {
+                new_brightness = ${max_brightness};
+              }
+              auto on_call = target->turn_on();
+              on_call.set_transition_length(${default_transition});
+              on_call.set_brightness(new_brightness);
+              on_call.perform();
+            }
+
+  - platform: esp32_touch
+    name: Touch Sensor Right
+    id: touch_sensor_right
+    pin: ${gpio_touch_sensor_right}
+    threshold: ${threshold_touch_sensor_right}
+    filters:
+      - delayed_on: 50ms
+    on_press:
+      then:
+        # Right pad decreases brightness in steps; min press turns the selected segment off.
+        - lambda: |-
+            esphome::light::LightState *target = &id(outer_ring_partition_light);
+            if (id(controlled_segment).state == "Inner ring") {
+              target = &id(inner_ring_partition_light);
+            } else if (id(controlled_segment).state == "Orientation light") {
+              target = &id(orientation_partition_light);
+            }
+
+            if (!target->current_values.is_on()) {
+              auto call = target->turn_on();
+              call.set_transition_length(${default_transition});
+              call.set_brightness(${min_brightness});
+              call.perform();
+              return;
+            }
+
+            float b = target->current_values.get_brightness();
+            if (b <= (${min_brightness} + 0.05f)) {
+              auto off_call = target->turn_off();
+              off_call.set_transition_length(${default_transition});
+              off_call.perform();
+            } else {
+              float new_brightness = b - ${step_brightness};
+              if (new_brightness < ${min_brightness}) {
+                new_brightness = ${min_brightness};
+              }
+              auto on_call = target->turn_on();
+              on_call.set_transition_length(${default_transition});
+              on_call.set_brightness(new_brightness);
+              on_call.perform();
+            }
+
+  - platform: esp32_touch
+    name: Touch Sensor Center
+    id: touch_sensor_center
+    pin: ${gpio_touch_sensor_center}
+    threshold: ${threshold_touch_sensor_center}
+    filters:
+      - delayed_on: 50ms
+    on_press:
+      then:
+        # Center pad toggles the selected segment.
+        - lambda: |-
+            esphome::light::LightState *target = &id(outer_ring_partition_light);
+            if (id(controlled_segment).state == "Inner ring") {
+              target = &id(inner_ring_partition_light);
+            } else if (id(controlled_segment).state == "Orientation light") {
+              target = &id(orientation_partition_light);
+            }
+            auto call = target->toggle();
+            call.set_transition_length(${toggle_transition});
+            call.perform();
+
+button:
+  - platform: restart
+    name: Restart ESP
+    entity_category: diagnostic
+
+  - platform: safe_mode
+    name: Restart in Safe Mode
+    entity_category: diagnostic
+
+light:
+  - platform: neopixelbus
+    id: light_1
+    type: GRB
+    variant: SK6812
+    pin: ${gpio_led_strip}
+    num_leds: ${led_num_total}
+    restore_mode: ALWAYS_OFF
+    internal: true
+    color_correct: [60%, 60%, 60%]
+    gamma_correct: 2.8
+
+  # Orientation segment is intentionally tiny and helps with physical alignment.
+  - platform: partition
+    name: Orientation Light
+    id: orientation_partition_light
+    default_transition_length: ${default_transition}
+    segments:
+      - id: light_1
+        from: ${led_orientation_a_start}
+        to: ${led_orientation_a_end}
+      - id: light_1
+        from: ${led_orientation_b_start}
+        to: ${led_orientation_b_end}
+    effects:
+      - random:
+      - pulse:
+      - strobe:
+      - flicker:
+      - addressable_rainbow:
+      - addressable_color_wipe:
+      - addressable_scan:
+      - addressable_twinkle:
+      - addressable_random_twinkle:
+      - addressable_fireworks:
+      - addressable_flicker:
+
+  - platform: partition
+    name: Inner Ring Light
+    id: inner_ring_partition_light
+    default_transition_length: ${default_transition}
+    segments:
+      - id: light_1
+        from: ${led_inner_start}
+        to: ${led_inner_end}
+    effects:
+      - random:
+      - pulse:
+      - strobe:
+      - flicker:
+      - addressable_rainbow:
+      - addressable_color_wipe:
+      - addressable_scan:
+      - addressable_twinkle:
+      - addressable_random_twinkle:
+      - addressable_fireworks:
+      - addressable_flicker:
+
+  - platform: partition
+    name: Outer Ring Light
+    id: outer_ring_partition_light
+    default_transition_length: ${default_transition}
+    segments:
+      - id: light_1
+        from: ${led_outer_start}
+        to: ${led_outer_end}
+    effects:
+      - random:
+      - pulse:
+      - strobe:
+      - flicker:
+      - addressable_rainbow:
+      - addressable_color_wipe:
+      - addressable_scan:
+      - addressable_twinkle:
+      - addressable_random_twinkle:
+      - addressable_fireworks:
+      - addressable_flicker:
+
+select:
+  - platform: template
+    name: Controlled Segment
+    id: controlled_segment
+    optimistic: true
+    options:
+      - Outer ring
+      - Inner ring
+      - Orientation light
+    initial_option: Outer ring
+    icon: mdi:lightbulb
