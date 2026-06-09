@@ -30,8 +30,8 @@ This product provides the concept and hardware structure for a compact ESPHome-b
 - **[🛍️ Nerdiy.de Shop](https://nerdiy.de/)** - Purchase the STL files here to support independent design and development
 
 ### Alternative Sources
-- **[🎨 Printables Store](https://www.printables.com/)**
-- **[🖨️ Cults3D](https://cults3d.com/)**
+- **[🎨 Printables Store](https://www.printables.com/model/1287050-disciy-esp32-driven-usb-c-powered-disc-sized-led-l)**
+- **[🖨️ Cults3D](https://cults3d.com/de/modell-3d/gadget/disciy-esp32-driven-usb-c-powered-disc-sized-led-lamp-by-nerdiy-de)**
 
 > 💖 **Support independent makers**: By purchasing the STL files through [Nerdiy.de Shop](https://nerdiy.de/), you directly support further development and new projects!
 
@@ -119,8 +119,8 @@ This product provides the concept and hardware structure for a compact ESPHome-b
 
 2. **Download 3D Files**
    - [🛍️ Download from Nerdiy.de Shop](https://nerdiy.de/) (recommended - supports independent makers)
-   - Alternative: [Download from Printables](https://www.printables.com/)
-   - Alternative: [Download from Cults3D](https://cults3d.com/)
+   - Alternative: [Download from Printables](https://www.printables.com/model/1287050-disciy-esp32-driven-usb-c-powered-disc-sized-led-l)
+   - Alternative: [Download from Cults3D](https://cults3d.com/de/modell-3d/gadget/disciy-esp32-driven-usb-c-powered-disc-sized-led-lamp-by-nerdiy-de)
 
 3. **ESPHome Firmware Configuration**
    - Configure ESPHome for the XIAO ESP32-S3
