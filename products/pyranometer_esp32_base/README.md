@@ -26,8 +26,8 @@ This product provides a compact 3D-printed adapter housing plus ESPHome firmware
 - **[Nerdiy.de Shop](https://nerdiy.de/)** - Purchase the product here to support independent design and development
 
 ### Alternative Sources (3D Files)
-- Printables: *(link to be added)*
-- Cults3D: *(link to be added)*
+- Printables: [Pyranometer ESP32 Base by Nerdiy.de](https://www.printables.com/model/1750355-pyranometer-esp32-base-by-nerdiyde)
+- Cults3D: [Pyranometer ESP32 Base by Nerdiy.de](https://cults3d.com/de/modell-3d/haus/pyranometer-esp32-base-by-nerdiy-de)
 
 ---
 
