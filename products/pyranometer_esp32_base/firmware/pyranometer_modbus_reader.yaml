@@ -1,0 +1,358 @@
+#                                  _   _                 _  _               _
+#                                 | \ | |               | |(_)             | |
+#  __      ____      ____      __ |  \| |  ___  _ __  __| | _  _   _     __| |  ___
+#  \ \ /\ / /\ \ /\ / /\ \ /\ / / | . ` | / _ \| '__|/ _` || || | | |   / _` | / _ \
+#   \ V  V /  \ V  V /  \ V  V /_ | |\  ||  __/| |  | (_| || || |_| | _| (_| ||  __/
+#    \_/\_/    \_/\_/    \_/\_/(_)|_| \_| \___||_|   \__,_||_| \__, |(_)\__,_| \___|
+#                                                               __/ |
+#                                                              |___/
+#
+#
+#     This program is free software: you can redistribute it and/or modify
+#     it under the terms of the GNU General Public License as published by
+#     the Free Software Foundation, either version 3 of the License, or
+#     (at your option) any later version.
+#
+#     This program is distributed in the hope that it will be useful,
+#     but WITHOUT ANY WARRANTY; without even the implied warranty of
+#     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#     GNU General Public License for more details.
+#
+#     You should have received a copy of the GNU General Public License
+#     along with this program. If not, see <http://www.gnu.org/licenses/>.
+#     Additional licensing information: https://nerdiy.de/en/lizenz/
+#
+#     Project information: https://www.Nerdiy.de/
+#
+# +------------------------------------------------------------------------------------------+
+# |            Pyranometer Modbus Reader - GPIO and Bus Mapping (XIAO ESP32-S3)              |
+# +------------------------------------------------------------------------------------------+
+#
+# This YAML file configures the ESPHome firmware for reading a solar radiation pyranometer
+# over RS485 / Modbus RTU using a Seeed XIAO ESP32-S3 with RS485 expansion board.
+#
+# The pyranometer is powered by an external 12–24 V DC supply (NOT from the XIAO USB supply).
+# RS485 communication uses the XIAO onboard UART via the RS485 expansion board.
+#
+# +------------------------------+       +------------------------------+
+# | Seeed XIAO ESP32-S3          |       | RS485 Pyranometer            |
+# |    + RS485 Expansion Board   |       |                              |
+# |------------------------------|       |------------------------------|
+# | RS485 A+ ───────────────────-+──────>| A+ (brown / yellow wire)     |
+# | RS485 B-  <─────────────────-+───────| B-  (blue / white wire)      |
+# | GND ────────────────────────-+───────| GND / shield                 |
+# +------------------------------+       |                              |
+#                                        | 12–24 V DC ──> external PSU  |
+#                                        +------------------------------+
+#
+# Seeed XIAO ESP32-S3 UART / RS485 Board pin assignment (project-specific):
+# - GPIO25 = UART TX
+# - GPIO27 = UART RX
+# - The Seeed RS485 expansion board handles RS485 direction automatically (no DE/RE GPIO needed).
+#
+# Notes:
+# - If communication fails, swap the A+ and B− wires at the sensor terminal.
+# - Use shielded twisted-pair cable for outdoor installations.
+# - Add a 120 Ω termination resistor at the far end of cable runs longer than ~10 m.
+# - The default Modbus slave address of this sensor type is 0x01. Adjust if changed.
+# - Some units ship with 4800 bps instead of 9600 bps. Check the label and adjust uart_baud_rate.
+# - Register 0x0000 holds the solar irradiance in W/m² as an unsigned 16-bit integer.
+#   If your sensor uses a 0.1 scaling factor, change the multiply filter from 1.0 to 0.1.
+# -----------------------------------------------------------------------------
+
+substitutions:
+  # ===== Device / Build ======================================================
+  device_name: pyranometer-modbus-reader           # ESPHome node name (unique in network)
+  friendly_name: Pyranometer Modbus Reader          # Friendly display name in HA / web UI
+  esp32_board: seeed_xiao_esp32s3                  # ESPHome board target for XIAO ESP32-S3
+  project_name: nerdiy.pyranometer_modbus_reader   # ESPHome project metadata (owner.project)
+  firmware_version: "1.0.0"                        # Firmware version string
+  name_add_mac_suffix: "false"                     # Append MAC suffix to node name (true/false)
+
+  # ===== System / Access =====================================================
+  logger_default_level: INFO   # Default ESP log level at boot
+  timezone: Europe/Berlin      # Local timezone used by SNTP time synchronization
+  ntp_server_primary: fritz.box         # Primary NTP server
+  ntp_server_secondary: 1.pool.ntp.org  # Secondary NTP server
+  api_encryption_key: REPLACE_WITH_32_BYTE_BASE64_KEY  # HA API encryption key (replace!)
+  ota_password: please_change_me_ota                   # OTA update password (replace!)
+
+  # ===== WiFi / Web ==========================================================
+  wifi_fallback_ssid: Pyranometer-Reader Fallback  # AP SSID if normal WiFi fails
+  wifi_fallback_password: please_change_me_ap      # AP fallback hotspot password
+  webserver_port: "80"           # Embedded web server TCP port
+  webserver_version: "3"         # ESPHome web server version
+  webserver_auth_username: admin # Basic auth username for web UI
+  webserver_auth_password: admin # Basic auth password for web UI
+
+  # ===== UART / Modbus Transport =============================================
+  # Seeed XIAO ESP32-S3 hardware UART pins (project wiring)
+  uart_tx_pin: GPIO25         # UART TX → RS485 driver input
+  uart_rx_pin: GPIO27         # UART RX ← RS485 driver output
+  uart_baud_rate: "4800"      # Modbus baud rate
+  uart_data_bits: "8"         # UART data bits
+  uart_stop_bits: "1"         # UART stop bits
+  uart_parity: NONE           # UART parity mode
+  modbus_send_wait_time: 30ms # Pause after Modbus frame send
+  modbus_address: "0x01"      # Modbus slave address of the pyranometer
+  modbus_command_throttle: 50ms       # Minimum delay between Modbus commands
+  modbus_update_interval: 1s          # Default polling interval for all sensors
+
+  # ===== Pyranometer Register Addresses =====================================
+  # Register layout for standard RS485 Modbus solar radiation pyranometers
+  # (XNQ / compatible sensors from AliExpress).
+  # Adjust addresses and scaling if your sensor ships with a different register map.
+  addr_solar_irradiance: "0x0000"  # Solar irradiance in W/m² (U_WORD, holding register)
+  irradiance_scale: "1.0"          # Scaling factor: 1.0 for direct W/m², 0.1 if sensor outputs in 0.1 W/m² steps
+
+# =============================================================================
+
+esphome:
+  name: ${device_name}
+  friendly_name: ${friendly_name}
+  min_version: 2024.11.0
+  project:
+    name: ${project_name}
+    version: ${firmware_version}
+  name_add_mac_suffix: ${name_add_mac_suffix}
+
+esp32:
+  board: ${esp32_board}
+  framework:
+    type: arduino  # arduino framework is widely supported on XIAO ESP32-S3
+
+logger:
+  level: ${logger_default_level}
+
+api:
+  encryption:
+    key: ${api_encryption_key}
+
+ota:
+  - platform: esphome
+    password: ${ota_password}
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: ${wifi_fallback_ssid}
+    password: ${wifi_fallback_password}
+
+captive_portal:
+
+improv_serial:
+
+time:
+  - platform: sntp
+    id: sntp_time
+    timezone: ${timezone}
+    servers:
+      - ${ntp_server_primary}
+      - ${ntp_server_secondary}
+  - platform: homeassistant
+    id: homeassistant_time
+
+sun:
+  id: sun_data
+  latitude: 51.4818445
+  longitude: 7.2162363
+
+web_server:
+  port: ${webserver_port}
+  version: ${webserver_version}
+  auth:
+    username: ${webserver_auth_username}
+    password: ${webserver_auth_password}
+
+# =============================================================================
+# Modbus / UART
+# =============================================================================
+uart:
+  - id: modbus_uart
+    rx_pin: ${uart_rx_pin}
+    tx_pin: ${uart_tx_pin}
+    baud_rate: ${uart_baud_rate}
+    data_bits: ${uart_data_bits}
+    stop_bits: ${uart_stop_bits}
+    parity: ${uart_parity}
+
+modbus:
+  - id: modbus1
+    uart_id: modbus_uart
+    send_wait_time: ${modbus_send_wait_time}
+
+modbus_controller:
+  - id: pyranometer_sensor_id
+    address: ${modbus_address}
+    modbus_id: modbus1
+    setup_priority: -10
+    command_throttle: ${modbus_command_throttle}
+    update_interval: ${modbus_update_interval}
+
+# =============================================================================
+# Sensors
+# =============================================================================
+sensor:
+  # ---------------------------------------------------------------------------
+  # Solar Irradiance (W/m²)
+  # Holding register 0x0000, unsigned 16-bit integer.
+  # The raw value is the irradiance in W/m² (factor 1.0) for most variants.
+  # If your sensor outputs in 0.1 W/m² steps, change irradiance_scale to 0.1.
+  # ---------------------------------------------------------------------------
+  - name: "Solar GHI"
+    id: solar_irradiation_ghi_value_id
+    platform: modbus_controller
+    modbus_controller_id: pyranometer_sensor_id
+    register_type: read
+    address: ${addr_solar_irradiance}
+    value_type: U_WORD
+    unit_of_measurement: "W/m²"
+    device_class: irradiance
+    state_class: measurement
+    accuracy_decimals: 1
+    icon: mdi:weather-sunny
+    filters:
+      - sliding_window_moving_average:
+          send_first_at: 10
+          window_size: 60
+          send_every: 10
+
+  # ---------------------------------------------------------------------------
+  # Daily Solar Energy (Wh/m²) – integrated from irradiance using ESPHome
+  # integration sensor (trapezoidal, resets daily at midnight).
+  # ---------------------------------------------------------------------------
+  - platform: integration
+    name: "Daily Solar Energy"
+    id: daily_solar_energy
+    sensor: solar_irradiation_ghi_value_id
+    time_unit: h           # result: Wh/m²
+    integration_method: trapezoidal
+    unit_of_measurement: "Wh/m²"
+    device_class: energy
+    state_class: total_increasing
+    icon: mdi:solar-power
+    accuracy_decimals: 2
+    restore: false
+
+  # ---------------------------------------------------------------------------
+  # ESP diagnostics
+  # ---------------------------------------------------------------------------
+  - platform: wifi_signal
+    name: "ESP WiFi Signal dB"
+    id: wifi_signal_db
+    update_interval: 60s
+    entity_category: diagnostic
+
+  - platform: copy
+    source_id: wifi_signal_db
+    name: "ESP WiFi Signal Percent"
+    filters:
+      - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
+    unit_of_measurement: "Signal %"
+    entity_category: diagnostic
+
+  - platform: uptime
+    name: "ESP Uptime"
+    entity_category: diagnostic
+
+  - platform: internal_temperature
+    name: "ESP Internal Temperature"
+    entity_category: diagnostic
+
+  - platform: sun
+    name: Sun Elevation
+    id: sun_elevation
+    type: elevation
+    disabled_by_default: true
+
+  - platform: sun
+    name: Sun Azimuth
+    id: sun_azimuth
+    type: azimuth
+    disabled_by_default: true
+
+  - platform: template
+    name: "Solar zenith"
+    id: solar_zenith_id
+    unit_of_measurement: "°"
+    update_interval: 10s
+    lambda: |-
+      return 90 - id(sun_elevation).state;
+
+number:
+  - platform: template
+    name: "Longitude"
+    id: longitude
+    mode: box
+    restore_value: true
+    entity_category: "config"
+    max_value: 360.0
+    min_value: 0.0
+    step: 0.000001
+    initial_value: 180.0
+    unit_of_measurement: "°"
+    optimistic: true
+    on_value:
+      then:
+        - lambda: |-
+            id(sun_data).set_longitude(x);
+
+  - platform: template
+    name: "Latitude"
+    id: latitude
+    mode: box
+    restore_value: true
+    entity_category: "config"
+    max_value: 90.0
+    min_value: -90.0
+    step: 0.000001
+    initial_value: 0.0
+    unit_of_measurement: "°"
+    optimistic: true
+    on_value:
+      then:
+        - lambda: |-
+            id(sun_data).set_latitude(x);
+
+button:
+  - platform: restart
+    name: "Restart ESP"
+
+# =============================================================================
+# Text sensors
+# =============================================================================
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "ESP IP Address"
+      icon: mdi:ip
+    ssid:
+      name: "ESP Connected SSID"
+      icon: mdi:wifi
+    mac_address:
+      name: "ESP WiFi MAC Address"
+
+  - platform: version
+    name: "ESPHome Version"
+    id: esphome_version_id
+    hide_timestamp: true
+    entity_category: diagnostic
+
+  - platform: template
+    name: "Current Time"
+    lambda: |-
+      char str[17];
+      time_t currTime = id(homeassistant_time).now().timestamp;
+      strftime(str, sizeof(str), "%d.%m.%Y %H:%M", localtime(&currTime));
+      return { str };
+    update_interval: 60s
+    disabled_by_default: true
+
+# =============================================================================
+# Binary sensors
+# =============================================================================
+binary_sensor:
+  - platform: status
+    name: "ESP API Status"
+    entity_category: diagnostic
