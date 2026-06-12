@@ -32,7 +32,10 @@ This product provides the firmware and product structure for an ESPHome-powered 
 - **[Nerdiy.de Shop](https://nerdiy.de/)** - Purchase the product here to support independent design and development
 
 ### Alternative Sources
-- Additional distribution links can be added here later.
+- Printables (Wi-Fi): [Marstek Modbus Companion by Nerdiy.de - Wifi Version](https://www.printables.com/model/1752146-marstek-modbus-companion-by-nerdiyde-wifi-version)
+- Printables (Ethernet): [Marstek Modbus Companion by Nerdiy.de - Ethernet Version](https://www.printables.com/model/1752169-marstek-modbus-companion-by-nerdiyde-ethernet-vers)
+- Cults3D (Wi-Fi): [🔋 Marstek Modbus Companion by Nerdiy.de - Wifi Version](https://cults3d.com/de/modell-3d/werkzeuge/marstek-modbus-companion-by-nerdiy-de-wifi-version)
+- Cults3D (Ethernet): [🔋 Marstek Modbus Companion by Nerdiy.de - Ethernet Version](https://cults3d.com/de/modell-3d/werkzeuge/marstek-modbus-companion-by-nerdiy-de-ethernet-version)
 
 ---
 
