@@ -8,6 +8,8 @@ Build an ESPHome-based Modbus companion for Marstek battery and inverter systems
 
 Marstek Modbus Companion is designed as a dedicated ESP32-based bridge that communicates with supported Marstek hardware over RS485 and integrates device data and controls into Home Assistant via ESPHome. The firmware also provides local diagnostics, a web interface, and status LED feedback for installation and troubleshooting.
 
+The current configuration is made to control a Marstek Venus E V3.0.
+
 This product supports two firmware variants: one for Wi-Fi connectivity and one for Ethernet connectivity via a W5500 module. The code can be adapted by commenting or uncommenting the marked sections in the firmware YAML; the matching tips are documented directly in that file.
 
 There are also two matching enclosure versions: one housing version for Wi-Fi operation and one housing version for Ethernet operation (with W5500 module).

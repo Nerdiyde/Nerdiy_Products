@@ -35,6 +35,7 @@
 #
 # This YAML file configures the ESPHome firmware for the Marstek Modbus Companion device, which uses a LilyGo T-CAN485 board to communicate with a Marstek battery/inverter system over RS485. 
 # The configuration includes pin assignments, Modbus register addresses, polling intervals, and other settings required for proper operation and integration with Home Assistant.
+# The current configuration can also be used to control a Marstek Venus E V3.0.
 #
 # +------------------------------+                         +------------------------------+
 # | LILYGO T-CAN485              |                         | Marstek RJ45 (battery side)  |
