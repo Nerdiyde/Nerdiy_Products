@@ -1,0 +1,121 @@
+substitutions:
+  # Core device settings
+  device_name: "pxlblck-s3-matrix"
+  friendly_name: "pxlBlck Waveshare ESP32-S3-Matrix"
+
+  # Connectivity and access settings
+  wifi_ssid: "please_change_wifi_ssid"
+  wifi_password: "please_change_wifi_password"
+  fallback_ap_ssid: "pxlBlck-ESP32-S3-Matrix"
+  ap_password: "please_change_me"
+  web_user: "admin"
+  web_password: "please_change_me"
+  ota_password: "please_change_me"
+
+  # API settings
+  api_encryption_key: "MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY="
+
+  # Generic defaults
+  timezone: "Europe/Berlin"
+  sntp_server_1: "0.pool.ntp.org"
+  sntp_server_2: "1.pool.ntp.org"
+  sntp_server_3: "2.pool.ntp.org"
+
+  # LED matrix settings
+  led_data_pin: "GPIO21"
+  led_count: "64"
+  led_color_order: "GRB"
+
+esphome:
+  name: "${device_name}"
+  friendly_name: "${friendly_name}"
+  project:
+    name: nerdiy.pxlblck_waveshare_esp32_s3_matrix
+    version: "1.0.0"
+
+esp32:
+  board: esp32-s3-devkitc-1
+  framework:
+    type: esp-idf
+
+logger:
+  level: DEBUG
+
+api:
+  encryption:
+    key: "${api_encryption_key}"
+
+ota:
+  - platform: esphome
+    password: "${ota_password}"
+
+wifi:
+  ssid: "${wifi_ssid}"
+  password: "${wifi_password}"
+  output_power: 20dB
+  power_save_mode: none
+  min_auth_mode: WPA2
+  ap:
+    ssid: "${fallback_ap_ssid}"
+    password: "${ap_password}"
+
+captive_portal:
+
+improv_serial:
+  next_url: http://{{ip_address}}
+
+web_server:
+  version: 3
+  port: 80
+  auth:
+    username: "${web_user}"
+    password: "${web_password}"
+
+time:
+  - platform: sntp
+    id: sntp_time
+    timezone: ${timezone}
+    servers:
+      - ${sntp_server_1}
+      - ${sntp_server_2}
+      - ${sntp_server_3}
+
+light:
+  - platform: esp32_rmt_led_strip
+    id: onboard_matrix
+    name: "Onboard Matrix"
+    pin: ${led_data_pin}
+    num_leds: ${led_count}
+    chipset: WS2812
+    rgb_order: ${led_color_order}
+    default_transition_length: 0ms
+    restore_mode: RESTORE_DEFAULT_OFF
+    gamma_correct: 1.0
+
+sensor:
+  - platform: wifi_signal
+    name: "WiFi Signal dB"
+    id: wifi_signal_db
+    update_interval: 60s
+    entity_category: diagnostic
+
+  - platform: copy
+    source_id: wifi_signal_db
+    name: "WiFi Signal Percent"
+    filters:
+      - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
+    unit_of_measurement: "%"
+    entity_category: diagnostic
+
+  - platform: uptime
+    name: "Uptime"
+    entity_category: diagnostic
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "IP Address"
+    ssid:
+      name: "Connected SSID"
+    mac_address:
+      name: "MAC Address"

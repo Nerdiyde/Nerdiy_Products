@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pxlBlck 8x8 Matrix - Waveshare ESP32-S3-Matrix by Nerdiy.de</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0d1117;
+            --panel: #161b22;
+            --panel-2: #1c2128;
+            --border: #30363d;
+            --text: #e6edf3;
+            --muted: #8b949e;
+            --accent: #58a6ff;
+            --accent-2: #79c0ff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top, rgba(88, 166, 255, 0.16), transparent 34%),
+                linear-gradient(180deg, #111827 0%, #0d1117 40%, #0b1020 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 72px 20px 56px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(31, 111, 235, 0.95) 0%, rgba(88, 166, 255, 0.9) 100%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            margin-bottom: 12px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            max-width: 760px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 36px 20px 60px;
+        }
+
+        section {
+            background: rgba(22, 27, 34, 0.94);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+        }
+
+        h2 {
+            color: var(--accent);
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(88, 166, 255, 0.45);
+        }
+
+        p, li {
+            color: #c9d1d9;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .info-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+        }
+
+        .info-card label {
+            display: block;
+            color: var(--accent-2);
+            font-weight: 700;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .info-card value {
+            color: var(--text);
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .btn-primary {
+            color: white;
+            background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
+            box-shadow: 0 10px 22px rgba(31, 111, 235, 0.28);
+        }
+
+        .btn-secondary {
+            color: var(--accent);
+            border: 1px solid rgba(88, 166, 255, 0.5);
+            background: transparent;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+        }
+
+        .gallery figure {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .gallery img {
+            width: 100%;
+            display: block;
+            background: #0a0f14;
+        }
+
+        .gallery figcaption {
+            padding: 12px 14px 14px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .material-table {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        th, td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+            color: #c9d1d9;
+            vertical-align: top;
+        }
+
+        thead th {
+            background: rgba(31, 111, 235, 0.28);
+            color: white;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: var(--muted);
+        }
+
+        @media (max-width: 720px) {
+            section {
+                padding: 20px;
+            }
+
+            .btn-row {
+                flex-direction: column;
+            }
+
+            .btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>pxlBlck 8x8 Matrix</h1>
+        <p>Waveshare ESP32-S3-Matrix by Nerdiy.de. A compact pxlBlck-style build with an onboard 8x8 RGB LED matrix, ESP32-S3, USB-C, Wi-Fi, Bluetooth LE, and IMU support.</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Product Information</h2>
+            <div class="info-grid">
+                <div class="info-card"><label>Product Name</label><value>pxlBlck 8x8 Matrix - Waveshare ESP32-S3-Matrix by Nerdiy.de</value></div>
+                <div class="info-card"><label>Base Hardware</label><value>Waveshare ESP32-S3-Matrix</value></div>
+                <div class="info-card"><label>Status</label><value>Draft</value></div>
+                <div class="info-card"><label>Last Updated</label><value>29.07.2026</value></div>
+            </div>
+            <div class="btn-row">
+                <a class="btn btn-primary" href="README.md">Open README</a>
+                <a class="btn btn-secondary" href="firmware/config/pxlblck-waveshare-esp32-s3-matrix.yaml">Open ESPHome Config</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>MCU</td><td>ESP32-S3</td></tr>
+                    <tr><td>Display</td><td>Onboard 8x8 RGB LED matrix</td></tr>
+                    <tr><td>Connectivity</td><td>Wi-Fi, Bluetooth LE, USB-C</td></tr>
+                    <tr><td>Sensor</td><td>QMI8658 6-axis IMU</td></tr>
+                    <tr><td>Firmware</td><td>ESPHome configuration included in this product folder</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Material List</h2>
+            <p>The list below combines the matching entries from the shared global materials library with the additional parts needed for this build.</p>
+            <div class="material-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Qty</th>
+                            <th>Component</th>
+                            <th>ASIN (DE)</th>
+                            <th>Amazon (DE)</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1x</td><td>Waveshare ESP32-S3-Matrix Board</td><td>-</td><td><a href="https://docs.waveshare.com/ESP32-S3-Matrix">Waveshare Docs</a></td><td>Base board for this pxlBlck build</td></tr>
+                        <tr><td>1x</td><td>M2 Thread Insert</td><td>B08DDBWKZF</td><td><a href="https://www.amazon.de/dp/B08DDBWKZF?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td><td>For screw reinforcement</td></tr>
+                        <tr><td>1x</td><td>M2x6 Countersunk</td><td>B0957W34XS</td><td><a href="https://www.amazon.de/dp/B0957W34XS?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td><td>Small fitting for the housing</td></tr>
+                        <tr><td>1x</td><td>PLA Filament White</td><td>-</td><td>-</td><td>White housing or accent parts; no dedicated global library entry available</td></tr>
+                        <tr><td>1x</td><td>PLA Filament Black (1kg)</td><td>B07T6WLFML</td><td><a href="https://www.amazon.de/dp/B07T6WLFML?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td><td>Black housing or inner parts</td></tr>
+                        <tr><td>1x</td><td>PETG Filament (1kg)</td><td>B07T2QZYS1</td><td><a href="https://www.amazon.de/dp/B07T2QZYS1?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td><td>Any additional housing color</td></tr>
+                        <tr><td>1x</td><td>USB-C Cable</td><td>B098WVHH5L</td><td><a href="https://www.amazon.de/dp/B098WVHH5L?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td><td>Power and flashing</td></tr>
+                        <tr><td>1x</td><td>USB Power Supply</td><td>B00WLI5E3M</td><td><a href="https://www.amazon.de/dp/B00WLI5E3M?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td><td>5V/3A recommended</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Required Tools</h2>
+            <div class="material-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Qty</th>
+                            <th>Component</th>
+                            <th>ASIN (DE)</th>
+                            <th>Amazon (DE)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1x</td><td>Screwdriver Set</td><td>B086SQZGLJ</td><td><a href="https://www.amazon.de/dp/B086SQZGLJ?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td></tr>
+                        <tr><td>1x</td><td>Soldering Iron</td><td>B0D5M727WM</td><td><a href="https://www.amazon.de/dp/B0D5M727WM?tag=nerdiyde018-21&linkCode=ogi&th=1&psc=1">Amazon</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/pxlblck-waveshare-esp32-s3-matrix-01-front-view.jpg" alt="Front view of the pxlBlck Waveshare ESP32-S3 matrix build">
+                    <figcaption>Front view of the finished cube.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/pxlblck-waveshare-esp32-s3-matrix-02-front-view-with-tool.jpg" alt="Front view with screwdriver beside the pxlBlck cube">
+                    <figcaption>Scale and tooling reference.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/pxlblck-waveshare-esp32-s3-matrix-03-top-view.jpg" alt="Top view of the pxlBlck cube">
+                    <figcaption>Top surface and matrix face.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/pxlblck-waveshare-esp32-s3-matrix-04-top-detail-view.jpg" alt="Top detail view of the pxlBlck cube">
+                    <figcaption>Detail view of the top face.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/pxlblck-waveshare-esp32-s3-matrix-05-usb-c-side-view.jpg" alt="USB-C side view of the pxlBlck cube">
+                    <figcaption>USB-C access on the rear side.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/pxlblck-waveshare-esp32-s3-matrix-06-open-top-board-view.jpg" alt="Open top board view of the pxlBlck cube">
+                    <figcaption>Open housing with the board visible.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/pxlblck-waveshare-esp32-s3-matrix-07-open-top-angled-view.jpg" alt="Open top angled view of the pxlBlck cube">
+                    <figcaption>Angled internal board view.</figcaption>
+                </figure>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nerdiy.de</p>
+    </footer>
+</body>
+</html>
